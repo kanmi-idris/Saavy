@@ -5,6 +5,7 @@ import DollarIcon from './icons/fi_dollar';
 import ChatIcon from './icons/Chat';
 import BriefcaseIcon from './icons/fi_briefcase';
 import ArrowRight from './icons/fi_arrow-right';
+import HelpCircle from './icons/fi_help-circle';
 
 interface IconProp {
   name: string;
@@ -24,6 +25,8 @@ const Icon = ({name, ...props}: IconProp) => {
       return <BriefcaseIcon {...props} />;
     case 'arrowRight':
       return <ArrowRight {...props} />;
+    case 'helpCircle':
+      return <HelpCircle {...props} />;
     default:
       return null;
   }

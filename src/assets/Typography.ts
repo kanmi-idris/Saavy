@@ -188,7 +188,12 @@ const typography = {
     },
     paragraphMid: {
       fontSize: 13.3,
-      fontFamily: fonts.semiBold600,
+      fontFamily: fonts.medium500,
+      textDecorationLine: 'underline' as Underline,
+    },
+    paragraphReg: {
+      fontSize: 13.3,
+      fontFamily: fonts.regular400,
       textDecorationLine: 'underline' as Underline,
     },
     paragraphMidSmall: {
@@ -198,7 +203,7 @@ const typography = {
     },
     paragraphRegSmall: {
       fontSize: 11.1,
-      fontFamily: fonts.medium500,
+      fontFamily: fonts.regular400,
       textDecorationStyle: 'underline' as Underline,
     },
     footer: {

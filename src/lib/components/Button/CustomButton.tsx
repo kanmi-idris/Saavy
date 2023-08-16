@@ -112,12 +112,8 @@ const CustomButton = ({
   return (
     <Pressable
       style={states() || variants()}
-      onPressIn={() => {
-        setPressed(true);
-      }}
-      onPressOut={() => {
-        setPressed(false);
-      }}
+      onPressIn={() => setPressed(true)}
+      onPressOut={() => setPressed(false)}
       disabled={disable}>
       {iconStart && <Icon name={iconStart} {...iconProps} />}
       <Text style={textStyleState() || textStyles()}>{label}</Text>

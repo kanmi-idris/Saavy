@@ -2,6 +2,7 @@ import React, {StrictMode} from 'react';
 import {SafeAreaView, StatusBar, StyleSheet} from 'react-native';
 import colors from '@/assets/Colors';
 import CustomButton from './lib/components/Button/CustomButton';
+import InvestmentSuites from './lib/components/InvestmentSuitesScroll';
 
 function App(): JSX.Element {
   return (
@@ -19,6 +20,7 @@ function App(): JSX.Element {
           iconStart="home"
           variant="text"
         />
+        <InvestmentSuites />
       </SafeAreaView>
     </StrictMode>
   );
