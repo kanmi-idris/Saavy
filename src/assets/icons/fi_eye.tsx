@@ -1,7 +1,7 @@
 import React from 'react';
 import Svg, {Path, G} from 'react-native-svg';
 
-export default function Naira(props: any) {
+export default function Eye(props: any) {
   const {
     width = 24,
     height = 24,
@@ -17,40 +17,16 @@ export default function Naira(props: any) {
 
   return (
     <Svg width={width} height={height} viewBox={viewBox} fill={fill}>
-      <G id="fi:arrow-right">
+      <G id="fi:eye">
         <Path
-          d="M2 15L22 15"
+          d="M0.666626 8.00008C0.666626 8.00008 3.33329 2.66675 7.99996 2.66675C12.6666 2.66675 15.3333 8.00008 15.3333 8.00008C15.3333 8.00008 12.6666 13.3334 7.99996 13.3334C3.33329 13.3334 0.666626 8.00008 0.666626 8.00008Z"
           stroke={stroke}
           strokeWidth={strokeWidth}
           strokeLinecap={strokeLinecap}
           strokeLinejoin={strokeLinejoin}
         />
         <Path
-          d="M2 9L22 9"
-          fill={pathFill}
-          stroke={pathStroke}
-          strokeWidth={strokeWidth}
-          strokeLinecap={strokeLinecap}
-          strokeLinejoin={strokeLinejoin}
-        />
-        <Path
-          d="M20 3L18 21"
-          fill={pathFill}
-          stroke={pathStroke}
-          strokeWidth={strokeWidth}
-          strokeLinecap={strokeLinecap}
-          strokeLinejoin={strokeLinejoin}
-        />
-        <Path
-          d="M6 3L18 21"
-          fill={pathFill}
-          stroke={pathStroke}
-          strokeWidth={strokeWidth}
-          strokeLinecap={strokeLinecap}
-          strokeLinejoin={strokeLinejoin}
-        />
-        <Path
-          d="M6 3L4 21"
+          d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
           fill={pathFill}
           stroke={pathStroke}
           strokeWidth={strokeWidth}

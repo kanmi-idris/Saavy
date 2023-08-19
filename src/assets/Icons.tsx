@@ -6,6 +6,14 @@ import ChatIcon from './icons/Chat';
 import BriefcaseIcon from './icons/fi_briefcase';
 import ArrowRight from './icons/fi_arrow-right';
 import HelpCircle from './icons/fi_help-circle';
+import Naira from './icons/fi_naira';
+import Search from './icons/fi_search';
+import PhoneCall from './icons/fi_phone-call';
+import Calendar from './icons/fi_calendar';
+import ChevronDown from './icons/fi_chevronDown';
+import UploadCloud from './icons/fi_uploadCloud';
+import Eye from './icons/fi_eye';
+import EyeOff from './icons/fi_eyeOff';
 
 interface IconProp {
   name: string;
@@ -27,6 +35,22 @@ const Icon = ({name, ...props}: IconProp) => {
       return <ArrowRight {...props} />;
     case 'helpCircle':
       return <HelpCircle {...props} />;
+    case 'naira':
+      return <Naira {...props} />;
+    case 'search':
+      return <Search {...props} />;
+    case 'phoneCall':
+      return <PhoneCall {...props} />;
+    case 'calendar':
+      return <Calendar {...props} />;
+    case 'chevronDown':
+      return <ChevronDown {...props} />;
+    case 'uploadCloud':
+      return <UploadCloud {...props} />;
+    case 'eye':
+      return <Eye {...props} />;
+    case 'eyeOff':
+      return <EyeOff {...props} />;
     default:
       return null;
   }

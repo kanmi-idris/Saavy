@@ -104,6 +104,7 @@ const CustomButton = ({
   const iconProps = {
     width: 20,
     height: 20,
+    viewBox: '0 0 20 20',
     fill: iconFill(),
     stroke: iconStroke(),
     pathStroke: iconPathStroke(),
