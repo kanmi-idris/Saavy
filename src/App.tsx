@@ -1,13 +1,19 @@
-import React, {StrictMode} from 'react';
-import {SafeAreaView, StatusBar, StyleSheet, View} from 'react-native';
+import React, {StrictMode, useState} from 'react';
+import {
+  Keyboard,
+  Pressable,
+  SafeAreaView,
+  StatusBar,
+  StyleSheet,
+} from 'react-native';
 import colors from '@/assets/Colors';
-import BasicInput from './lib/components/FormInputs/BasicInput';
-import {ScrollableSection} from './lib/layout/Section';
-import MiniInvestmentDetailCard from './lib/components/Cards/MiniInvestmentDetailCard';
+import SecurePinInput from './lib/components/FormInputs/SecurePinInput';
+import CustomButton from './lib/components/Button/CustomButton';
 
 function App(): JSX.Element {
-  const SecureinputFields = new Array(4).fill(0);
-  console.log(SecureinputFields);
+  const [pin, setPin] = useState('');
+  const [isPinReady, SetIsPinReady] = useState(false);
+  const MAX_LENGTH = 4;
 
   return (
     <StrictMode>
@@ -17,7 +23,7 @@ function App(): JSX.Element {
           barStyle="light-content" // set the text color of the status bar to dark
           hidden={false} // show the status bar
         />
-        <View style={styles.wrapper}>
+        {/* <View style={styles.wrapper}>
           <BasicInput
             label="Email"
             type="numeric"
@@ -36,21 +42,6 @@ function App(): JSX.Element {
             // errorMessage="Please Enter Your 4 digit Pin"
           />
         </View>
-        {/* <View style={styles.otp}>
-          {SecureinputFields.map((field, index) => {
-            const emptyInputChar = ' ';
-            // const digit = code[index] || emptyInputChar;
-
-            return (
-              <BasicInput
-                key={index}
-                type="numeric"
-                value={1}
-                // disabled
-              />
-            );
-          })}
-        </View> */}
         <View>
           <ScrollableSection heading="Summary" horizontal auxBtn>
             <View style={styles.view}>
@@ -124,7 +115,21 @@ function App(): JSX.Element {
               />
             </View>
           </ScrollableSection>
-        </View>
+        </View> */}
+
+        <Pressable style={{flex: 0.1}} onPressIn={Keyboard.dismiss}>
+          <SecurePinInput
+            pin={pin}
+            setPin={setPin}
+            maxLength={MAX_LENGTH}
+            setIsPinReady={SetIsPinReady}
+          />
+        </Pressable>
+        <CustomButton
+          label="Confirm"
+          variant="primary"
+          disable={isPinReady ? false : true}
+        />
       </SafeAreaView>
     </StrictMode>
   );
