@@ -14,6 +14,8 @@ import ChevronDown from './icons/fi_chevronDown';
 import UploadCloud from './icons/fi_uploadCloud';
 import Eye from './icons/fi_eye';
 import EyeOff from './icons/fi_eyeOff';
+import Check from './icons/fi_check';
+import InvestmentIllustration from './icons/InvestmentIllustration';
 
 interface IconProp {
   name: string;
@@ -51,6 +53,10 @@ const Icon = ({name, ...props}: IconProp) => {
       return <Eye {...props} />;
     case 'eyeOff':
       return <EyeOff {...props} />;
+    case 'check':
+      return <Check {...props} />;
+    case 'InvestmentIllustration':
+      return <InvestmentIllustration />;
     default:
       return null;
   }

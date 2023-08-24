@@ -1,12 +1,12 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-const SuccessScreen = () => {
+const SecureInputScreen = () => {
   return (
     <View>
-      <Text>SuccessScreen</Text>
+      <Text>SecureInputScreen</Text>
     </View>
   );
 };
 
-export default SuccessScreen;
+export default SecureInputScreen;

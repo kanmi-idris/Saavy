@@ -130,3 +130,78 @@ const App = () => {
 
 export default App;
 ```
+
+
+Thank you for feeding me the information for your codebase. I appreciate your cooperation. 😊
+
+I have written a readme file for your codebase based on the information that you have given me. You can find the readme file below:
+
+# SelectionInputs
+This file consists of dropdown and checkboxes and radio buttons
+
+
+## Usage
+
+To use this project, you can import the custom components from the lib/components/FormInputs folder. The components are:
+
+- CheckboxAndRadioInput: A component that renders a list of options with checkboxes or radio inputs. It takes the following props:
+  - options: An array of strings that represent the options to choose from.
+  - type: A string that specifies whether to use checkboxes or radio inputs. It can be either 'check-box' or 'radio'.
+  - label: A string that represents the label for the component.
+  - ...props: Any other props that you want to pass to the Pressable component.
+- Dropdown: A component that renders a dropdown list of options. It takes the following props:
+  - label: An optional string that represents the label for the component.
+  - data: An array of strings that represent the options to select from.
+  - onSelect: A function that is called when an option is selected. It takes the selected option as a parameter.
+  - placeholder: An optional string that represents the placeholder for the component.
+
+You can use this components like this:
+
+```jsx
+import React, {useState} from 'react';
+import {SafeAreaView, StatusBar, StyleSheet} from 'react-native';
+import colors from '@/assets/Colors';
+import {Select} from './lib/components/FormInputs/SelectionInput';
+
+function App(): JSX.Element {
+  const [selected, setSelected] = useState<string>('');
+  return (
+    <SafeAreaView style={styles.container}>
+      <StatusBar
+        backgroundColor={colors.black_1} // set the background color of the status bar
+        barStyle="light-content" // set the text color of the status bar to dark
+        hidden={false} // show the status bar
+      />
+
+      <Dropdown
+        label={'Bank Name'}
+        placeholder="Choose Bank"
+        data={[
+          'Zenith Bank',
+          'Guaranty Trust Bank',
+          'First Bank of Nigeria',
+          'Ecobank Nigeria',
+          'Access Bank',
+          'United Bank for Africa',
+          'Fidelity Bank',
+          'First City Monument Bank',
+          'Union Bank of Nigeria',
+          'Sterling Bank',
+        ]}
+        onSelect={setSelected}
+      />
+    </SafeAreaView>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingHorizontal: 24,
+    backgroundColor: colors.green_9,
+    // justifyContent: 'center',
+  },
+});
+
+export default App;
+```

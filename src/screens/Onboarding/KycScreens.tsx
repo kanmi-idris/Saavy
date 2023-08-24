@@ -1,12 +1,12 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-const SuccessScreen = () => {
+const KycScreens = () => {
   return (
     <View>
-      <Text>SuccessScreen</Text>
+      <Text>Kyc Screens</Text>
     </View>
   );
 };
 
-export default SuccessScreen;
+export default KycScreens;
