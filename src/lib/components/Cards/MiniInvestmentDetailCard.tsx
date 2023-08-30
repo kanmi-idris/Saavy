@@ -146,14 +146,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: colors.white,
-    shadowColor: colors.black_1,
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowRadius: 8,
-    elevation: 8,
-    shadowOpacity: 1,
+    // shadowColor: colors.black_1,
+    // shadowOffset: {
+    //   width: 0,
+    //   height: 4,
+    // },
+    // shadowRadius: 8,
+    // elevation: 8,
+    // shadowOpacity: 1,
   },
   imgWrap: {
     borderRadius: 50,

@@ -7,36 +7,29 @@ import Icons from '@/assets/Icons';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {RootStackParams} from '@/navigation/RootStackNavigator';
-import InvestmentIllustration from '@/assets/images/investment-illustration.svg';
+
+type SplashScreenNavigationProp = NativeStackNavigationProp<RootStackParams>;
 
 export const SplashScreen = () => {
-  const navigation =
-    useNavigation<NativeStackNavigationProp<RootStackParams>>();
+  const navigation = useNavigation<SplashScreenNavigationProp>();
 
-  const dummyToken = () => {
-    return Math.random() < 0.5;
-  };
+  // const dummyToken = () => {
+  //   return Math.random() < 0.5;
+  // };
   useEffect(() => {
     const timer = setTimeout(() => {
       const checkToken = () => {
-        const token = dummyToken();
+        const token = 1;
 
-        if (token) {
+        if (token !== 1) {
           navigation.navigate('SignInScreen');
         } else {
-          navigation.navigate('OnboardingStack', {
-            WelcomeScreen: {
-              PageTitle: 'Reach Your Financial Goals',
-              IntroText:
-                'Whether you want to save for retirement, buy a house, or fund your education, Saavy has the right solution for you.',
-              Image: <InvestmentIllustration />,
-            },
-          });
+          navigation.navigate('OnboardingStack', {screen: 'WelcomeScreen'});
         }
       };
 
       checkToken();
-    }, 5000);
+    }, 3000);
 
     return () => {
       clearTimeout(timer);

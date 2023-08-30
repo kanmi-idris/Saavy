@@ -14,6 +14,7 @@ export default function HomeIcon(props: any) {
     strokeLinejoin = 'round',
     pathFill = 'none',
     pathStroke = 'black',
+    pathStrokeWidth = 2,
   } = props;
 
   return (
@@ -29,7 +30,7 @@ export default function HomeIcon(props: any) {
         d="M9 22V12H15V22"
         fill={pathFill}
         stroke={pathStroke}
-        strokeWidth={strokeWidth}
+        strokeWidth={pathStrokeWidth}
         strokeLinecap={strokeLinecap}
         strokeLinejoin={strokeLinejoin}
       />

@@ -67,6 +67,7 @@ interface DropdownProps {
   data: Array<string>;
   onSelect: (item: string) => void;
   placeholder?: string;
+  flex?: number;
 }
 
 export const Dropdown = ({
@@ -74,6 +75,7 @@ export const Dropdown = ({
   data,
   onSelect,
   placeholder,
+  flex,
 }: DropdownProps) => {
   const [visible, setVisible] = useState(false);
   const [selected, setSelected] = useState(undefined);
@@ -98,10 +100,18 @@ export const Dropdown = ({
   const divider = () => <View style={styles.divider} />;
 
   const renderDropdown = () => {
+    const dropdownHeight = () => {
+      if (data.length < 3) {
+        return 'auto';
+      } else {
+        return 200;
+      }
+    };
+
     if (visible) {
       return (
         <View
-          style={styles.dropdownOptionsContainer}
+          style={[styles.dropdownOptionsContainer, {height: dropdownHeight()}]}
           // onPress={() => setVisible(false)}
         >
           <FlatList
@@ -123,7 +133,7 @@ export const Dropdown = ({
     strokeWidth: 1,
   };
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, {flex: flex}]}>
       <Text style={styles.label}>{label}</Text>
       <Pressable style={styles.inputField} onPress={toggleDropdown}>
         <Text style={styles.dropdownBtnText}>{selected || placeholder}</Text>
@@ -173,7 +183,7 @@ const styles = StyleSheet.create({
   dropdownBtnText: {
     ...typography.regular.paragraphMid,
     flex: 1,
-    color: colors.black_1,
+    color: colors.black_6,
   },
   inputField: {
     borderRadius: 8,
@@ -184,20 +194,20 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.white,
     zIndex: 1,
-    shadowColor: colors.black_1,
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowRadius: 8,
-    elevation: 8,
-    shadowOpacity: 1,
+    // shadowColor: colors.black_1,
+    // shadowOffset: {
+    //   width: 0,
+    //   height: 4,
+    // },
+    // shadowRadius: 8,
+    // elevation: 8,
+    // shadowOpacity: 1,
   },
   dropdownOptionsContainer: {
     position: 'absolute',
     top: 75,
     backgroundColor: colors.white,
-    height: 200,
+    // height: 'auto',
     width: '100%',
     padding: 16,
     justifyContent: 'center',
@@ -210,10 +220,11 @@ const styles = StyleSheet.create({
     shadowRadius: 8,
     elevation: 8,
     shadowOpacity: 1,
+    zIndex: 1000,
   },
   label: {
     ...typography.regular.paragraphMid,
-    color: colors.black_1,
+    color: colors.black_6,
   },
   container: {
     gap: 4,

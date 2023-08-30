@@ -16,12 +16,30 @@ import Eye from './icons/fi_eye';
 import EyeOff from './icons/fi_eyeOff';
 import Check from './icons/fi_check';
 import InvestmentIllustration from './icons/InvestmentIllustration';
+import ChevronLeft from './icons/fi_chevron-left';
+import BusinessSuccess from './icons/BusinessSuccess';
+import DiverseOpportunities from './icons/DiverseOpportunities';
+import LearningIllustration from './icons/LearningIllustration';
+import GoogleLogo from './icons/GoogleLogo';
+import CheckCircle from './icons/fi_check-circle';
+import X_Circle from './icons/fi_x-circle';
+import Home_2 from './icons/fi_home2';
+import PlusCircle_1 from './icons/fi_plus-circle';
+import PlusCircle_2 from './icons/fi_plus-circle2';
+import Ai_Icon from './icons/fi_Ai-Icon';
+import Ai_Icon_Active from './icons/fi_Ai-Icon-Active';
+import User from './icons/fi_user';
+import UserActive from './icons/fi_user2';
+import PlayCircle from './icons/fi_play-circle';
+import DisplayCardChart from './icons/DisplayCardChart';
+import NotificationBell from './icons/fi_notificationBell';
 
 interface IconProp {
   name: string;
+  onPress?: any;
 }
 
-const Icon = ({name, ...props}: IconProp) => {
+const Icon = ({name, onPress, ...props}: IconProp) => {
   switch (name) {
     case 'home':
       return <HomeIcon {...props} />;
@@ -47,6 +65,8 @@ const Icon = ({name, ...props}: IconProp) => {
       return <Calendar {...props} />;
     case 'chevronDown':
       return <ChevronDown {...props} />;
+    case 'chevronLeft':
+      return <ChevronLeft onPress={onPress} {...props} />;
     case 'uploadCloud':
       return <UploadCloud {...props} />;
     case 'eye':
@@ -56,7 +76,39 @@ const Icon = ({name, ...props}: IconProp) => {
     case 'check':
       return <Check {...props} />;
     case 'InvestmentIllustration':
-      return <InvestmentIllustration />;
+      return <InvestmentIllustration {...props} />;
+    case 'LearningIllustration':
+      return <LearningIllustration {...props} />;
+    case 'BusinessSuccess':
+      return <BusinessSuccess {...props} />;
+    case 'DiverseOpportunities':
+      return <DiverseOpportunities {...props} />;
+    case 'GoogleLogo':
+      return <GoogleLogo {...props} />;
+    case 'CheckCircle':
+      return <CheckCircle {...props} />;
+    case 'X_Circle':
+      return <X_Circle {...props} />;
+    case 'home_2':
+      return <Home_2 {...props} />;
+    case 'plusCircle_1':
+      return <PlusCircle_1 {...props} />;
+    case 'plusCircle_2':
+      return <PlusCircle_2 {...props} />;
+    case 'ai_icon':
+      return <Ai_Icon {...props} />;
+    case 'ai_icon_active':
+      return <Ai_Icon_Active {...props} />;
+    case 'user':
+      return <User {...props} />;
+    case 'userActive':
+      return <UserActive {...props} />;
+    case 'playCircle':
+      return <PlayCircle {...props} />;
+    case 'displayCardChart':
+      return <DisplayCardChart {...props} />;
+    case 'bell':
+      return <NotificationBell {...props} />;
     default:
       return null;
   }

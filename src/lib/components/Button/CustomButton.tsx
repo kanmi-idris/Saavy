@@ -8,8 +8,9 @@ interface CustomButtonProps {
   disable?: boolean;
   iconStart?: string;
   iconEnd?: string;
-  label: string;
-  variant: 'primary' | 'secondary' | 'text';
+  label?: string;
+  variant: 'primary' | 'secondary' | 'text' | 'socialAuth' | 'error';
+  onPress?: () => void;
 }
 
 const CustomButton = ({
@@ -18,6 +19,7 @@ const CustomButton = ({
   iconStart,
   label,
   variant,
+  onPress,
 }: CustomButtonProps) => {
   const [pressed, setPressed] = useState(false);
 
@@ -26,8 +28,12 @@ const CustomButton = ({
       return activePryBtn;
     } else if (variant === 'secondary' && pressed) {
       return activeSecBtn;
+    } else if (variant === 'error' && pressed) {
+      return activeErrorBtn;
     } else if (variant === 'text' && pressed) {
       return activeTextBtn;
+    } else if (variant === 'socialAuth' && pressed) {
+      return activeSocialAuthBtn;
     } else if (disable && variant === 'text') {
       return;
     } else if (disable) {
@@ -40,6 +46,10 @@ const CustomButton = ({
       return defaultTextBtn;
     } else if (variant === 'secondary') {
       return defaultSecBtn;
+    } else if (variant === 'error') {
+      return defaultErrorBtn;
+    } else if (variant === 'socialAuth') {
+      return defaultSocialAuthBtn;
     } else {
       return defaultPryBtn;
     }
@@ -51,6 +61,8 @@ const CustomButton = ({
       (pressed && variant === 'secondary')
     ) {
       return styles.textTextActive;
+    } else if (pressed && variant === 'socialAuth') {
+      return styles.textDisable;
     } else if (disable) {
       return styles.textDisable;
     }
@@ -61,7 +73,11 @@ const CustomButton = ({
       return styles.textText;
     } else if (variant === 'secondary') {
       return styles.textSec;
+    } else if (variant === 'socialAuth') {
+      return styles.textSocialAuth;
     } else if (variant === 'primary') {
+      return styles.textPry;
+    } else if (variant === 'error') {
       return styles.textPry;
     }
   };
@@ -115,9 +131,10 @@ const CustomButton = ({
       style={states() || variants()}
       onPressIn={() => setPressed(true)}
       onPressOut={() => setPressed(false)}
-      disabled={disable}>
+      disabled={disable}
+      onPress={onPress}>
       {iconStart && <Icon name={iconStart} {...iconProps} />}
-      <Text style={textStyleState() || textStyles()}>{label}</Text>
+      {label && <Text style={textStyleState() || textStyles()}>{label}</Text>}
       {iconEnd && <Icon name={iconEnd} {...iconProps} />}
     </Pressable>
   );
@@ -142,6 +159,12 @@ const styles = StyleSheet.create({
   activePry: {
     backgroundColor: colors.activeBtn,
   },
+  defaultError: {
+    backgroundColor: colors.red_1,
+  },
+  activeError: {
+    backgroundColor: colors.red_4,
+  },
   disabled: {
     backgroundColor: colors.black_10,
   },
@@ -150,13 +173,23 @@ const styles = StyleSheet.create({
     borderColor: colors.green_1,
     borderWidth: 1,
   },
+  defaultSocialAuthBtn: {
+    backgroundColor: 'transparent',
+    borderColor: colors.black_3,
+    borderWidth: 0.6,
+  },
   activeSec: {
     backgroundColor: colors.green_8,
     borderColor: colors.activeBtn,
     borderWidth: 1,
   },
+  activeSocialAuthBtn: {
+    backgroundColor: colors.black_4,
+    borderColor: colors.black_4,
+    borderWidth: 1,
+  },
   Text: {
-    backgroundColor: 'none',
+    backgroundColor: 'transparent',
   },
   activeText: {
     backgroundColor: colors.green_8,
@@ -165,7 +198,15 @@ const styles = StyleSheet.create({
     ...typography.medium.paragraphNormal,
     color: colors.green_1,
   },
+  textSocialAuth: {
+    ...typography.medium.paragraphNormal,
+    color: colors.black_3,
+  },
   textPry: {
+    ...typography.medium.paragraphNormal,
+    color: colors.white,
+  },
+  textError: {
     ...typography.medium.paragraphNormal,
     color: colors.white,
   },
@@ -187,6 +228,13 @@ const defaultPryBtn = StyleSheet.compose(styles.BtnStyle, styles.defaultPry);
 
 const activePryBtn = StyleSheet.compose(styles.BtnStyle, styles.activePry);
 
+const defaultErrorBtn = StyleSheet.compose(
+  styles.BtnStyle,
+  styles.defaultError,
+);
+
+const activeErrorBtn = StyleSheet.compose(styles.BtnStyle, styles.activeError);
+
 const defaultSecBtn = StyleSheet.compose(styles.BtnStyle, styles.defaultSec);
 
 const activeSecBtn = StyleSheet.compose(styles.BtnStyle, styles.activeSec);
@@ -196,3 +244,13 @@ const defaultTextBtn = StyleSheet.compose(styles.BtnStyle, styles.Text);
 const activeTextBtn = StyleSheet.compose(styles.BtnStyle, styles.activeText);
 
 const disabledBtn = StyleSheet.compose(styles.BtnStyle, styles.disabled);
+
+const defaultSocialAuthBtn = StyleSheet.compose(
+  styles.BtnStyle,
+  styles.defaultSocialAuthBtn,
+);
+
+const activeSocialAuthBtn = StyleSheet.compose(
+  styles.BtnStyle,
+  styles.activeSocialAuthBtn,
+);

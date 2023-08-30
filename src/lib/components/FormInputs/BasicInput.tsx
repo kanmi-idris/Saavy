@@ -21,6 +21,7 @@ interface BasicInputProps {
   disabled?: boolean;
   type: 'multiline' | 'text' | 'numeric' | 'password';
   customOnFocus?: () => void;
+  flex?: number;
 }
 
 const BasicInput = ({
@@ -31,7 +32,9 @@ const BasicInput = ({
   errorMessage,
   type,
   autoComplete,
+  placeholder,
   disabled,
+  flex,
   ...props
 }: BasicInputProps) => {
   const [isFocused, setIsFocused] = useState(false);
@@ -78,8 +81,8 @@ const BasicInput = ({
     strokeWidth: 1,
   };
   return (
-    <View style={styles.container}>
-      <Text style={styles.label}>{label}</Text>
+    <View style={[styles.container, {flex: flex}]}>
+      {label && <Text style={styles.label}>{label}</Text>}
       <View style={[styles.inputField, inputState()]}>
         {iconStart && <Icon name={iconStart} {...iconProps} />}
         <TextInput
@@ -89,6 +92,7 @@ const BasicInput = ({
           textAlignVertical={type === 'multiline' ? 'top' : 'auto'}
           autoCorrect={false}
           placeholderTextColor={colors.black_6}
+          placeholder={placeholder}
           style={styles.input}
           onFocus={handleFocus}
           onBlur={handleBlur}
@@ -105,13 +109,15 @@ const BasicInput = ({
           {endIcon && <Icon name={endIcon} {...iconProps} />}
         </Pressable>
       </View>
-      <Text
-        style={[
-          styles.extraInfo,
-          errorMessage ? styles.errorMessage : undefined,
-        ]}>
-        {errorMessage ? errorMessage : extraInfo}
-      </Text>
+      {errorMessage || extraInfo ? (
+        <Text
+          style={[
+            styles.extraInfo,
+            errorMessage ? styles.errorMessage : undefined,
+          ]}>
+          {errorMessage ? errorMessage : extraInfo}
+        </Text>
+      ) : null}
     </View>
   );
 };

@@ -1,10 +1,10 @@
-import React, {ReactElement} from 'react';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import KycScreens from '@/screens/Onboarding/KycScreens';
+import SuccessScreen from '@/screens/FeedbackScreen';
 import {SignUpScreen} from '@/screens/Onboarding/AuthScreens';
+import KycScreens from '@/screens/Onboarding/KycScreens';
 import WelcomeScreens from '@/screens/Onboarding/WelcomeScreens';
 import SecureInputScreen from '@/screens/SecureInputScreen';
-import SuccessScreen from '@/screens/SuccessScreen';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import React, {ReactElement} from 'react';
 
 export type InvestingStackParams = {
   SignUpScreen?: undefined;

@@ -1,14 +1,14 @@
 import colors from '@/assets/Colors';
 import typography from '@/assets/Typography';
 import React from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {Image, StyleSheet, Text, View} from 'react-native';
 
 interface RecommendationCardProps {
   title: string;
   subtitle: string;
   subtext1: string | number;
   subtext2: number;
-  type: 'default' | 'stocks' | 'startups';
+  type: string;
   image: number;
 }
 
@@ -21,7 +21,7 @@ const RecommendationCard = ({
   type,
 }: RecommendationCardProps) => {
   const subtext2Type = () => {
-    if (type === 'startups') {
+    if (type === 'Startup') {
       return '$' + subtext2;
     } else {
       return subtext2 + '%';
@@ -29,9 +29,9 @@ const RecommendationCard = ({
   };
 
   const subtext1Type = () => {
-    if (type === 'stocks') {
+    if (type === 'Stock') {
       return '$' + subtext1;
-    } else if (type === 'startups') {
+    } else if (type === 'Startup') {
       return '$' + subtext1 + 'Cap';
     } else {
       return subtext1;
@@ -42,7 +42,9 @@ const RecommendationCard = ({
       <View style={styles.topWrap}>
         <Image source={image} style={styles.image} />
         <View>
-          <Text style={styles.title}>{title}</Text>
+          <Text style={styles.title} numberOfLines={1} ellipsizeMode="tail">
+            {title}
+          </Text>
           <Text style={styles.subtitle} numberOfLines={1} ellipsizeMode="tail">
             {subtitle}
           </Text>
@@ -77,6 +79,7 @@ const styles = StyleSheet.create({
   title: {
     ...typography.medium.paragraphMid,
     color: colors.white,
+    width: 100,
   },
   subtitle: {
     ...typography.regular.paragraphSmall,

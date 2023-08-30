@@ -14,8 +14,10 @@ import {
 interface SectionProps {
   children: React.ReactNode;
   auxBtn?: boolean;
-  heading: string;
+  heading?: string;
   horizontal?: boolean;
+  fillScreen?: boolean;
+  gap?: number;
 }
 
 export const ScrollableSection = ({
@@ -23,12 +25,17 @@ export const ScrollableSection = ({
   heading,
   auxBtn,
   horizontal,
+  fillScreen,
 }: SectionProps) => {
   const {width} = Dimensions.get('window');
 
   const data = React.Children.toArray(children);
   const renderItem = ({item}: {item: React.ReactNode}) => {
-    return <View style={[{width: width - 65}, styles.item]}>{item}</View>;
+    return (
+      <View style={[fillScreen ? {width: width - 65} : null, styles.item]}>
+        {item}
+      </View>
+    );
   };
 
   const iconProps = {
@@ -39,8 +46,12 @@ export const ScrollableSection = ({
   };
   return (
     <View style={styles.container}>
-      <View style={[{width: width - 65}, styles.headingWrapper]}>
-        <Text style={styles.heading}>{heading}</Text>
+      <View
+        style={[
+          fillScreen ? {width: width - 65} : null,
+          styles.headingWrapper,
+        ]}>
+        {heading && <Text style={styles.heading}>{heading}</Text>}
         {auxBtn && (
           <Pressable style={styles.filterByParent}>
             <Text style={styles.filterBy}>Filter By</Text>
@@ -50,17 +61,24 @@ export const ScrollableSection = ({
       </View>
       <FlatList
         style={styles.list}
+        contentContainerStyle={styles.flatlist}
         horizontal={horizontal}
         data={data}
         renderItem={renderItem}
         keyExtractor={(_, index) => index.toString()}
         initialNumToRender={2}
+        showsHorizontalScrollIndicator={false}
       />
     </View>
   );
 };
 
-export const StaticSection = ({children, heading, auxBtn}: SectionProps) => {
+export const StaticSection = ({
+  children,
+  heading,
+  auxBtn,
+  gap,
+}: SectionProps) => {
   const iconProps = {
     width: 12,
     height: 12,
@@ -68,7 +86,7 @@ export const StaticSection = ({children, heading, auxBtn}: SectionProps) => {
     viewBox: '0 0 20 20',
   };
   return (
-    <View style={styles.container}>
+    <View style={{gap: gap}}>
       <View style={[styles.headingWrapper]}>
         <Text style={styles.heading}>{heading}</Text>
         {auxBtn && (
@@ -109,5 +127,8 @@ const styles = StyleSheet.create({
   },
   list: {
     overflow: 'visible',
+  },
+  flatlist: {
+    alignItems: 'stretch',
   },
 });
