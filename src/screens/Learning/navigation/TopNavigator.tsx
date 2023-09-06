@@ -1,12 +1,19 @@
 /* eslint-disable react-native/no-inline-styles */
-import React from 'react';
+import React, {useState} from 'react';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import SaavyAIChatbotScreen from '../SaavyAI';
 import AllGuidesScreen from '../AllGuides';
 import typography from '@/assets/Typography';
 import colors from '@/assets/Colors';
 import Icon from '@/assets/Icons';
-import {View, Pressable, Text, StyleSheet, SafeAreaView} from 'react-native';
+import {
+  View,
+  Pressable,
+  Text,
+  StyleSheet,
+  SafeAreaView,
+  Modal,
+} from 'react-native';
 
 export type LearningStackParams = {
   SaavyAIChatbotScreen: undefined;
@@ -24,6 +31,9 @@ export type LearningStackParams = {
 
 const Tab = createMaterialTopTabNavigator<LearningStackParams>();
 const TopNavigator = () => {
+  const [modalIsVisible, setModalIsVisible] = useState(false);
+  const toggleModal = () => setModalIsVisible(!modalIsVisible);
+
   return (
     <Tab.Navigator
       initialRouteName="SaavyAIChatbotScreen"
@@ -65,9 +75,19 @@ const TopNavigator = () => {
             })}
           </View>
           {/* menu icon at the right of the tab bar */}
-          <Pressable onPress={() => {}}>
+          <Pressable onPress={toggleModal}>
             <Icon name="menu" />
           </Pressable>
+          {/* Modal Component */}
+          <Modal
+            onRequestClose={toggleModal}
+            visible={modalIsVisible}
+            animationType="none"
+            transparent={true}>
+            <Pressable onPress={toggleModal} style={styles.modalBackground}>
+              <Menu />
+            </Pressable>
+          </Modal>
         </SafeAreaView>
       )}>
       <Tab.Screen
@@ -81,6 +101,65 @@ const TopNavigator = () => {
         options={{tabBarLabel: 'Guides'}}
       />
     </Tab.Navigator>
+  );
+};
+
+const Menu = () => {
+  const [pressed, setPressed] = useState(false);
+  const handlePress = () => setPressed(!pressed);
+
+  return (
+    <View style={styles.menu}>
+      <View style={{gap: 16}}>
+        <Pressable
+          onPress={handlePress}
+          style={[
+            styles.btn,
+            {backgroundColor: pressed ? colors.black_6 : colors.white},
+          ]}>
+          <Icon name="plus" />
+          <Text
+            style={[
+              styles.text,
+              {color: pressed ? colors.white : colors.black_1},
+            ]}>
+            New Chat
+          </Text>
+        </Pressable>
+        <View style={{gap: 8}}>
+          <View style={styles.row}>
+            <Icon name="square-message" />
+            <Text style={[styles.text]}>What are mutual Funds</Text>
+          </View>
+          <View style={styles.row}>
+            <Icon name="square-message" />
+            <Text style={[styles.text]}>
+              Why should I invest in tesla stocks
+            </Text>
+          </View>
+          <View style={styles.row}>
+            <Icon name="square-message" />
+            <Text style={[styles.text]}>
+              This startups invest that you have, how does it work
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View style={{gap: 8}}>
+        <View style={styles.row}>
+          <Icon name="trash" />
+          <Text style={[styles.text]}>Clear Conversations</Text>
+        </View>
+        <View style={styles.row}>
+          <Icon name="list" />
+          <Text style={[styles.text]}>Terms of use</Text>
+        </View>
+        <View style={styles.row}>
+          <Icon name="shield" />
+          <Text style={[styles.text]}>Privacy Policies</Text>
+        </View>
+      </View>
+    </View>
   );
 };
 
@@ -103,6 +182,41 @@ const styles = StyleSheet.create({
     backgroundColor: colors.black_1,
     height: 1.2,
     width: '100%',
+  },
+  menu: {
+    gap: 48,
+    borderRadius: 8,
+    borderWidth: 0.7,
+    borderColor: colors.black_6,
+    backgroundColor: colors.white,
+    width: '80%',
+    padding: 16,
+    alignSelf: 'flex-end',
+    marginTop: '15%',
+    marginRight: '5%',
+  },
+  btn: {
+    borderRadius: 8,
+    borderWidth: 0.7,
+    borderColor: colors.black_6,
+    gap: 4,
+    paddingVertical: 12,
+    paddingHorizontal: 8,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  text: {
+    ...typography.regular.paragraphMid,
+    color: colors.black_1,
+    flex: 1,
+  },
+  row: {
+    flexDirection: 'row',
+    gap: 4,
+  },
+  modalBackground: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.5)',
   },
 });
 

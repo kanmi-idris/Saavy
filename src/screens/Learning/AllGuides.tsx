@@ -12,7 +12,9 @@ const AllGuidesScreen = () => {
         <BasicInput placeholder="Search" iconStart="search" type="text" />
         <InvestmentSuites heading="What to Learn" />
       </View>
-      <ScrollView contentContainerStyle={styles.contentWrap}>
+      <ScrollView
+        contentContainerStyle={styles.contentWrap}
+        showsVerticalScrollIndicator={false}>
         <GuideCard
           image={require('@/assets/images/ardent-server.png')}
           content="What are the benefits and risks of investing in mutual funds?"
