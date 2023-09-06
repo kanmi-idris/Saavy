@@ -17,13 +17,13 @@ const ProgressBar = ({percent}: progressBarProps) => {
 const styles = StyleSheet.create({
   background: {
     width: 250,
-    height: 4,
+    height: 6,
     backgroundColor: colors.black_10,
     borderRadius: 50,
     position: 'relative',
   },
   progress: {
-    height: 4,
+    height: 6,
     backgroundColor: colors.green_1,
     position: 'absolute',
     borderRadius: 50,

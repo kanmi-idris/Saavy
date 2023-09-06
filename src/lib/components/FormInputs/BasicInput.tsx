@@ -72,18 +72,48 @@ const BasicInput = ({
     }
   };
 
+  const ai_input_icons = () => {
+    if (iconStart === 'ai_icon' && iconEnd === 'ai_send') {
+      return {
+        width: 28,
+        height: 26,
+        viewBox: '0 0 28 28',
+      };
+    }
+  };
+
   const iconProps = {
-    width: 16,
-    height: 16,
-    viewBox: '0 0 16 16',
+    width: ai_input_icons()?.width || 16,
+    height: ai_input_icons()?.height || 16,
+    viewBox: ai_input_icons()?.viewBox || '0 0 16 16',
     stroke: colors.black_6,
     pathStroke: colors.black_6,
     strokeWidth: 1,
+    fill: iconStart === 'ai_icon' ? colors.black_6 : undefined,
   };
   return (
     <View style={[styles.container, {flex: flex}]}>
       {label && <Text style={styles.label}>{label}</Text>}
-      <View style={[styles.inputField, inputState()]}>
+      <View
+        style={[
+          styles.inputField,
+          inputState(),
+          iconStart === 'ai_icon' && iconEnd === 'ai_send'
+            ? // eslint-disable-next-line react-native/no-inline-styles
+              {
+                borderColor: colors.black_6,
+                shadowColor: colors.black_1,
+                borderWidth: 0.5,
+                shadowOffset: {
+                  width: 0,
+                  height: 4,
+                },
+                shadowRadius: 4,
+                elevation: 4,
+                shadowOpacity: 1,
+              }
+            : undefined,
+        ]}>
         {iconStart && <Icon name={iconStart} {...iconProps} />}
         <TextInput
           autoComplete={autoComplete}

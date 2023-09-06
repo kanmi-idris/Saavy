@@ -32,11 +32,11 @@ const UserDashboardScreen = () => {
         </View>
         <View style={styles.scrollables}>
           <ScrollableSection fillScreen horizontal>
-            <DisplayCard trend="upward" />
-            <DisplayCard trend="downward" />
-            <DisplayCard trend="upward" />
-            <DisplayCard trend="downward" />
-            <DisplayCard trend="upward" />
+            <DisplayCard key={Math.random()} trend="upward" />
+            <DisplayCard key={Math.random()} trend="downward" />
+            <DisplayCard key={Math.random()} trend="upward" />
+            <DisplayCard key={Math.random()} trend="downward" />
+            <DisplayCard key={Math.random()} trend="upward" />
           </ScrollableSection>
           <ScrollableSection heading="Recommendations For You" horizontal>
             {strings.recommendations.map(recommendation => (
@@ -190,8 +190,8 @@ const ContinueLearningCard = ({
   percentCompleted,
 }: ContinueLearningCardProps) => {
   const iconProps = {
-    width: 40,
-    height: 40,
+    width: 56,
+    height: 56,
     pathFill: colors.white,
     fill: colors.green_1,
     stroke: colors.green_1,
@@ -233,7 +233,7 @@ const styles = StyleSheet.create({
     height: 'auto',
   },
   wrapper: {
-    gap: 8,
+    gap: 4,
     maxWidth: '80%',
   },
   heading: {
@@ -242,8 +242,8 @@ const styles = StyleSheet.create({
   },
   subheading: {
     ...typography.regular.paragraphMid,
-    color: colors.black_1,
-    marginBottom: 4,
+    color: colors.black_6,
+    marginBottom: 8,
   },
   welcomeBarWrap: {
     marginHorizontal: 24,

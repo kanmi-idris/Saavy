@@ -33,6 +33,11 @@ import UserActive from './icons/fi_user2';
 import PlayCircle from './icons/fi_play-circle';
 import DisplayCardChart from './icons/DisplayCardChart';
 import NotificationBell from './icons/fi_notificationBell';
+import Ai_Send from './icons/ai_send';
+import Menu from './icons/fi_menu';
+import ThumbsUp from './icons/fi_thumbs-up';
+import ThumbsDown from './icons/fi_thumbs-down';
+import Clipboard from './icons/fi_clipboard';
 
 interface IconProp {
   name: string;
@@ -109,6 +114,16 @@ const Icon = ({name, onPress, ...props}: IconProp) => {
       return <DisplayCardChart {...props} />;
     case 'bell':
       return <NotificationBell {...props} />;
+    case 'ai_send':
+      return <Ai_Send {...props} />;
+    case 'menu':
+      return <Menu {...props} />;
+    case 'thumbs-up':
+      return <ThumbsUp {...props} />;
+    case 'thumbs-down':
+      return <ThumbsDown {...props} />;
+    case 'clipboard':
+      return <Clipboard {...props} />;
     default:
       return null;
   }

@@ -21,7 +21,7 @@ export const SplashScreen = () => {
       const checkToken = () => {
         const token = 1;
 
-        if (token !== 1) {
+        if (token === 1) {
           navigation.navigate('SignInScreen');
         } else {
           navigation.navigate('OnboardingStack', {screen: 'WelcomeScreen'});

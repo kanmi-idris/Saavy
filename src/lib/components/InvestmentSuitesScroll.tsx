@@ -20,7 +20,7 @@ import {View, Pressable, Text, StyleSheet, ScrollView} from 'react-native';
  * */
 
 interface InvestmentSuitesProps {
-  auxButton: boolean;
+  auxButton?: boolean;
   heading: string;
 }
 
@@ -35,8 +35,8 @@ const InvestmentSuites = ({heading, auxButton}: InvestmentSuitesProps) => {
   ];
 
   const iconProps = {
-    width: 16,
-    height: 16,
+    width: 12,
+    height: 12,
     stroke: colors.link,
   };
 
@@ -83,13 +83,14 @@ const styles = StyleSheet.create({
   headingWrapper: {
     justifyContent: 'space-between',
     flexDirection: 'row',
+    marginEnd: 24,
   },
   heading: {
-    ...typography.medium.paragraphNormal,
+    ...typography.medium.paragraphMid,
     color: colors.black_1,
   },
   linkText: {
-    ...typography.underline.paragraphMid,
+    ...typography.underline.paragraphMidSmall,
     color: colors.link,
   },
   activeLinkText: {

@@ -1,27 +1,22 @@
 import React from 'react';
 import UserDashboardScreen from '@/screens/UserDashboardScreen';
 import ExploreInvestmentsScreen from '@/screens/Investing/ExploreInvestmentsScreen';
-import SaavyAIChatbotScreen from '@/screens/Learning/SaavyAI';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Icon from '@/assets/Icons';
 import colors from '@/assets/Colors';
 import typography from '@/assets/Typography';
 import AccountScreen from '@/screens/UserAccount/AccountScreen';
+import {NavigatorScreenParams} from '@react-navigation/native';
+import TopNavigator, {
+  LearningStackParams,
+} from '@/screens/Learning/navigation/TopNavigator';
 
 export type UserIsLoggedInStackParams = {
   UserDashboard?: undefined;
   InvestingStack?: undefined;
-  LearningStack?: undefined;
+  LearningStack?: NavigatorScreenParams<LearningStackParams>;
+  // LearningStack?: undefined;
   UserAccountStack?: undefined;
-  // WelcomeScreen?: {
-  //   PageTitle: string;
-  //   IntroText: string;
-  //   Image: ReactElement<any, any>;
-  // };
-  // KycScreen?: {
-  //   PageTitle: string;
-  //   IntroText: string;
-  // };
 };
 
 const UserIsLoggedInStack =
@@ -37,9 +32,9 @@ const UserIsLoggedInScreensStack = () => {
   return (
     <UserIsLoggedInStack.Navigator
       initialRouteName="UserDashboard"
-      // screenOptions={{headerShown: false}}
       screenOptions={({route}) => ({
         headerShown: false,
+        tabBarHideOnKeyboard: true,
         // eslint-disable-next-line react/no-unstable-nested-components
         tabBarIcon: ({focused}) => {
           let iconName;
@@ -81,7 +76,7 @@ const UserIsLoggedInScreensStack = () => {
       />
       <UserIsLoggedInStack.Screen
         name="LearningStack"
-        component={SaavyAIChatbotScreen}
+        component={TopNavigator}
         options={{tabBarLabel: 'Learn'}}
       />
       <UserIsLoggedInStack.Screen
