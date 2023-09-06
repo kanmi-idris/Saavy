@@ -30,7 +30,7 @@ export type LearningStackParams = {
 };
 
 const Tab = createMaterialTopTabNavigator<LearningStackParams>();
-const TopNavigator = () => {
+const LearningScreensNavigator = () => {
   const [modalIsVisible, setModalIsVisible] = useState(false);
   const toggleModal = () => setModalIsVisible(!modalIsVisible);
 
@@ -126,38 +126,38 @@ const Menu = () => {
             New Chat
           </Text>
         </Pressable>
-        <View style={{gap: 8}}>
-          <View style={styles.row}>
+        <View style={{gap: 12}}>
+          <Pressable style={styles.row}>
             <Icon name="square-message" />
             <Text style={[styles.text]}>What are mutual Funds</Text>
-          </View>
-          <View style={styles.row}>
+          </Pressable>
+          <Pressable style={styles.row}>
             <Icon name="square-message" />
             <Text style={[styles.text]}>
               Why should I invest in tesla stocks
             </Text>
-          </View>
-          <View style={styles.row}>
+          </Pressable>
+          <Pressable style={styles.row}>
             <Icon name="square-message" />
             <Text style={[styles.text]}>
               This startups invest that you have, how does it work
             </Text>
-          </View>
+          </Pressable>
         </View>
       </View>
-      <View style={{gap: 8}}>
-        <View style={styles.row}>
+      <View style={{gap: 12}}>
+        <Pressable style={styles.row}>
           <Icon name="trash" />
           <Text style={[styles.text]}>Clear Conversations</Text>
-        </View>
-        <View style={styles.row}>
+        </Pressable>
+        <Pressable style={styles.row}>
           <Icon name="list" />
           <Text style={[styles.text]}>Terms of use</Text>
-        </View>
-        <View style={styles.row}>
+        </Pressable>
+        <Pressable style={styles.row}>
           <Icon name="shield" />
           <Text style={[styles.text]}>Privacy Policies</Text>
-        </View>
+        </Pressable>
       </View>
     </View>
   );
@@ -220,4 +220,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default TopNavigator;
+export default LearningScreensNavigator;

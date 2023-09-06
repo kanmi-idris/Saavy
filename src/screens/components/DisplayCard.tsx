@@ -6,9 +6,10 @@ import {Pressable, StyleSheet, Text, View} from 'react-native';
 
 interface DisplayCardProps {
   trend: 'upward' | 'downward';
+  label: string;
 }
 
-const DisplayCard = ({trend}: DisplayCardProps) => {
+const DisplayCard = ({trend, label}: DisplayCardProps) => {
   const chartProps = {
     width: 150,
     height: 150,
@@ -24,7 +25,7 @@ const DisplayCard = ({trend}: DisplayCardProps) => {
     <View style={styles.container}>
       <View style={styles.valueWrapper}>
         <View>
-          <Text style={styles.valueHeading}>Portfolio Value</Text>
+          <Text style={styles.valueHeading}>{label}</Text>
           <Text style={styles.portfolioValue}>$375,000.00</Text>
         </View>
         <View>

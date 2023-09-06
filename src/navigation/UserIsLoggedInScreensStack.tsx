@@ -7,9 +7,9 @@ import colors from '@/assets/Colors';
 import typography from '@/assets/Typography';
 import AccountScreen from '@/screens/UserAccount/AccountScreen';
 import {NavigatorScreenParams} from '@react-navigation/native';
-import TopNavigator, {
+import LearningScreensNavigator, {
   LearningStackParams,
-} from '@/screens/Learning/navigation/TopNavigator';
+} from '@/screens/Learning/navigation/LearningScreensNavigator';
 
 export type UserIsLoggedInStackParams = {
   UserDashboard?: undefined;
@@ -77,7 +77,7 @@ const UserIsLoggedInScreensStack = () => {
       />
       <UserIsLoggedInStack.Screen
         name="LearningStack"
-        component={TopNavigator}
+        component={LearningScreensNavigator}
         options={{tabBarLabel: 'Learn'}}
       />
       <UserIsLoggedInStack.Screen

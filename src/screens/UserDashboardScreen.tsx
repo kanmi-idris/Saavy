@@ -32,11 +32,28 @@ const UserDashboardScreen = () => {
         </View>
         <View style={styles.scrollables}>
           <ScrollableSection fillScreen horizontal>
-            <DisplayCard key={Math.random()} trend="upward" />
-            <DisplayCard key={Math.random()} trend="downward" />
-            <DisplayCard key={Math.random()} trend="upward" />
-            <DisplayCard key={Math.random()} trend="downward" />
-            <DisplayCard key={Math.random()} trend="upward" />
+            <DisplayCard
+              label="Portfolio Value"
+              key={Math.random()}
+              trend="upward"
+            />
+            <DisplayCard label="Stocks" key={Math.random()} trend="downward" />
+            <DisplayCard
+              label="Real Estate"
+              key={Math.random()}
+              trend="upward"
+            />
+            <DisplayCard
+              label="Mutual Funds"
+              key={Math.random()}
+              trend="downward"
+            />
+            <DisplayCard
+              label="Savings Lock"
+              key={Math.random()}
+              trend="upward"
+            />
+            <DisplayCard label="Startups" key={Math.random()} trend="upward" />
           </ScrollableSection>
           <ScrollableSection heading="Recommendations For You" horizontal>
             {strings.recommendations.map(recommendation => (
