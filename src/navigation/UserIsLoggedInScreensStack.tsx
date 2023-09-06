@@ -26,7 +26,8 @@ const UserIsLoggedInScreensStack = () => {
   const iconProps = {
     width: 32,
     height: 32,
-    pathStrokeWidth: 1.7,
+    pathStrokeWidth: 1.6,
+    strokeWidth: 1.6,
   };
 
   return (

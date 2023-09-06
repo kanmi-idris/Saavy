@@ -190,8 +190,8 @@ const ContinueLearningCard = ({
   percentCompleted,
 }: ContinueLearningCardProps) => {
   const iconProps = {
-    width: 56,
-    height: 56,
+    width: 44,
+    height: 44,
     pathFill: colors.white,
     fill: colors.green_1,
     stroke: colors.green_1,

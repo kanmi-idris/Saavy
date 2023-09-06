@@ -38,6 +38,7 @@ import Menu from './icons/fi_menu';
 import ThumbsUp from './icons/fi_thumbs-up';
 import ThumbsDown from './icons/fi_thumbs-down';
 import Clipboard from './icons/fi_clipboard';
+import ChevronRight from './icons/fi_chevron-right';
 
 interface IconProp {
   name: string;
@@ -72,6 +73,8 @@ const Icon = ({name, onPress, ...props}: IconProp) => {
       return <ChevronDown {...props} />;
     case 'chevronLeft':
       return <ChevronLeft onPress={onPress} {...props} />;
+    case 'chevronRight':
+      return <ChevronRight {...props} />;
     case 'uploadCloud':
       return <UploadCloud {...props} />;
     case 'eye':
