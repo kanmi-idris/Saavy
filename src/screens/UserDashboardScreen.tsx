@@ -229,6 +229,7 @@ const ContinueLearningCard = ({
 
 const styles = StyleSheet.create({
   baseContainer: {
+    paddingTop: 32,
     flex: 1,
     backgroundColor: colors.green_9,
   },

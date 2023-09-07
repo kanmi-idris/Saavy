@@ -1,38 +1,29 @@
-import SuccessScreen from '@/screens/FeedbackScreen';
-import {SignUpScreen} from '@/screens/Onboarding/AuthScreens';
-import KycScreens from '@/screens/Onboarding/KycScreens';
-import WelcomeScreens from '@/screens/Onboarding/WelcomeScreens';
+import FeedbackScreen from '@/screens/FeedbackScreen';
+import EnterInvestmentAmountScreen from '@/screens/Investing/EnterInvestmentAmountScreen';
+import ExploreInvestmentsScreen from '@/screens/Investing/ExploreInvestmentsScreen';
+import InvestmentDetailScreen from '@/screens/Investing/InvestmentDetailScreen';
+import InvestmentSummaryScreen from '@/screens/Investing/InvestmentSummaryScreen';
 import SecureInputScreen from '@/screens/SecureInputScreen';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import React, {ReactElement} from 'react';
+import React from 'react';
 
 export type InvestingStackParams = {
-  SignUpScreen?: undefined;
-  WelcomeScreen?: {
-    PageTitle: string;
-    IntroText: string;
-    Image: ReactElement<any, any>;
+  ExploreInvestmentsScreen: undefined;
+  InvestmentDetailScreen: {
+    InvestmentName: string;
   };
-  KycScreen?: {
-    PageTitle: string;
-    IntroText: string;
+  EnterInvestmentAmountScreen: {
+    MinimumInvestmentAmount: number;
   };
-  EnterEmailVerificationCodeScreen?: {
-    PageTitle: string;
-    IntroText: string;
-    InputFieldExtraInfo: string;
-    ButtonLabel: string;
-    ButtonExtraInfo: string;
+  InvestmentSummaryScreen: {
+    InvestmentName: string;
+    AmountInvested: number;
   };
-  EmailVerifiedScreen?: {
-    PageTitle: string;
-    IntroText: string;
-    ButtonLabel: string;
+  EnterUserPasswordScreen: {
+    AmountInvested: number;
   };
-  CreatePasswordScreen?: {
-    PageTitle: string;
-    IntroText: string;
-    ButtonLabel: string;
+  PaymentSuccessfulScreen: {
+    AmountInvested: number;
   };
 };
 
@@ -41,23 +32,32 @@ const InvestingStack = createNativeStackNavigator<InvestingStackParams>();
 const InvestingScreensStack = () => {
   return (
     <InvestingStack.Navigator
-      initialRouteName="WelcomeScreen"
+      initialRouteName="ExploreInvestmentsScreen"
       screenOptions={{headerShown: false}}>
-      <InvestingStack.Screen name="WelcomeScreen" component={WelcomeScreens} />
-      <InvestingStack.Screen name="SignUpScreen" component={SignUpScreen} />
       <InvestingStack.Screen
-        name="EnterEmailVerificationCodeScreen"
+        name="ExploreInvestmentsScreen"
+        component={ExploreInvestmentsScreen}
+      />
+      <InvestingStack.Screen
+        name="InvestmentDetailScreen"
+        component={InvestmentDetailScreen}
+      />
+      <InvestingStack.Screen
+        name="EnterInvestmentAmountScreen"
+        component={EnterInvestmentAmountScreen}
+      />
+      <InvestingStack.Screen
+        name="InvestmentSummaryScreen"
+        component={InvestmentSummaryScreen}
+      />
+      <InvestingStack.Screen
+        name="EnterUserPasswordScreen"
         component={SecureInputScreen}
       />
       <InvestingStack.Screen
-        name="EmailVerifiedScreen"
-        component={SuccessScreen}
+        name="PaymentSuccessfulScreen"
+        component={FeedbackScreen}
       />
-      <InvestingStack.Screen
-        name="CreatePasswordScreen"
-        component={SecureInputScreen}
-      />
-      <InvestingStack.Screen name="KycScreen" component={KycScreens} />
     </InvestingStack.Navigator>
   );
 };

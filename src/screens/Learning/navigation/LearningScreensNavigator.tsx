@@ -165,12 +165,12 @@ const Menu = () => {
 
 const styles = StyleSheet.create({
   container: {
+    paddingTop: 36,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     backgroundColor: colors.green_9,
     paddingHorizontal: 16,
-    paddingTop: 16,
     paddingBottom: 32,
   },
   backButton: {paddingHorizontal: 8},

@@ -125,6 +125,7 @@ export default WelcomeScreen;
 
 const styles = StyleSheet.create({
   container: {
+    paddingTop: 16,
     flex: 1,
     backgroundColor: colors.green_9,
   },

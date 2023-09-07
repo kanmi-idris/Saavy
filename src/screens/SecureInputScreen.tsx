@@ -92,6 +92,7 @@ const SecureInputScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
+    paddingTop: 32,
     flex: 1,
     backgroundColor: colors.green_9,
   },
