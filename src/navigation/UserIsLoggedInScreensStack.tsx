@@ -1,6 +1,5 @@
 import React from 'react';
 import UserDashboardScreen from '@/screens/UserDashboardScreen';
-import ExploreInvestmentsScreen from '@/screens/Investing/ExploreInvestmentsScreen';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Icon from '@/assets/Icons';
 import colors from '@/assets/Colors';
@@ -10,12 +9,14 @@ import {NavigatorScreenParams} from '@react-navigation/native';
 import LearningScreensNavigator, {
   LearningStackParams,
 } from '@/screens/Learning/navigation/LearningScreensNavigator';
+import InvestingScreensStack, {
+  InvestingStackParams,
+} from './InvestingScreensStack';
 
 export type UserIsLoggedInStackParams = {
   UserDashboard?: undefined;
-  InvestingStack?: undefined;
+  InvestingStack?: NavigatorScreenParams<InvestingStackParams>;
   LearningStack?: NavigatorScreenParams<LearningStackParams>;
-  // LearningStack?: undefined;
   UserAccountStack?: undefined;
 };
 
@@ -72,7 +73,7 @@ const UserIsLoggedInScreensStack = () => {
       />
       <UserIsLoggedInStack.Screen
         name="InvestingStack"
-        component={ExploreInvestmentsScreen}
+        component={InvestingScreensStack}
         options={{tabBarLabel: 'Invest'}}
       />
       <UserIsLoggedInStack.Screen

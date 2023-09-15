@@ -32,7 +32,7 @@ export const ScrollableSection = ({
   const data = React.Children.toArray(children);
   const renderItem = ({item}: {item: React.ReactNode}) => {
     return (
-      <View style={[fillScreen ? {width: width - 65} : null, styles.item]}>
+      <View style={[fillScreen ? {width: width - 50} : null, styles.item]}>
         {item}
       </View>
     );
@@ -48,7 +48,7 @@ export const ScrollableSection = ({
     <View style={styles.container}>
       <View
         style={[
-          fillScreen ? {width: width - 65} : null,
+          fillScreen ? {width: width - 50} : null,
           styles.headingWrapper,
         ]}>
         {heading && <Text style={styles.heading}>{heading}</Text>}
