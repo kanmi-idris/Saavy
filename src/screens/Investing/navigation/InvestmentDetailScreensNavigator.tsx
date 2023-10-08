@@ -11,6 +11,7 @@ import {RouteProp, useRoute} from '@react-navigation/native';
 import {InvestingStackParams} from '@/navigation/InvestingScreensStack';
 import Icon from '@/assets/Icons';
 import fonts from '@/assets/Fonts';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 export type InvestmentDetailParams = {
   About: undefined;
@@ -28,7 +29,7 @@ const InvestmentDetailScreensNavigator = () => {
       // Render a custom tab bar component
       // eslint-disable-next-line react/no-unstable-nested-components
       tabBar={props => (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container} edges={['top']}>
           <View style={styles.topBar}>
             {/* back icon at the left of the tab bar */}
             <Pressable onPress={() => props.navigation.goBack()}>
@@ -80,7 +81,7 @@ const InvestmentDetailScreensNavigator = () => {
               );
             })}
           </View>
-        </View>
+        </SafeAreaView>
       )}>
       <Tab.Screen
         name="About"
@@ -103,7 +104,6 @@ const InvestmentDetailScreensNavigator = () => {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 36,
     backgroundColor: colors.green_9,
     gap: 20,
   },
