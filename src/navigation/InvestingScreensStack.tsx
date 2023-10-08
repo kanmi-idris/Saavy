@@ -1,8 +1,8 @@
 import FeedbackScreen from '@/screens/FeedbackScreen';
 import EnterInvestmentAmountScreen from '@/screens/Investing/EnterInvestmentAmountScreen';
 import ExploreInvestmentsScreen from '@/screens/Investing/ExploreInvestmentsScreen';
-import InvestmentDetailScreen from '@/screens/Investing/InvestmentDetailScreen';
 import InvestmentSummaryScreen from '@/screens/Investing/InvestmentSummaryScreen';
+import InvestmentDetailScreensNavigator from '@/screens/Investing/navigation/InvestmentDetailScreensNavigator';
 import SecureInputScreen from '@/screens/SecureInputScreen';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
@@ -40,7 +40,7 @@ const InvestingScreensStack = () => {
       />
       <InvestingStack.Screen
         name="InvestmentDetailScreen"
-        component={InvestmentDetailScreen}
+        component={InvestmentDetailScreensNavigator}
       />
       <InvestingStack.Screen
         name="EnterInvestmentAmountScreen"

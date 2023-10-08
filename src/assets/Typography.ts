@@ -185,6 +185,7 @@ const typography = {
     paragraphNormal: {
       fontSize: 16,
       fontFamily: fonts.regular400,
+      textDecorationLine: 'underline' as Underline,
     },
     paragraphMid: {
       fontSize: 13.3,

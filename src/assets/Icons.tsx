@@ -44,6 +44,7 @@ import MessageSquare from './icons/fi_message-square';
 import Trash_2 from './icons/fi_trash-2';
 import List from './icons/fi_list';
 import Shield from './icons/fi_shield';
+import Share from './icons/fi_share';
 
 interface IconProp {
   name: string;
@@ -142,6 +143,8 @@ const Icon = ({name, onPress, ...props}: IconProp) => {
       return <List {...props} />;
     case 'shield':
       return <Shield {...props} />;
+    case 'share':
+      return <Share {...props} />;
     default:
       return null;
   }
