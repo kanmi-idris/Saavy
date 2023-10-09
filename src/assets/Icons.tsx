@@ -45,6 +45,9 @@ import Trash_2 from './icons/fi_trash-2';
 import List from './icons/fi_list';
 import Shield from './icons/fi_shield';
 import Share from './icons/fi_share';
+import ArrowUp from './icons/fi_arrow-up';
+import ArrowDown from './icons/fi_arrow-down';
+import LockClosed from './icons/fi_lock-closed';
 
 interface IconProp {
   name: string;
@@ -65,6 +68,10 @@ const Icon = ({name, onPress, ...props}: IconProp) => {
       return <BriefcaseIcon {...props} />;
     case 'arrowRight':
       return <ArrowRight {...props} />;
+    case 'arrowUp':
+      return <ArrowUp {...props} />;
+    case 'arrowDown':
+      return <ArrowDown {...props} />;
     case 'helpCircle':
       return <HelpCircle {...props} />;
     case 'naira':
@@ -145,6 +152,8 @@ const Icon = ({name, onPress, ...props}: IconProp) => {
       return <Shield {...props} />;
     case 'share':
       return <Share {...props} />;
+    case 'lock-closed':
+      return <LockClosed {...props} />;
     default:
       return null;
   }

@@ -14,7 +14,9 @@ import fonts from '@/assets/Fonts';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
 export type InvestmentDetailParams = {
-  About: undefined;
+  About: {
+    investmentName: string;
+  };
   Financials: undefined;
   News: undefined;
 };
@@ -23,6 +25,7 @@ const Tab = createMaterialTopTabNavigator<InvestmentDetailParams>();
 const InvestmentDetailScreensNavigator = () => {
   const PageRoute =
     useRoute<RouteProp<InvestingStackParams, 'InvestmentDetailScreen'>>();
+
   return (
     <Tab.Navigator
       initialRouteName="About"
@@ -36,18 +39,15 @@ const InvestmentDetailScreensNavigator = () => {
               <Icon name="chevronLeft" />
             </Pressable>
 
-            <View>
-              <Text
-                style={{
-                  ...typography.underline.paragraphNormal,
-                  fontFamily: fonts.semiBold600,
-                  color: colors.black_1,
-                  textTransform: 'uppercase',
-                }}>
-                {PageRoute.params.InvestmentName}
-              </Text>
-              {/* <View style={styles.indicator} /> */}
-            </View>
+            <Text
+              style={{
+                ...typography.underline.paragraphNormal,
+                fontFamily: fonts.semiBold600,
+                color: colors.black_1,
+                textTransform: 'uppercase',
+              }}>
+              {PageRoute.params.InvestmentName}
+            </Text>
 
             <Pressable onPress={() => {}}>
               <Icon name="share" />
