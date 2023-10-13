@@ -90,6 +90,7 @@ const UserDashboardScreen = () => {
         <View style={styles.staticSection}>
           <StaticSection heading="Your Top Performers" gap={8}>
             <MiniInvestmentDetailCard
+              key={1}
               name="FairLock"
               issuer="FairMoney Microfinance Bank"
               image={require('@/assets/images/MicrosoftLogo.png')}
@@ -99,8 +100,10 @@ const UserDashboardScreen = () => {
               type="savingsLock"
               valueCap={18}
               term="Monthly"
+              onPress={() => {}}
             />
             <MiniInvestmentDetailCard
+              key={2}
               name="FairLock"
               issuer="FairMoney Microfinance Bank"
               image={require('@/assets/images/MicrosoftLogo.png')}
@@ -110,8 +113,10 @@ const UserDashboardScreen = () => {
               type="savingsLock"
               valueCap={18}
               term="Monthly"
+              onPress={() => {}}
             />
             <MiniInvestmentDetailCard
+              key={3}
               name="FairLock"
               issuer="FairMoney Microfinance Bank"
               image={require('@/assets/images/MicrosoftLogo.png')}
@@ -121,72 +126,7 @@ const UserDashboardScreen = () => {
               type="savingsLock"
               valueCap={18}
               term="Monthly"
-            />
-            <MiniInvestmentDetailCard
-              name="FairLock"
-              issuer="FairMoney Microfinance Bank"
-              image={require('@/assets/images/MicrosoftLogo.png')}
-              amtRaised={200000000}
-              price={250.11}
-              rate={14.55}
-              type="savingsLock"
-              valueCap={18}
-              term="Monthly"
-            />
-            <MiniInvestmentDetailCard
-              name="FairLock"
-              issuer="FairMoney Microfinance Bank"
-              image={require('@/assets/images/MicrosoftLogo.png')}
-              amtRaised={200000000}
-              price={250.11}
-              rate={14.55}
-              type="savingsLock"
-              valueCap={18}
-              term="Monthly"
-            />
-            <MiniInvestmentDetailCard
-              name="FairLock"
-              issuer="FairMoney Microfinance Bank"
-              image={require('@/assets/images/MicrosoftLogo.png')}
-              amtRaised={200000000}
-              price={250.11}
-              rate={14.55}
-              type="savingsLock"
-              valueCap={18}
-              term="Monthly"
-            />
-            <MiniInvestmentDetailCard
-              name="FairLock"
-              issuer="FairMoney Microfinance Bank"
-              image={require('@/assets/images/MicrosoftLogo.png')}
-              amtRaised={200000000}
-              price={250.11}
-              rate={14.55}
-              type="savingsLock"
-              valueCap={18}
-              term="Monthly"
-            />
-            <MiniInvestmentDetailCard
-              name="FairLock"
-              issuer="FairMoney Microfinance Bank"
-              image={require('@/assets/images/MicrosoftLogo.png')}
-              amtRaised={200000000}
-              price={250.11}
-              rate={14.55}
-              type="savingsLock"
-              valueCap={18}
-              term="Monthly"
-            />
-            <MiniInvestmentDetailCard
-              name="FairLock"
-              issuer="FairMoney Microfinance Bank"
-              image={require('@/assets/images/MicrosoftLogo.png')}
-              amtRaised={200000000}
-              price={250.11}
-              rate={14.55}
-              type="savingsLock"
-              valueCap={18}
-              term="Monthly"
+              onPress={() => {}}
             />
           </StaticSection>
         </View>

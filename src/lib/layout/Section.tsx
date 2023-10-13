@@ -68,6 +68,8 @@ export const ScrollableSection = ({
         keyExtractor={(_, index) => index.toString()}
         initialNumToRender={2}
         showsHorizontalScrollIndicator={false}
+        bounces={false}
+        overScrollMode="never"
       />
     </View>
   );
@@ -110,8 +112,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   heading: {
-    ...typography.medium.paragraphNormal,
+    ...typography.medium.paragraphMid,
     color: colors.black_1,
+    textTransform: 'capitalize',
   },
   filterByParent: {
     flexDirection: 'row',

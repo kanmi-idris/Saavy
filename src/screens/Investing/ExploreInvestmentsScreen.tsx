@@ -8,12 +8,40 @@ import {ScrollableSection} from '@/lib/layout/Section';
 import {UserIsLoggedInStackParams} from '@/navigation/UserIsLoggedInScreensStack';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
-import React from 'react';
-import {SafeAreaView, View, StyleSheet, Pressable} from 'react-native';
+import React, {useCallback, useState} from 'react';
+import {
+  SafeAreaView,
+  View,
+  StyleSheet,
+  useWindowDimensions,
+} from 'react-native';
+
+// dummy APIs
+// import * as stocks_api from './api/dummyDB/explore/stocks.json';
+// import * as startups_api from './api/dummyDB/explore/startups.json';
+// import * as savings_lock_api from './api/dummyDB/explore/savings_lock.json';
+// import * as real_estate_api from './api/dummyDB/explore/real_estate.json';
+import * as mutual_funds_api from './api/dummyDB/explore/mutual_funds.json';
 
 const ExploreInvestmentsScreen = () => {
   const navigation =
     useNavigation<NativeStackNavigationProp<UserIsLoggedInStackParams>>();
+
+  const {height} = useWindowDimensions();
+  const [screenHeight, setScreenHeight] = useState(600);
+  const [amtOfCardsShown, setAmtOfCardsShown] = useState(3);
+
+  const cardsToBeShown = useCallback(() => {
+    if (screenHeight < height) {
+      setAmtOfCardsShown(amtOfCardsShown + 1);
+      setScreenHeight(screenHeight + 100);
+    }
+  }, [screenHeight, amtOfCardsShown, height]);
+  cardsToBeShown();
+
+  const amtOfColumns = mutual_funds_api.funds.length / amtOfCardsShown;
+  const AllColumns = Array(Math.floor(amtOfColumns)).fill(null);
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.search}>
@@ -22,7 +50,7 @@ const ExploreInvestmentsScreen = () => {
       <View style={styles.investmentSuites}>
         <InvestmentSuites heading="Investment Suites" auxButton />
       </View>
-      <View style={styles.recommendations}>
+      <View style={styles.margin}>
         <ScrollableSection heading="Highest Investors" horizontal>
           {strings.recommendations.map(recommendation => (
             <RecommendationCard
@@ -50,84 +78,40 @@ const ExploreInvestmentsScreen = () => {
             horizontal
             auxBtn
             fillScreen>
-            <View style={{gap: 12}}>
-              <Pressable
-                onPress={() =>
-                  navigation.navigate('InvestingStack', {
-                    screen: 'InvestmentDetailScreen',
-                    params: {InvestmentName: 'FairLock'},
-                  })
-                }>
-                <MiniInvestmentDetailCard
-                  name="FairLock"
-                  issuer="FairMoney Microfinance Bank"
-                  image={require('@/assets/images/MicrosoftLogo.png')}
-                  amtRaised={200000000}
-                  price={250.11}
-                  rate={14.55}
-                  type="savingsLock"
-                  valueCap={18}
-                  term="Monthly"
-                />
-              </Pressable>
-              <MiniInvestmentDetailCard
-                name="FairLock"
-                issuer="FairMoney Microfinance Bank"
-                image={require('@/assets/images/MicrosoftLogo.png')}
-                amtRaised={200000000}
-                price={250.11}
-                rate={14.55}
-                type="savingsLock"
-                valueCap={18}
-                term="Monthly"
-              />
-              <MiniInvestmentDetailCard
-                name="FairLock"
-                issuer="FairMoney Microfinance Bank"
-                image={require('@/assets/images/MicrosoftLogo.png')}
-                amtRaised={200000000}
-                price={250.11}
-                rate={14.55}
-                type="savingsLock"
-                valueCap={18}
-                term="Monthly"
-              />
-            </View>
-            <View style={{gap: 12}}>
-              <MiniInvestmentDetailCard
-                name="FairLock"
-                issuer="FairMoney Microfinance Bank"
-                image={require('@/assets/images/MicrosoftLogo.png')}
-                amtRaised={200000000}
-                price={250.11}
-                rate={14.55}
-                type="savingsLock"
-                valueCap={18}
-                term="Monthly"
-              />
-              <MiniInvestmentDetailCard
-                name="FairLock"
-                issuer="FairMoney Microfinance Bank"
-                image={require('@/assets/images/MicrosoftLogo.png')}
-                amtRaised={200000000}
-                price={250.11}
-                rate={14.55}
-                type="savingsLock"
-                valueCap={18}
-                term="Monthly"
-              />
-              <MiniInvestmentDetailCard
-                name="FairLock"
-                issuer="FairMoney Microfinance Bank"
-                image={require('@/assets/images/MicrosoftLogo.png')}
-                amtRaised={200000000}
-                price={250.11}
-                rate={14.55}
-                type="savingsLock"
-                valueCap={18}
-                term="Monthly"
-              />
-            </View>
+            {AllColumns.map(index => (
+              <View style={{gap: 12}} key={index}>
+                {mutual_funds_api.funds
+                  .slice(
+                    amtOfCardsShown === 3 ? 0 : amtOfCardsShown,
+                    amtOfCardsShown === 3
+                      ? amtOfCardsShown
+                      : amtOfCardsShown * 2,
+                  )
+                  .map((content, id) => {
+                    return (
+                      <MiniInvestmentDetailCard
+                        key={id}
+                        name={content.symbol}
+                        issuer={content.name}
+                        image={require('@/assets/images/MicrosoftLogo.png')}
+                        amtRaised={0}
+                        price={content.min_investment}
+                        rate={content.return_rate}
+                        type="mutualFunds"
+                        valueCap={0}
+                        term={content.distribution_frequency}
+                        maturityStructure={content.maturity_structure}
+                        onPress={() =>
+                          navigation.navigate('InvestingStack', {
+                            screen: 'InvestmentDetailScreen',
+                            params: {InvestmentName: 'FairLock'},
+                          })
+                        }
+                      />
+                    );
+                  })}
+              </View>
+            ))}
           </ScrollableSection>
         </View>
       </View>
@@ -149,7 +133,7 @@ const styles = StyleSheet.create({
     marginStart: 24,
     marginBottom: 32,
   },
-  recommendations: {
+  margin: {
     marginStart: 24,
   },
   live: {

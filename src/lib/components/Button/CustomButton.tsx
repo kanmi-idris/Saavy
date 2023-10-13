@@ -2,7 +2,7 @@ import colors from '@/assets/Colors';
 import Icon from '@/assets/Icons';
 import typography from '@/assets/Typography';
 import React, {useState} from 'react';
-import {Pressable, Text, StyleSheet} from 'react-native';
+import {Pressable, Text, StyleSheet, ViewStyle, StyleProp} from 'react-native';
 
 interface CustomButtonProps {
   disable?: boolean;
@@ -11,6 +11,7 @@ interface CustomButtonProps {
   label?: string;
   variant: 'primary' | 'secondary' | 'text' | 'socialAuth' | 'error';
   onPress?: () => void;
+  style?: StyleProp<ViewStyle>;
 }
 
 const CustomButton = ({
@@ -20,6 +21,7 @@ const CustomButton = ({
   label,
   variant,
   onPress,
+  style,
 }: CustomButtonProps) => {
   const [pressed, setPressed] = useState(false);
 
@@ -128,7 +130,7 @@ const CustomButton = ({
 
   return (
     <Pressable
-      style={states() || variants()}
+      style={[states() || variants(), style]}
       onPressIn={() => setPressed(true)}
       onPressOut={() => setPressed(false)}
       disabled={disable}

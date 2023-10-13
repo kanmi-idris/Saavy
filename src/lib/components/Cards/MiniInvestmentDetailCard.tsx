@@ -1,8 +1,9 @@
+/* eslint-disable react-native/no-inline-styles */
 import colors from '@/assets/Colors';
 import typography from '@/assets/Typography';
 import {addCommas} from '@/lib/utils/HelperFunctions';
-import React from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
+import React, {useState} from 'react';
+import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
 
 interface MiniInvestmentDetailCardPops {
   name: string;
@@ -12,8 +13,10 @@ interface MiniInvestmentDetailCardPops {
   price: number;
   valueCap: number;
   type: 'realEstate' | 'mutualFunds' | 'stocks' | 'startups' | 'savingsLock';
-  image: number;
+  image: number | string;
   term: number | string;
+  maturityStructure?: string;
+  onPress: () => void;
 }
 
 const MiniInvestmentDetailCard = ({
@@ -26,7 +29,11 @@ const MiniInvestmentDetailCard = ({
   type,
   term,
   valueCap,
+  onPress,
+  maturityStructure,
 }: MiniInvestmentDetailCardPops) => {
+  const [pressed, setPressed] = useState(false);
+
   const firstBlock = () => {
     if (type === 'startups') {
       const formattedAmt = addCommas(amtRaised);
@@ -40,7 +47,7 @@ const MiniInvestmentDetailCard = ({
     if (type === 'realEstate' || type === 'mutualFunds') {
       return {
         TopText: rate + '%',
-        BottomText: 'Annually',
+        BottomText: term,
       };
     } else if (type === 'startups') {
       return {
@@ -74,7 +81,10 @@ const MiniInvestmentDetailCard = ({
     } else {
       return {
         TopText: '$' + price,
-        BottomText: term + '-yr maturity',
+        BottomText:
+          type === 'mutualFunds' || type === 'realEstate'
+            ? maturityStructure
+            : term + '-yr maturity',
       };
     }
   };
@@ -92,24 +102,51 @@ const MiniInvestmentDetailCard = ({
         TopText: rateColor,
         BottomText: styles.subText,
       };
+    } else {
+      return {
+        TopText: rateColor,
+        BottomText: styles.subText,
+      };
     }
   };
 
   return (
-    <View style={styles.container}>
+    <Pressable
+      style={[
+        styles.container,
+        {backgroundColor: pressed ? colors.black_10 : colors.white},
+      ]}
+      onPressIn={() => setPressed(true)}
+      onPressOut={() => setPressed(false)}
+      onPress={onPress}>
       <View style={styles.imgWrap}>
-        <Image source={image} style={styles.image} />
+        <Image
+          source={typeof image === 'number' ? image : {uri: `${image}`}}
+          style={styles.image}
+        />
       </View>
       <View style={styles.wrapper}>
         <View style={styles.wrapStart}>
           <Text
-            style={[styles.mainText, styles.longText]}
+            style={[
+              styles.mainText,
+              {
+                width:
+                  type === 'mutualFunds' || type === 'realEstate' ? 71 : 100,
+              },
+            ]}
             numberOfLines={1}
             ellipsizeMode="tail">
             {name}
           </Text>
           <Text
-            style={[styles.subText, styles.longText]}
+            style={[
+              styles.subText,
+              {
+                width:
+                  type === 'mutualFunds' || type === 'realEstate' ? 71 : 100,
+              },
+            ]}
             numberOfLines={1}
             ellipsizeMode="tail">
             {firstBlock()}
@@ -124,15 +161,25 @@ const MiniInvestmentDetailCard = ({
           </Text>
         </View>
         <View style={styles.wrapEnd}>
-          <Text style={[styles.mainText, ratesStyle()!.TopText]}>
+          <Text
+            style={[
+              styles.mainText,
+              !(type === 'mutualFunds' || type === 'realEstate') &&
+                ratesStyle()!.TopText,
+            ]}>
             {lastBlock()?.TopText}
           </Text>
-          <Text style={[styles.subText, ratesStyle()!.BottomText]}>
+          <Text
+            style={[
+              styles.subText,
+              !(type === 'mutualFunds' || type === 'realEstate') &&
+                ratesStyle()!.BottomText,
+            ]}>
             {lastBlock()?.BottomText}
           </Text>
         </View>
       </View>
-    </View>
+    </Pressable>
   );
 };
 
@@ -157,8 +204,8 @@ const styles = StyleSheet.create({
   },
   imgWrap: {
     borderRadius: 50,
-    width: 40,
-    height: 40,
+    width: 32,
+    height: 32,
     backgroundColor: colors.green_9,
     alignItems: 'center',
     justifyContent: 'center',
@@ -177,16 +224,16 @@ const styles = StyleSheet.create({
     gap: 4,
   },
   image: {
-    width: 32,
-    height: 32,
+    width: 24,
+    height: 24,
     borderRadius: 32,
   },
   mainText: {
-    ...typography.medium.paragraphNormal,
+    ...typography.medium.paragraphMid,
     color: colors.black_1,
   },
   subText: {
-    ...typography.regular.paragraphMid,
+    ...typography.regular.paragraphSmall,
     color: colors.black_6,
   },
   longText: {

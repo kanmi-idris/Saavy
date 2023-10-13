@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Tiny Organics",
+    "min_invest": 100,
+    "valuation": "$18M",
+    "funds_raised": 141883,
+    "id": "AX12JKL",
+    "logo": "tiny_organics_logo.png"
+  },
+  {
+    "name": "Rentberry",
+    "min_invest": 250,
+    "valuation": "$25M",
+    "funds_raised": 2141780,
+    "id": "AX34MNO",
+    "logo": "rentberry_logo.png"
+  },
+  {
+    "name": "Bioverge",
+    "min_invest": 100,
+    "valuation": "$18M",
+    "funds_raised": 116721,
+    "id": "AX56HKL",
+    "logo": "bioverge_logo.png"
+  },
+  {
+    "name": "Startup 4",
+    "min_invest": 150,
+    "valuation": "$30M",
+    "funds_raised": 2200000,
+    "id": "AX78XYZ",
+    "logo": "startup4_logo.png"
+  },
+  {
+    "name": "Tech Innovators",
+    "min_invest": 200,
+    "valuation": "$40M",
+    "funds_raised": 2600000,
+    "id": "AX90ABC",
+    "logo": "tech_innovators_logo.png"
+  },
+  {
+    "name": "EcoTech",
+    "min_invest": 75,
+    "valuation": "$15M",
+    "funds_raised": 950000,
+    "id": "AX11PQR",
+    "logo": "ecotech_logo.png"
+  },
+  {
+    "name": "HealthTech Solutions",
+    "min_invest": 300,
+    "valuation": "$50M",
+    "funds_raised": 3100000,
+    "id": "AX12DEF",
+    "logo": "healthtech_solutions_logo.png"
+  },
+  {
+    "name": "FoodTech Innovations",
+    "min_invest": 125,
+    "valuation": "$20M",
+    "funds_raised": 1400000,
+    "id": "AX13GHI",
+    "logo": "foodtech_innovations_logo.png"
+  },
+  {
+    "name": "Clean Energy Co.",
+    "min_invest": 180,
+    "valuation": "$35M",
+    "funds_raised": 1850000,
+    "id": "AX14JKL",
+    "logo": "clean_energy_co_logo.png"
+  },
+  {
+    "name": "FinTech Pro",
+    "min_invest": 220,
+    "valuation": "$42M",
+    "funds_raised": 2300000,
+    "id": "AX15MNO",
+    "logo": "fintech_pro_logo.png"
+  }
+]
