@@ -1,8 +1,9 @@
 import colors from '@/assets/Colors';
 import Icon from '@/assets/Icons';
 import typography from '@/assets/Typography';
-import React, {useState} from 'react';
+import React, {createContext, useContext, useState} from 'react';
 import {View, Pressable, Text, StyleSheet, ScrollView} from 'react-native';
+import {toCamelCase} from '../utils/toCamelCase';
 
 /*This is a component that displays different investment suites for the user
  * It takes two props: heading and auxButton
@@ -23,9 +24,24 @@ interface InvestmentSuitesProps {
   auxButton?: boolean;
   heading: string;
 }
+interface InvestmentContextProps {
+  chosenInvestment: string;
+  setChosenInvestment?: React.Dispatch<React.SetStateAction<string>>;
+}
+const InvestmentContext = createContext<InvestmentContextProps>({
+  chosenInvestment: 'mutualFunds',
+});
+
+export const InvestmentProvider = ({children}: {children: React.ReactNode}) => {
+  const [chosenInvestment, setChosenInvestment] = useState('mutualFunds');
+  return (
+    <InvestmentContext.Provider value={{chosenInvestment, setChosenInvestment}}>
+      {children}
+    </InvestmentContext.Provider>
+  );
+};
 
 const InvestmentSuites = ({heading, auxButton}: InvestmentSuitesProps) => {
-  const [pressed, setPressed] = useState(-1);
   const label = [
     'Mutual Funds',
     'Stocks',
@@ -34,6 +50,9 @@ const InvestmentSuites = ({heading, auxButton}: InvestmentSuitesProps) => {
     'Startups',
   ];
 
+  const {chosenInvestment, setChosenInvestment} = useContext(InvestmentContext);
+
+  const [pressed, setPressed] = useState(false);
   const iconProps = {
     width: 12,
     height: 12,
@@ -47,11 +66,13 @@ const InvestmentSuites = ({heading, auxButton}: InvestmentSuitesProps) => {
         {auxButton && (
           <Pressable
             style={styles.defaultLink}
-            onPressIn={() => setPressed(10)}
-            onPressOut={() => setPressed(-1)}>
+            onPressIn={() => setPressed(true)}
+            onPressOut={() => setPressed(false)}>
             <Icon name="helpCircle" {...iconProps} />
             <Text
-              style={pressed === 10 ? styles.activeLinkText : styles.linkText}>
+              style={
+                pressed === true ? styles.activeLinkText : styles.linkText
+              }>
               Learn to invest
             </Text>
           </Pressable>
@@ -60,12 +81,20 @@ const InvestmentSuites = ({heading, auxButton}: InvestmentSuitesProps) => {
       <ScrollView
         contentContainerStyle={styles.btnWrapper}
         horizontal={true}
+        bounces={false}
+        overScrollMode="never"
         showsHorizontalScrollIndicator={false}>
         {label.map((content, index) => (
           <Pressable
             key={index}
-            style={pressed === index ? activeBtn : defaultBtn}
-            onPressIn={() => setPressed(index)}>
+            style={
+              chosenInvestment === toCamelCase(label[index])
+                ? activeBtn
+                : defaultBtn
+            }
+            onPress={() => {
+              setChosenInvestment?.(toCamelCase(label[index]));
+            }}>
             <Text style={styles.btnLabel}>{content}</Text>
           </Pressable>
         ))}
