@@ -2,7 +2,7 @@
   "startups": [
     {
       "name": "Tiny Organics",
-      "min_invest": 100,
+      "min_investment": 100,
       "valuation": "$18M",
       "funds_raised": 141883,
       "id": "AX12JKL",
@@ -10,7 +10,7 @@
     },
     {
       "name": "Rentberry",
-      "min_invest": 250,
+      "min_investment": 250,
       "valuation": "$25M",
       "funds_raised": 2141780,
       "id": "AX34MNO",
@@ -18,15 +18,15 @@
     },
     {
       "name": "Bioverge",
-      "min_invest": 100,
+      "min_investment": 100,
       "valuation": "$18M",
       "funds_raised": 116721,
       "id": "AX56HKL",
       "logo": "bioverge_logo.png"
     },
     {
-      "name": "Startup 4",
-      "min_invest": 150,
+      "name": "Fort 4",
+      "min_investment": 150,
       "valuation": "$30M",
       "funds_raised": 2200000,
       "id": "AX78XYZ",
@@ -34,7 +34,7 @@
     },
     {
       "name": "Tech Innovators",
-      "min_invest": 200,
+      "min_investment": 200,
       "valuation": "$40M",
       "funds_raised": 2600000,
       "id": "AX90ABC",
@@ -42,7 +42,7 @@
     },
     {
       "name": "EcoTech",
-      "min_invest": 75,
+      "min_investment": 75,
       "valuation": "$15M",
       "funds_raised": 950000,
       "id": "AX11PQR",
@@ -50,7 +50,7 @@
     },
     {
       "name": "HealthTech Solutions",
-      "min_invest": 300,
+      "min_investment": 300,
       "valuation": "$50M",
       "funds_raised": 3100000,
       "id": "AX12DEF",
@@ -58,7 +58,7 @@
     },
     {
       "name": "FoodTech Innovations",
-      "min_invest": 125,
+      "min_investment": 125,
       "valuation": "$20M",
       "funds_raised": 1400000,
       "id": "AX13GHI",
@@ -66,7 +66,7 @@
     },
     {
       "name": "Clean Energy Co.",
-      "min_invest": 180,
+      "min_investment": 180,
       "valuation": "$35M",
       "funds_raised": 1850000,
       "id": "AX14JKL",
@@ -74,7 +74,7 @@
     },
     {
       "name": "FinTech Pro",
-      "min_invest": 220,
+      "min_investment": 220,
       "valuation": "$42M",
       "funds_raised": 2300000,
       "id": "AX15MNO",

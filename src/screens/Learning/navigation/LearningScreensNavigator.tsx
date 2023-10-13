@@ -6,14 +6,8 @@ import AllGuidesScreen from '../AllGuides';
 import typography from '@/assets/Typography';
 import colors from '@/assets/Colors';
 import Icon from '@/assets/Icons';
-import {
-  View,
-  Pressable,
-  Text,
-  StyleSheet,
-  SafeAreaView,
-  Modal,
-} from 'react-native';
+import {View, Pressable, Text, StyleSheet, Modal} from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 export type LearningStackParams = {
   SaavyAIChatbotScreen: undefined;
@@ -40,7 +34,7 @@ const LearningScreensNavigator = () => {
       // Render a custom tab bar component
       // eslint-disable-next-line react/no-unstable-nested-components
       tabBar={props => (
-        <SafeAreaView style={styles.container}>
+        <SafeAreaView edges={['top']} style={styles.container}>
           {/* back icon at the left of the tab bar */}
           <Pressable onPress={() => props.navigation.goBack()}>
             <Icon name="chevronLeft" />
@@ -165,12 +159,12 @@ const Menu = () => {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 36,
+    paddingTop: 8,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     backgroundColor: colors.green_9,
-    paddingHorizontal: 16,
+    paddingHorizontal: 20,
     paddingBottom: 32,
   },
   backButton: {paddingHorizontal: 8},

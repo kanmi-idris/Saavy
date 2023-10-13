@@ -65,7 +65,7 @@ const MiniInvestmentDetailCard = ({
   const lastBlock = () => {
     if (type === 'startups') {
       return {
-        TopText: '$' + valueCap + 'M',
+        TopText: valueCap,
         BottomText: 'Value Cap',
       };
     } else if (type === 'stocks') {
@@ -153,7 +153,11 @@ const MiniInvestmentDetailCard = ({
           </Text>
         </View>
         <View style={styles.wrapEnd}>
-          <Text style={[styles.mainText, ratesStyle()!.TopText]}>
+          <Text
+            style={[
+              styles.mainText,
+              !(type === 'startups') && ratesStyle()!.TopText,
+            ]}>
             {middleBlock()?.TopText}
           </Text>
           <Text style={[styles.subText, ratesStyle()!.BottomText]}>
@@ -164,16 +168,22 @@ const MiniInvestmentDetailCard = ({
           <Text
             style={[
               styles.mainText,
-              !(type === 'mutualFunds' || type === 'realEstate') &&
-                ratesStyle()!.TopText,
+              !(
+                type === 'mutualFunds' ||
+                type === 'realEstate' ||
+                type === 'startups'
+              ) && ratesStyle()!.TopText,
             ]}>
             {lastBlock()?.TopText}
           </Text>
           <Text
             style={[
               styles.subText,
-              !(type === 'mutualFunds' || type === 'realEstate') &&
-                ratesStyle()!.BottomText,
+              !(
+                type === 'mutualFunds' ||
+                type === 'realEstate' ||
+                type === 'startups'
+              ) && ratesStyle()!.BottomText,
             ]}>
             {lastBlock()?.BottomText}
           </Text>

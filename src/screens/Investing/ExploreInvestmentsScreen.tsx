@@ -92,7 +92,8 @@ const ExploreInvestmentsScreen = () => {
             heading="Live Opportunities"
             horizontal
             auxBtn
-            fillScreen>
+            fillScreen
+            gap={4}>
             {AllColumns.map((val, index) => {
               let start = index * amtOfCardsShown;
               let end = start + amtOfCardsShown;
@@ -102,10 +103,22 @@ const ExploreInvestmentsScreen = () => {
                     return (
                       <MiniInvestmentDetailCard
                         key={id}
-                        name={content.symbol}
-                        issuer={content.name}
+                        name={
+                          chosenInvestment === 'realEstate' ||
+                          chosenInvestment === 'savingsLock' ||
+                          chosenInvestment === 'startups'
+                            ? content.name
+                            : content.symbol
+                        }
+                        issuer={
+                          chosenInvestment === 'realEstate'
+                            ? content.maintained_by
+                            : chosenInvestment === 'savingsLock'
+                            ? content.provider
+                            : content.name
+                        }
                         image={require('@/assets/images/MicrosoftLogo.png')}
-                        amtRaised={0}
+                        amtRaised={content.funds_raised}
                         price={
                           chosenInvestment === 'stocks'
                             ? content.price
@@ -114,6 +127,8 @@ const ExploreInvestmentsScreen = () => {
                         rate={
                           chosenInvestment === 'stocks'
                             ? content.percent_change
+                            : chosenInvestment === 'savingsLock'
+                            ? content.interest_rate
                             : content.return_rate
                         }
                         type={
@@ -127,8 +142,12 @@ const ExploreInvestmentsScreen = () => {
                             ? 'savingsLock'
                             : 'mutualFunds'
                         }
-                        valueCap={0}
-                        term={content.distribution_frequency}
+                        valueCap={content.valuation}
+                        term={
+                          chosenInvestment === 'savingsLock'
+                            ? content.duration
+                            : content.distribution_frequency
+                        }
                         maturityStructure={content.maturity_structure}
                         onPress={() =>
                           navigation.navigate('InvestingStack', {
@@ -151,7 +170,7 @@ const ExploreInvestmentsScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
-    // paddingTop: 36,
+    paddingTop: 8,
     flex: 1,
     backgroundColor: colors.green_9,
   },
