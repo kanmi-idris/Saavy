@@ -1,14 +1,9 @@
+/* eslint-disable react-native/no-inline-styles */
 import colors from '@/assets/Colors';
 import Icon from '@/assets/Icons';
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  View,
-  Text,
-  StyleSheet,
-  Pressable,
-} from 'react-native';
+import {ScrollView, View, Text, StyleSheet, Pressable} from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import ProgressBar from './components/ProgressBar';
 import typography from '@/assets/Typography';
 import {ScrollableSection, StaticSection} from '@/lib/layout/Section';
@@ -20,8 +15,12 @@ import WelcomeBar from './components/WelcomeBar';
 
 const UserDashboardScreen = () => {
   return (
-    <SafeAreaView style={styles.baseContainer}>
-      <ScrollView showsHorizontalScrollIndicator={false}>
+    <SafeAreaView edges={['top']} style={styles.baseContainer}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        bounces={false}
+        overScrollMode="never"
+        contentContainerStyle={{paddingBottom: 32}}>
         <View style={styles.welcomeBarWrap}>
           <WelcomeBar
             heading="Hi, Inumidun"
@@ -55,7 +54,10 @@ const UserDashboardScreen = () => {
             />
             <DisplayCard label="Startups" key={Math.random()} trend="upward" />
           </ScrollableSection>
-          <ScrollableSection heading="Recommendations For You" horizontal>
+          <ScrollableSection
+            heading="Recommendations For You"
+            horizontal
+            pagingEnabled>
             {strings.recommendations.map(recommendation => (
               <RecommendationCard
                 key={recommendation.id}
@@ -76,7 +78,11 @@ const UserDashboardScreen = () => {
               />
             ))}
           </ScrollableSection>
-          <ScrollableSection heading="Continue Learning" horizontal fillScreen>
+          <ScrollableSection
+            heading="Continue Learning"
+            horizontal
+            fillScreen
+            pagingEnabled>
             {strings.learning.continue.map(content => (
               <ContinueLearningCard
                 key={content.id}
@@ -169,7 +175,7 @@ const ContinueLearningCard = ({
 
 const styles = StyleSheet.create({
   baseContainer: {
-    paddingTop: 32,
+    // paddingTop: 32,
     flex: 1,
     backgroundColor: colors.green_9,
   },

@@ -1,112 +1,115 @@
-[
-  {
-    "name": "Balogun 2.0",
-    "return_rate": "16.96%",
-    "min_investment": 300,
-    "maintained_by": "Catalyst Properties",
-    "distribution_frequency": "Annually",
-    "maturity_structure": "5-yr maturity",
-    "id": "ASQ101A",
-    "logo": "logo1.png"
-  },
-  {
-    "name": "Lacasa",
-    "return_rate": "22.20%",
-    "min_investment": 150,
-    "maintained_by": "CBC Africa",
-    "distribution_frequency": "Annually",
-    "maturity_structure": "15-yr maturity",
-    "id": "ASQ102B",
-    "logo": "logo2.png"
-  },
-  {
-    "name": "Millenial City",
-    "return_rate": "22.46%",
-    "min_investment": 50,
-    "maintained_by": "Lagos State Housing Authority",
-    "distribution_frequency": "Annually",
-    "maturity_structure": "10-yr maturity",
-    "id": "ASQ103C",
-    "logo": "logo3.png"
-  },
-  {
-    "name": "Project Balogun 3.0",
-    "return_rate": "16.96%",
-    "min_investment": 300,
-    "maintained_by": "CBC Africa",
-    "distribution_frequency": "Monthly",
-    "maturity_structure": "5-yr maturity",
-    "id": "ASQ104D",
-    "logo": "logo4.png"
-  },
-  {
-    "name": "New Horizon Estates",
-    "return_rate": "18.75%",
-    "min_investment": 400,
-    "maintained_by": "Horizon Investments",
-    "distribution_frequency": "Quarterly",
-    "maturity_structure": "8-yr maturity",
-    "id": "ASQ105E",
-    "logo": "logo5.png"
-  },
-  {
-    "name": "Silver Oaks",
-    "return_rate": "19.80%",
-    "min_investment": 250,
-    "maintained_by": "Silver Investments",
-    "distribution_frequency": "Semi-Annually",
-    "maturity_structure": "7-yr maturity",
-    "id": "ASQ106F",
-    "logo": "logo6.png"
-  },
-  {
-    "name": "Green Garden Homes",
-    "return_rate": "20.25%",
-    "min_investment": 350,
-    "maintained_by": "Eco Investments",
-    "distribution_frequency": "Monthly",
-    "maturity_structure": "12-yr maturity",
-    "id": "ASQ107G",
-    "logo": "logo7.png"
-  },
-  {
-    "name": "Harbor View Residences",
-    "return_rate": "21.30%",
-    "min_investment": 450,
-    "maintained_by": "Harbor Investments",
-    "distribution_frequency": "Annually",
-    "maturity_structure": "10-yr maturity",
-    "id": "ASQ108H",
-    "logo": "logo8.png"
-  },
-  {
-    "name": "Sunset Villas",
-    "return_rate": "17.90%",
-    "min_investment": 200,
-    "maintained_by": "Sunset Investments",
-    "distribution_frequency": "Quarterly",
-    "maturity_structure": "6-yr maturity",
-    "id": "ASQ109I",
-    "logo": "logo9.png"
-  },
-  {
-    "name": "Oceanfront Paradise",
-    "return_rate": "23.50%",
-    "min_investment": 550,
-    "maintained_by": "Paradise Investments",
-    "distribution_frequency": "Semi-Annually",
-    "maturity_structure": "9-yr maturity",
-    "id": "ASQ110J",
-    "logo": "logo10.png"
-  },
-  {
-    "name": "Palm Beach Retreat",
-    "return_rate": "19.40%",
-    "min_investment": 300,
-    "maintained_by": "Beach Investments",
-    "distribution_frequency": "Annually",
-    "maturity_structure": "11-yr maturity",
-    "id": "ASQ111K",
-    "logo": "logo11.png"
-  }
-]
+{
+  "estates": [
+    {
+      "name": "Balogun 2.0",
+      "return_rate": "16.96%",
+      "min_investment": 300,
+      "maintained_by": "Catalyst Properties",
+      "distribution_frequency": "Annually",
+      "maturity_structure": "5-yr maturity",
+      "id": "ASQ101A",
+      "logo": "logo1.png"
+    },
+    {
+      "name": "Lacasa",
+      "return_rate": "22.20%",
+      "min_investment": 150,
+      "maintained_by": "CBC Africa",
+      "distribution_frequency": "Annually",
+      "maturity_structure": "15-yr maturity",
+      "id": "ASQ102B",
+      "logo": "logo2.png"
+    },
+    {
+      "name": "Millenial City",
+      "return_rate": "22.46%",
+      "min_investment": 50,
+      "maintained_by": "Lagos State Housing Authority",
+      "distribution_frequency": "Annually",
+      "maturity_structure": "10-yr maturity",
+      "id": "ASQ103C",
+      "logo": "logo3.png"
+    },
+    {
+      "name": "Project Balogun 3.0",
+      "return_rate": "16.96%",
+      "min_investment": 300,
+      "maintained_by": "CBC Africa",
+      "distribution_frequency": "Monthly",
+      "maturity_structure": "5-yr maturity",
+      "id": "ASQ104D",
+      "logo": "logo4.png"
+    },
+    {
+      "name": "New Horizon Estates",
+      "return_rate": "18.75%",
+      "min_investment": 400,
+      "maintained_by": "Horizon Investments",
+      "distribution_frequency": "Quarterly",
+      "maturity_structure": "8-yr maturity",
+      "id": "ASQ105E",
+      "logo": "logo5.png"
+    },
+    {
+      "name": "Silver Oaks",
+      "return_rate": "19.80%",
+      "min_investment": 250,
+      "maintained_by": "Silver Investments",
+      "distribution_frequency": "Semi-Annually",
+      "maturity_structure": "7-yr maturity",
+      "id": "ASQ106F",
+      "logo": "logo6.png"
+    },
+    {
+      "name": "Green Garden Homes",
+      "return_rate": "20.25%",
+      "min_investment": 350,
+      "maintained_by": "Eco Investments",
+      "distribution_frequency": "Monthly",
+      "maturity_structure": "12-yr maturity",
+      "id": "ASQ107G",
+      "logo": "logo7.png"
+    },
+    {
+      "name": "Harbor View Residences",
+      "return_rate": "21.30%",
+      "min_investment": 450,
+      "maintained_by": "Harbor Investments",
+      "distribution_frequency": "Annually",
+      "maturity_structure": "10-yr maturity",
+      "id": "ASQ108H",
+      "logo": "logo8.png"
+    },
+    {
+      "name": "Sunset Villas",
+      "return_rate": "17.90%",
+      "min_investment": 200,
+      "maintained_by": "Sunset Investments",
+      "distribution_frequency": "Quarterly",
+      "maturity_structure": "6-yr maturity",
+      "id": "ASQ109I",
+      "logo": "logo9.png"
+    },
+    {
+      "name": "Oceanfront Paradise",
+      "return_rate": "23.50%",
+      "min_investment": 550,
+      "maintained_by": "Paradise Investments",
+      "distribution_frequency": "Semi-Annually",
+      "maturity_structure": "9-yr maturity",
+      "id": "ASQ110J",
+      "logo": "logo10.png"
+    },
+    {
+      "name": "Palm Beach Retreat",
+      "return_rate": "19.40%",
+      "min_investment": 300,
+      "maintained_by": "Beach Investments",
+      "distribution_frequency": "Annually",
+      "maturity_structure": "11-yr maturity",
+      "id": "ASQ111K",
+      "logo": "logo11.png"
+    }
+  ]
+
+}

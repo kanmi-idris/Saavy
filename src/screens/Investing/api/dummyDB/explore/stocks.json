@@ -1,98 +1,125 @@
-[
-  {
-    "name": "Microsoft Corp.",
-    "symbol": "MSFT",
-    "logo": "",
-    "price": 285.72,
-    "percent_change": "+0.60%",
-    "id": "8KJ2Y9R"
-  },
-  {
-    "name": "Alphabet Inc.",
-    "symbol": "GOOGL",
-    "logo": "",
-    "price": 103.92,
-    "percent_change": "+0.14%",
-    "id": "4ZP7C1W"
-  },
-  {
-    "name": "Spotify Group.",
-    "symbol": "SPOT",
-    "logo": "",
-    "price": 98.01,
-    "percent_change": "+1.68%",
-    "id": "6QH5D8N"
-  },
-  {
-    "name": "Amazon",
-    "symbol": "AMZN",
-    "logo": "",
-    "price": 114.95,
-    "percent_change": "-0.93%",
-    "id": "2TJ9R5M"
-  },
-  {
-    "name": "Apple",
-    "symbol": "AAPL",
-    "logo": "",
-    "price": 152.73,
-    "percent_change": "+0.46%",
-    "id": "7XN3P4L"
-  },
-  {
-    "name": "Tesla",
-    "symbol": "TSLA",
-    "logo": "",
-    "price": 214.36,
-    "percent_change": "-0.41%",
-    "id": "1FZ6G2V"
-  },
-  {
-    "name": "Meta",
-    "symbol": "META",
-    "logo": "",
-    "price": 129.91,
-    "percent_change": "-0.32%",
-    "id": "5MW8T7Q"
-  },
-  {
-    "name": "Netflix",
-    "symbol": "NFLX",
-    "logo": "",
-    "price": 226.76,
-    "percent_change": "+0.27%",
-    "id": "3VS2K6H"
-  },
-  {
-    "name": "Nvidia",
-    "symbol": "NVDA",
-    "logo": "",
-    "price": 167.85,
-    "percent_change": "-0.15%",
-    "id": "9YZ4E7S"
-  },
-  {
-    "name": "Taiwan Semiconductor Manufacturing Company",
-    "symbol": "TSM",
-    "logo": "",
-    "price": 79.32,
-    "percent_change": "-0.67%",
-    "id": "0UQ1I3O"
-  },
-  {
-    "name": "Samsung Electronics",
-    "symbol": "005930.KS",
-    "logo": "",
-    "price": 58.3,
-    "percent_change": "-0.53%",
-    "id": "8DF3N2P"
-  },
-  {
-    "name": "ASML Holding",
-    "symbol": "ASML",
-    "logo": "",
-    "price": 416.5,
-    "percent_change": "-0.25%",
-    "id": "4AC7L6M"
-  }
-]
+{
+  "stocks": [
+    {
+      "name": "Microsoft Corp.",
+      "symbol": "MSFT",
+      "logo": "",
+      "price": 285.72,
+      "percent_change": 0.6,
+      "id": "8KJ2Y9R"
+    },
+    {
+      "name": "Alphabet Inc.",
+      "symbol": "GOOGL",
+      "logo": "",
+      "price": 103.92,
+      "percent_change": 0.14,
+      "id": "4ZP7C1W"
+    },
+    {
+      "name": "Spotify Group.",
+      "symbol": "SPOT",
+      "logo": "",
+      "price": 98.01,
+      "percent_change": 1.68,
+      "id": "6QH5D8N"
+    },
+    {
+      "name": "Amazon",
+      "symbol": "AMZN",
+      "logo": "",
+      "price": 114.95,
+      "percent_change": -0.93,
+      "id": "2TJ9R5M"
+    },
+    {
+      "name": "Apple",
+      "symbol": "AAPL",
+      "logo": "",
+      "price": 152.73,
+      "percent_change": 0.46,
+      "id": "7XN3P4L"
+    },
+    {
+      "name": "Tesla",
+      "symbol": "TSLA",
+      "logo": "",
+      "price": 214.36,
+      "percent_change": -0.41,
+      "id": "1FZ6G2V"
+    },
+    {
+      "name": "Meta",
+      "symbol": "META",
+      "logo": "",
+      "price": 129.91,
+      "percent_change": -0.32,
+      "id": "5MW8T7Q"
+    },
+    {
+      "name": "Netflix",
+      "symbol": "NFLX",
+      "logo": "",
+      "price": 226.76,
+      "percent_change": 0.27,
+      "id": "3VS2K6H"
+    },
+    {
+      "name": "Nvidia",
+      "symbol": "NVDA",
+      "logo": "",
+      "price": 167.85,
+      "percent_change": -0.15,
+      "id": "9YZ4E7S"
+    },
+    {
+      "name": "Taiwan Semiconductor Manufacturing Company",
+      "symbol": "TSM",
+      "logo": "",
+      "price": 79.32,
+      "percent_change": -0.67,
+      "id": "0UQ1I3O"
+    },
+    {
+      "name": "Samsung Electronics",
+      "symbol": "005930.KS",
+      "logo": "",
+      "price": 58.3,
+      "percent_change": -0.53,
+      "id": "8DF3N2P"
+    },
+    {
+      "name": "ASML Holding",
+      "symbol": "ASML",
+      "logo": "",
+      "price": 416.5,
+      "percent_change": -0.25,
+      "id": "4AC7L6M"
+    },
+    {
+      "name": "Nvidia",
+      "symbol": "NVDA",
+      "logo": "",
+      "price": 167.85,
+      "percent_change": -0.15,
+      "id": "9YZ4E7S"
+    },
+    {
+      "name": "Amazon",
+      "symbol": "AMZN",
+      "logo": "",
+      "price": 114.95,
+      "percent_change": -0.93,
+      "id": "2TJ9R5M"
+    },
+    {
+      "name": "Microsoft Corp.",
+      "symbol": "MSFT",
+      "logo": "",
+      "price": 285.72,
+      "percent_change": 0.6,
+      "id": "8KJ2Y9R"
+    }
+  ]
+
+}

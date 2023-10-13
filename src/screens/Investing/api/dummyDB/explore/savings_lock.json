@@ -1,98 +1,101 @@
-[
-  {
-    "name": "CashBox",
-    "provider": "Palmpay Financials",
-    "interest_rate": "16%",
-    "duration": "Yearly",
-    "id": "ASQ109I",
-    "logo": "logo9.png"
-  },
-  {
-    "name": "PiggyBox",
-    "provider": "Piggyvest Financials",
-    "interest_rate": "1.50%",
-    "duration": "Weekly",
-    "id": "ASQ109J",
-    "logo": "logo9.png"
-  },
-  {
-    "name": "FairLock",
-    "provider": "Fair Money Microfinance Bank",
-    "interest_rate": "2.50%",
-    "duration": "monthly",
-    "id": "ASQ109K",
-    "logo": "logo9.png"
-  },
-  {
-    "name": "Steady Saver",
-    "provider": "Steady Savings Inc.",
-    "interest_rate": "2.75%",
-    "duration": "monthly",
-    "id": "ASQ115O",
-    "logo": "logo15.png"
-  },
-  {
-    "name": "Secure Invest",
-    "provider": "Safe Investments Co.",
-    "interest_rate": "3.00%",
-    "duration": "monthly",
-    "id": "ASQ116P",
-    "logo": "logo16.png"
-  },
-  {
-    "name": "Reliable Returns",
-    "provider": "Reliable Investments Ltd.",
-    "interest_rate": "2.25%",
-    "duration": "monthly",
-    "id": "ASQ117Q",
-    "logo": "logo17.png"
-  },
-  {
-    "name": "Gold Savings Plus",
-    "provider": "Gold Savings Corp.",
-    "interest_rate": "2.90%",
-    "duration": "monthly",
-    "id": "ASQ118R",
-    "logo": "logo18.png"
-  },
-  {
-    "name": "Earnest Yield",
-    "provider": "Earnest Savings Bank",
-    "interest_rate": "2.65%",
-    "duration": "monthly",
-    "id": "ASQ119S",
-    "logo": "logo19.png"
-  },
-  {
-    "name": "Platinum Saver",
-    "provider": "Platinum Investments",
-    "interest_rate": "3.10%",
-    "duration": "monthly",
-    "id": "ASQ120T",
-    "logo": "logo20.png"
-  },
-  {
-    "name": "Safe Returns Fund",
-    "provider": "Safe Investments Co.",
-    "interest_rate": "2.75%",
-    "duration": "monthly",
-    "id": "ASQ121U",
-    "logo": "logo21.png"
-  },
-  {
-    "name": "Smart Saver",
-    "provider": "Smart Savings Ltd.",
-    "interest_rate": "2.85%",
-    "duration": "monthly",
-    "id": "ASQ122V",
-    "logo": "logo22.png"
-  },
-  {
-    "name": "Guaranteed Gain",
-    "provider": "Guaranteed Investments Inc.",
-    "interest_rate": "2.40%",
-    "duration": "monthly",
-    "id": "ASQ123W",
-    "logo": "logo23.png"
-  }
-]
+{
+  "fixed": [
+    {
+      "name": "CashBox",
+      "provider": "Palmpay Financials",
+      "interest_rate": "16%",
+      "duration": "Yearly",
+      "id": "ASQ109I",
+      "logo": "logo9.png"
+    },
+    {
+      "name": "PiggyBox",
+      "provider": "Piggyvest Financials",
+      "interest_rate": "1.50%",
+      "duration": "Weekly",
+      "id": "ASQ109J",
+      "logo": "logo9.png"
+    },
+    {
+      "name": "FairLock",
+      "provider": "Fair Money Microfinance Bank",
+      "interest_rate": "2.50%",
+      "duration": "monthly",
+      "id": "ASQ109K",
+      "logo": "logo9.png"
+    },
+    {
+      "name": "Steady Saver",
+      "provider": "Steady Savings Inc.",
+      "interest_rate": "2.75%",
+      "duration": "monthly",
+      "id": "ASQ115O",
+      "logo": "logo15.png"
+    },
+    {
+      "name": "Secure Invest",
+      "provider": "Safe Investments Co.",
+      "interest_rate": "3.00%",
+      "duration": "monthly",
+      "id": "ASQ116P",
+      "logo": "logo16.png"
+    },
+    {
+      "name": "Reliable Returns",
+      "provider": "Reliable Investments Ltd.",
+      "interest_rate": "2.25%",
+      "duration": "monthly",
+      "id": "ASQ117Q",
+      "logo": "logo17.png"
+    },
+    {
+      "name": "Gold Savings Plus",
+      "provider": "Gold Savings Corp.",
+      "interest_rate": "2.90%",
+      "duration": "monthly",
+      "id": "ASQ118R",
+      "logo": "logo18.png"
+    },
+    {
+      "name": "Earnest Yield",
+      "provider": "Earnest Savings Bank",
+      "interest_rate": "2.65%",
+      "duration": "monthly",
+      "id": "ASQ119S",
+      "logo": "logo19.png"
+    },
+    {
+      "name": "Platinum Saver",
+      "provider": "Platinum Investments",
+      "interest_rate": "3.10%",
+      "duration": "monthly",
+      "id": "ASQ120T",
+      "logo": "logo20.png"
+    },
+    {
+      "name": "Safe Returns Fund",
+      "provider": "Safe Investments Co.",
+      "interest_rate": "2.75%",
+      "duration": "monthly",
+      "id": "ASQ121U",
+      "logo": "logo21.png"
+    },
+    {
+      "name": "Smart Saver",
+      "provider": "Smart Savings Ltd.",
+      "interest_rate": "2.85%",
+      "duration": "monthly",
+      "id": "ASQ122V",
+      "logo": "logo22.png"
+    },
+    {
+      "name": "Guaranteed Gain",
+      "provider": "Guaranteed Investments Inc.",
+      "interest_rate": "2.40%",
+      "duration": "monthly",
+      "id": "ASQ123W",
+      "logo": "logo23.png"
+    }
+  ]
+
+}

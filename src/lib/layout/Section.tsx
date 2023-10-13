@@ -18,6 +18,7 @@ interface SectionProps {
   horizontal?: boolean;
   fillScreen?: boolean;
   gap?: number;
+  pagingEnabled?: boolean;
 }
 
 export const ScrollableSection = ({
@@ -26,6 +27,7 @@ export const ScrollableSection = ({
   auxBtn,
   horizontal,
   fillScreen,
+  pagingEnabled,
 }: SectionProps) => {
   const {width} = Dimensions.get('window');
 
@@ -44,6 +46,7 @@ export const ScrollableSection = ({
     stroke: colors.black_6,
     viewBox: '0 0 20 20',
   };
+
   return (
     <View style={styles.container}>
       <View
@@ -70,6 +73,8 @@ export const ScrollableSection = ({
         showsHorizontalScrollIndicator={false}
         bounces={false}
         overScrollMode="never"
+        pagingEnabled={pagingEnabled}
+        scrollEventThrottle={32}
       />
     </View>
   );
@@ -133,5 +138,6 @@ const styles = StyleSheet.create({
   },
   flatlist: {
     alignItems: 'stretch',
+    paddingEnd: 8,
   },
 });

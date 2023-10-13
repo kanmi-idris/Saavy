@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import colors from '@/assets/Colors';
 import strings from '@/assets/Strings';
 import MiniInvestmentDetailCard from '@/lib/components/Cards/MiniInvestmentDetailCard';
@@ -11,19 +12,15 @@ import {UserIsLoggedInStackParams} from '@/navigation/UserIsLoggedInScreensStack
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import React, {useCallback, useContext, useState} from 'react';
-import {
-  SafeAreaView,
-  View,
-  StyleSheet,
-  useWindowDimensions,
-} from 'react-native';
+import {View, StyleSheet, useWindowDimensions} from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 // dummy APIs
-// import * as stocks_api from './api/dummyDB/explore/stocks.json';
-// import * as startups_api from './api/dummyDB/explore/startups.json';
-// import * as savings_lock_api from './api/dummyDB/explore/savings_lock.json';
-// import * as real_estate_api from './api/dummyDB/explore/real_estate.json';
-import * as mutual_funds_api from './api/dummyDB/explore/mutual_funds.json';
+import stocks_api from './api/dummyDB/explore/stocks.json';
+import startups_api from './api/dummyDB/explore/startups.json';
+import savings_lock_api from './api/dummyDB/explore/savings_lock.json';
+import real_estate_api from './api/dummyDB/explore/real_estate.json';
+import mutual_funds_api from './api/dummyDB/explore/mutual_funds.json';
 
 const ExploreInvestmentsScreen = () => {
   const navigation =
@@ -42,15 +39,26 @@ const ExploreInvestmentsScreen = () => {
   }, [screenHeight, amtOfCardsShown, height]);
   cardsToBeShown();
 
-  // render the columns for horizontal scroll
-  const amtOfColumns = mutual_funds_api.funds.length / amtOfCardsShown;
-  const AllColumns = Array(Math.floor(amtOfColumns)).fill(null);
-
   // use the investments suites scroll to set the  investment type
   const {chosenInvestment} = useContext(InvestmentContext);
+  interface InvestmentAPIs {
+    [key: string]: any[];
+  }
+  let investmentAPIs: InvestmentAPIs = {
+    realEstate: real_estate_api.estates,
+    stocks: stocks_api.stocks,
+    savingsLock: savings_lock_api.fixed,
+    startups: startups_api.startups,
+    mutualFunds: mutual_funds_api.funds,
+  };
+  let API: any[] = investmentAPIs[chosenInvestment];
+
+  // render the columns for horizontal scroll
+  const amtOfColumns = API.length / amtOfCardsShown;
+  const AllColumns = Array(Math.floor(amtOfColumns)).fill(null);
 
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView edges={['top']} style={styles.container}>
       <View style={styles.search}>
         <BasicInput iconStart="search" placeholder="Search" type="text" />
       </View>
@@ -85,16 +93,12 @@ const ExploreInvestmentsScreen = () => {
             horizontal
             auxBtn
             fillScreen>
-            {AllColumns.map(index => (
-              <View style={{gap: 12}} key={index}>
-                {mutual_funds_api.funds
-                  .slice(
-                    amtOfCardsShown === 3 ? 0 : amtOfCardsShown,
-                    amtOfCardsShown === 3
-                      ? amtOfCardsShown
-                      : amtOfCardsShown * 2,
-                  )
-                  .map((content, id) => {
+            {AllColumns.map((val, index) => {
+              let start = index * amtOfCardsShown;
+              let end = start + amtOfCardsShown;
+              return (
+                <View style={{gap: 12}} key={index}>
+                  {API.slice(start, end).map((content, id) => {
                     return (
                       <MiniInvestmentDetailCard
                         key={id}
@@ -102,8 +106,16 @@ const ExploreInvestmentsScreen = () => {
                         issuer={content.name}
                         image={require('@/assets/images/MicrosoftLogo.png')}
                         amtRaised={0}
-                        price={content.min_investment}
-                        rate={content.return_rate}
+                        price={
+                          chosenInvestment === 'stocks'
+                            ? content.price
+                            : content.min_investment
+                        }
+                        rate={
+                          chosenInvestment === 'stocks'
+                            ? content.percent_change
+                            : content.return_rate
+                        }
                         type={
                           chosenInvestment === 'stocks'
                             ? 'stocks'
@@ -127,8 +139,9 @@ const ExploreInvestmentsScreen = () => {
                       />
                     );
                   })}
-              </View>
-            ))}
+                </View>
+              );
+            })}
           </ScrollableSection>
         </View>
       </View>
@@ -138,7 +151,7 @@ const ExploreInvestmentsScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 36,
+    // paddingTop: 36,
     flex: 1,
     backgroundColor: colors.green_9,
   },

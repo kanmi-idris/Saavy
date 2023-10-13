@@ -132,6 +132,7 @@ const styles = StyleSheet.create({
   },
   btnWrapper: {
     gap: 8,
+    paddingEnd: 24,
   },
   baseBtnStyle: {
     borderRadius: 8,
