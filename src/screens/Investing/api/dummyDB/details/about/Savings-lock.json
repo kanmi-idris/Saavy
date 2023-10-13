@@ -1,0 +1,44 @@
+{
+  "23WSDF1O": {
+    "name": "FairLock",
+    "provider": "Fairmoney Microfinance Bank",
+    "logo": "",
+    "interest_rate": "2.50%",
+    "duration": "monthly",
+    "risk_level": "high",
+    "prospectus": "https://fairmoney.io/products/fairlock/",
+    "details": {
+      "about": "FairLock, which is a fixed-term deposit product that gives you higher interest rates and more discipline to achieve your goals. With FairLock, you can securely:\n 1. Lock your money for a period of 3, 6, or 12 months and earn up to 10% annual interest rate\n 2.Choose to receive your interest monthly, quarterly, or at maturity\n 3.Access your account online or through the FairMoney app and monitor your savings progress\n 4.Enjoy zero fees, charges, or penalties for opening or maintaining your account.\n 5.Withdraw your money at any time before maturity, subject to a 5% early withdrawal fee",
+      "earning_model": "Suppose you want to save N 100,000 for a year and you choose FairLock as your savings product. You can lock your money for 12 months and earn up to 10% annual interest rate. This means that at the end of the year, you will get back your N 100,000 plus N 10,000 as interest. That is a total of N 110,000. \nHowever, if you withdraw your money before the maturity date, you will have to pay a 5% early withdrawal fee. For example, if you withdraw your money after six months, you will get back N 95,000 instead of N 105,000. This fee is meant to discourage you from breaking your savings plan and help you achieve your goals.",
+      "opinion": "At Saavy, we are always looking for the best ways to help you grow your money and achieve your financial goals. That’s why we want to share our opinion on FairLock, a fixed-term deposit product offered by FairMoney, a digital bank in Nigeria. FairLock allows you to lock funds for a duration of time and earn interest on the funds. The funds and interest earned are auto...."
+    }
+  }, 
+  "67WQT17": {
+    "name": "CashBox",
+    "provider": "Palmpay Financials",
+    "logo": "",
+    "interest_rate": "2.50%",
+    "duration": "yearly",
+    "risk_level": "low",
+    "prospectus": "https://fairmoney.io/products/fairlock/",
+    "details": {
+      "about": "FairLock, which is a fixed-term deposit product that gives you higher interest rates and more discipline to achieve your goals. With FairLock, you can securely:\n 1. Lock your money for a period of 3, 6, or 12 months and earn up to 10% annual interest rate\n 2.Choose to receive your interest monthly, quarterly, or at maturity\n 3.Access your account online or through the FairMoney app and monitor your savings progress\n 4.Enjoy zero fees, charges, or penalties for opening or maintaining your account.\n 5.Withdraw your money at any time before maturity, subject to a 5% early withdrawal fee",
+      "earning_model": "Suppose you want to save N 100,000 for a year and you choose FairLock as your savings product. You can lock your money for 12 months and earn up to 10% annual interest rate. This means that at the end of the year, you will get back your N 100,000 plus N 10,000 as interest. That is a total of N 110,000. \nHowever, if you withdraw your money before the maturity date, you will have to pay a 5% early withdrawal fee. For example, if you withdraw your money after six months, you will get back N 95,000 instead of N 105,000. This fee is meant to discourage you from breaking your savings plan and help you achieve your goals.",
+      "opinion": "At Saavy, we are always looking for the best ways to help you grow your money and achieve your financial goals. That’s why we want to share our opinion on FairLock, a fixed-term deposit product offered by FairMoney, a digital bank in Nigeria. FairLock allows you to lock funds for a duration of time and earn interest on the funds. The funds and interest earned are auto...."
+    }
+  },
+  "ASD123OP": {
+    "name": "PiggyLock",
+    "provider": "Piggyvest Financials",
+    "logo": "",
+    "interest_rate": "17%",
+    "duration": "monthly",
+    "risk_level": "low",
+    "prospectus": "https://fairmoney.io/products/fairlock/",
+    "details": {
+      "about": "FairLock, which is a fixed-term deposit product that gives you higher interest rates and more discipline to achieve your goals. With FairLock, you can securely:\n 1. Lock your money for a period of 3, 6, or 12 months and earn up to 10% annual interest rate\n 2.Choose to receive your interest monthly, quarterly, or at maturity\n 3.Access your account online or through the FairMoney app and monitor your savings progress\n 4.Enjoy zero fees, charges, or penalties for opening or maintaining your account.\n 5.Withdraw your money at any time before maturity, subject to a 5% early withdrawal fee",
+      "earning_model": "Suppose you want to save N 100,000 for a year and you choose FairLock as your savings product. You can lock your money for 12 months and earn up to 10% annual interest rate. This means that at the end of the year, you will get back your N 100,000 plus N 10,000 as interest. That is a total of N 110,000. \nHowever, if you withdraw your money before the maturity date, you will have to pay a 5% early withdrawal fee. For example, if you withdraw your money after six months, you will get back N 95,000 instead of N 105,000. This fee is meant to discourage you from breaking your savings plan and help you achieve your goals.",
+      "opinion": "At Saavy, we are always looking for the best ways to help you grow your money and achieve your financial goals. That’s why we want to share our opinion on FairLock, a fixed-term deposit product offered by FairMoney, a digital bank in Nigeria. FairLock allows you to lock funds for a duration of time and earn interest on the funds. The funds and interest earned are auto...."
+    }
+  }
+}

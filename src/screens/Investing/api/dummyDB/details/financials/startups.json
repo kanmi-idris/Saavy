@@ -1,0 +1,54 @@
+{
+  "AX34MNO": {
+    "valuation_cap": "$25M",
+    "funding_goal": "$4.76M",
+    "min_investment": "$250",
+    "maturity_period": "7 years",
+    "amount_raised_so_far": 2141580,
+    "total_raised_in_previous_rounds": "$25M+",
+    "total_raised_from_crowdfunding": "$15M",
+    "number_of_investors": 513,
+    "security_type": "Crowd SAFE",
+    "funding_deadline": "August 23, 2023",
+    "strategy_and_holdings": {
+      "intro": "Rentberry's strategy is to disrupt the home rental market by providing a more transparent and secure platform for both tenants and landlords. The company's platform uses AI-driven tools to help tenants find the best deals on rentals, and it also provides landlords with a way to manage their properties more efficiently.",
+      "points": ["", [""]]
+    },
+    "performance_and_fees": {
+      "intro": "Rentberry has not yet generated any revenue. However, the company has stated that it expects to generate revenue from listing fees charged to landlords for listing their properties on its platform.",
+      "points": ["", ""]
+    },
+    "trading_rules_and_restrictions": {
+      "intro": "Rentberry's Crowd SAFE investment is subject to the following trading rules and regulations:",
+      "points": [
+        "Minimum investment: The minimum investment for Rentberry's Crowd SAFE investment is $250.",
+        "Lockup period: Investors in Rentberry's Crowd SAFE investment will be subject to a lockup period of 12 months. This means that investors will not be able to sell their shares for the first 12 months after the investment closes.",
+        "Redemption rights: Investors in Rentberry's Crowd SAFE investment will have redemption rights after the lockup period expires. This means that investors will be able to redeem their shares for cash at a predetermined price"
+      ]
+    }
+  },
+    "AX12JKL": {
+    "valuation_cap": "$25M",
+    "funding_goal": "$4.76M",
+    "min_investment": "$250",
+    "maturity_period": "7 years",
+    "amount_raised_so_far": 2141580,
+    "total_raised_in_previous_rounds": "$25M+",
+    "total_raised_from_crowdfunding": "$15M",
+    "number_of_investors": 513,
+    "security_type": "Crowd SAFE",
+    "funding_deadline": "August 23, 2023",
+    "strategy_and_holdings": {
+      "intro" : "Tiny Organics's strategy is to disrupt the home rental market by providing a more transparent and secure platform for both tenants and landlords. The company's platform uses AI-driven tools to help tenants find the best deals on rentals, and it also provides landlords with a way to manage their properties more efficiently.",
+      "points": ["",[""]]
+    },
+    "performance_and_fees": {
+      "intro": "Tiny Organics has not yet generated any revenue. However, the company has stated that it expects to generate revenue from listing fees charged to landlords for listing their properties on its platform.",
+      "points": ["",""]
+    },
+    "trading_rules_and_restrictions": {
+      "intro": "Tiny Organics's Crowd SAFE investment is subject to the following trading rules and regulations:",
+      "points": ["Minimum investment: The minimum investment for Tiny Organics's Crowd SAFE investment is $250.","Lockup period: Investors in Tiny Organics's Crowd SAFE investment will be subject to a lockup period of 12 months. This means that investors will not be able to sell their shares for the first 12 months after the investment closes.", "Redemption rights: Investors in Tiny Organics's Crowd SAFE investment will have redemption rights after the lockup period expires. This means that investors will be able to redeem their shares for cash at a predetermined price"]
+    }
+  }
+}

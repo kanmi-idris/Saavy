@@ -1,0 +1,50 @@
+{
+  "ASQ109K": {
+    "product": "FairLock",
+    "min_investment": "₦1000",
+    "max_investment": "₦500,000",
+    "interest_rate": "2.5%",
+    "maturity_period": "30 days",
+    "liquidity": "Low",
+    "security": "High deposits insured by NDIC",
+    "composition": [
+      "All funds are locked in Naira (NGN)",
+      "No diversification or exposure to other currencies, assets, or markets",
+      "No reinvestment or compounding of interest"
+    ],
+    "strategy_and_holdings": "Fixed-term deposit product that offers high interest rates and discipline. Suitable for saving for specific goals or expenses in the near future. Requires commitment and planning ahead. No flexibility or access to funds during the term.",
+    "performance_and_fees": [
+      "No fees or charges to use FairLock",
+      "No penalties for early withdrawal (not allowed) or late payment (automatic)"
+    ],
+    "trading_rules_and_restrictions": [
+      "Funds cannot be withdrawn before maturity",
+      "Funds cannot be added to existing plans",
+      "Plans cannot be modified or cancelled once created"
+    ]
+  },
+  "ASQ109J": {
+    "product": "PiggyBox",
+    "min_investment": "₦1000",
+    "max_investment": "₦500,000",
+    "interest_rate": "2.5%",
+    "maturity_period": "30 days",
+    "liquidity": "Low",
+    "security": "High deposits insured by NDIC",
+    "composition": [
+      "All funds are locked in Naira (NGN)",
+      "No diversification or exposure to other currencies, assets, or markets",
+      "No reinvestment or compounding of interest"
+    ],
+    "strategy_and_holdings": "Fixed-term deposit product that offers high interest rates and discipline. Suitable for saving for specific goals or expenses in the near future. Requires commitment and planning ahead. No flexibility or access to funds during the term.",
+    "performance_and_fees": [
+      "No fees or charges to use FairLock",
+      "No penalties for early withdrawal (not allowed) or late payment (automatic)"
+    ],
+    "trading_rules_and_restrictions": [
+      "Funds cannot be withdrawn before maturity",
+      "Funds cannot be added to existing plans",
+      "Plans cannot be modified or cancelled once created"
+    ]
+  }
+}

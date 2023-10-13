@@ -1,0 +1,182 @@
+{
+  "8KJ2Y9R": {
+    "name": "Microsoft Corp.",
+    "symbol": "MSFT",
+    "logo": "",
+    "price": 213.1,
+    "market_status": "closed",
+    "percent_change": "+2.15%",
+    "risk_level": "high",
+    "prospectus": "https://www.nasdaq.com/market-activity/stocks/msft/sec-filings",
+    "details": {
+      "about": "Microsoft Corporation is a technology company that develops, manufactures, licenses, supports, and sells software, hardware, devices, and services.",
+      "earning_model": "Every day, the stock prices of different companies fluctuate. These changes affect your returns. For example, if you bought a stock for $50 last year and it is worth $80 today, you have earned $30. However, there can be losses too. That’s why some investors use the buy and hold strategy. This is a strategy where you buy stocks of well-managed companies with solid financials and a history of rewarding shareholders and keep them for at least five years. This can help you benefit from time and compound interest and avoid missing out on chances for high annual returns.",
+      "opinion": "1. It faces intense competition from other technology giants, such as Apple, Amazon, Google, Facebook, and Tesla, who are constantly innovating and challenging Microsoft’s market position and dominance.\n2. It is exposed to various regulatory risks, such as antitrust investigations, data privacy laws, cybersecurity threats, and intellectual property disputes."
+    }
+  },
+  "4ZP7C1W": {
+    "name": "Alphabet Inc.",
+    "symbol": "GOOGL",
+    "logo": "",
+    "price": 213.1,
+    "market_status": "closed",
+    "percent_change": "+1.32%",
+    "risk_level": "moderate",
+    "prospectus": "https://www.nasdaq.com/market-activity/stocks/googl/sec-filings",
+    "details": {
+      "about": "Alphabet Inc. is a multinational technology conglomerate that specializes in Internet-related services and products. It is one of the world's most valuable companies.",
+      "earning_model": "Alphabet's primary source of revenue is advertising. The company generates revenue from its search engine Google, its video-sharing platform YouTube, and its other advertising businesses. Alphabet also generates revenue from its cloud computing platform Google Cloud Platform and its hardware arm Google Nest.",
+      "opinion": "1. Alphabet faces intense competition from other technology giants, such as Microsoft, Amazon, Facebook, and Apple. These companies are constantly innovating and challenging Alphabet's market position and dominance.\n2. Alphabet is exposed to various regulatory risks, such as antitrust investigations, data privacy laws, and cybersecurity threats."
+    }
+  },
+  "6QH5D8N": {
+    "name": "Spotify Group.",
+    "symbol": "SPOT",
+    "logo": "",
+    "price": 213.1,
+    "market_status": "closed",
+    "percent_change": "-3.25%",
+    "risk_level": "low",
+    "prospectus": "https://www.nasdaq.com/market-activity/stocks/spot/sec-filings",
+    "details": {
+      "about": "Spotify Group. is a Swedish music, podcast, and audiobook streaming service. It is one of the world's largest music streaming services with over 433 million monthly active users.",
+      "earning_model": "Spotify's primary source of revenue is premium subscriptions. The company also generates revenue from advertising. Spotify's premium subscription service allows users to listen to music ad-free and download songs for offline listening.",
+      "opinion": "1. Spotify faces intense competition from other music streaming services, such as Apple Music, Amazon Music, and YouTube Music. These services are constantly innovating and challenging Spotify's market position and dominance.\n2. Spotify is exposed to various regulatory risks, such as data privacy laws and copyright laws."
+    }
+  },
+  "2TJ9R5M": {
+    "name": "Amazon.com Inc.",
+    "symbol": "AMZN",
+    "logo": "",
+    "price": 3420.5,
+    "market_status": "closed",
+    "percent_change": "+0.75%",
+    "risk_level": "high",
+    "prospectus": "https://www.nasdaq.com/market-activity/stocks/amzn/sec-filings",
+    "details": {
+      "about": "Amazon.com Inc. is a multinational technology and e-commerce company that focuses on cloud computing, digital streaming, and artificial intelligence.",
+      "earning_model": "Amazon's primary sources of revenue include its e-commerce platform, Amazon Web Services (AWS), and digital streaming services like Amazon Prime Video and Amazon Music.",
+      "opinion": "1. Amazon faces competition from various e-commerce, cloud computing, and streaming service providers.\n2. It is exposed to regulatory risks, including antitrust investigations and data privacy concerns."
+    }
+  },
+  "7XN3P4L": {
+    "name": "Apple Inc.",
+    "symbol": "AAPL",
+    "logo": "",
+    "price": 151.12,
+    "market_status": "closed",
+    "percent_change": "+1.23%",
+    "risk_level": "moderate",
+    "prospectus": "https://www.nasdaq.com/market-activity/stocks/aapl/sec-filings",
+    "details": {
+      "about": "Apple Inc. is a multinational technology company that designs, manufactures, and markets consumer electronics, software, and services.",
+      "earning_model": "Apple's primary sources of revenue include iPhone sales, Mac sales, services such as the App Store and Apple Music, and other products like the iPad and Apple Watch.",
+      "opinion": "1. Apple faces competition from other tech giants in the smartphone, computer, and software industries.\n2. It is exposed to regulatory and market risks, including antitrust investigations and supply chain disruptions."
+    }
+  },
+   "1FZ6G2V": {
+    "name": "Tesla, Inc.",
+    "symbol": "TSLA",
+    "logo": "",
+    "price": 710.92,
+    "market_status": "closed",
+    "percent_change": "+1.85%",
+    "risk_level": "high",
+    "prospectus": "https://www.nasdaq.com/market-activity/stocks/tsla/sec-filings",
+    "details": {
+      "about": "Tesla, Inc. is an electric vehicle and clean energy company. It designs and manufactures electric cars, battery energy storage systems, and solar products.",
+      "earning_model": "Tesla generates revenue primarily from the sale of electric vehicles, energy storage products, and solar energy products.",
+      "opinion": "1. Tesla faces competition in the electric vehicle industry from established automakers and startups.\n2. It is exposed to regulatory risks and market fluctuations."
+    }
+  },
+  "5MW8T7Q": {
+    "name": "Meta Platforms, Inc.",
+    "symbol": "META",
+    "logo": "",
+    "price": 340.84,
+    "market_status": "closed",
+    "percent_change": "+0.52%",
+    "risk_level": "moderate",
+    "prospectus": "https://www.nasdaq.com/market-activity/stocks/meta/sec-filings",
+    "details": {
+      "about": "Meta Platforms, Inc. (formerly Facebook, Inc.) is a social media and technology company that operates various social networking platforms, including Facebook, Instagram, WhatsApp, and Oculus.",
+      "earning_model": "Meta primarily generates revenue from advertising on its social media platforms and other services.",
+      "opinion": "1. Meta faces competition in the social media and technology space and regulatory scrutiny regarding user data and content moderation.\n2. The company's success is tied to its ability to retain and engage users."
+    }
+  },
+  "3VS2K6H": {
+    "name": "Netflix, Inc.",
+    "symbol": "NFLX",
+    "logo": "",
+    "price": 566.74,
+    "market_status": "closed",
+    "percent_change": "+0.99%",
+    "risk_level": "moderate",
+    "prospectus": "https://www.nasdaq.com/market-activity/stocks/nflx/sec-filings",
+    "details": {
+      "about": "Netflix, Inc. is a subscription-based streaming service that offers a wide variety of TV shows, movies, documentaries, and more.",
+      "earning_model": "Netflix generates revenue primarily from subscription fees paid by its customers.",
+      "opinion": "1. Netflix faces competition in the streaming industry from other providers, including Amazon Prime Video, Disney+, and Hulu.\n2. The company's growth depends on its ability to produce and license popular content."
+    }
+  },
+  "9YZ4E7S": {
+    "name": "NVIDIA Corporation",
+    "symbol": "NVDA",
+    "logo": "",
+    "price": 224.55,
+    "market_status": "closed",
+    "percent_change": "+1.64%",
+    "risk_level": "high",
+    "prospectus": "https://www.nasdaq.com/market-activity/stocks/nvda/sec-filings",
+    "details": {
+      "about": "NVIDIA Corporation is a technology company known for its graphics processing units (GPUs) and related technologies. It's involved in gaming, artificial intelligence, and data center markets.",
+      "earning_model": "NVIDIA generates revenue from the sale of GPUs for gaming, data centers, and AI, among other sources.",
+      "opinion": "1. NVIDIA competes with other tech companies in the GPU and AI sectors and is exposed to market demand and innovation risks.\n2. Regulatory and legal matters can impact the company's operations."
+    }
+  },
+  "0UQ1I3O": {
+    "name": "Taiwan Semiconductor Manufacturing Company Ltd.",
+    "symbol": "TSM",
+    "logo": "",
+    "price": 121.38,
+    "market_status": "closed",
+    "percent_change": "+0.94%",
+    "risk_level": "moderate",
+    "prospectus": "https://www.nasdaq.com/market-activity/stocks/tsm/sec-filings",
+    "details": {
+      "about": "Taiwan Semiconductor Manufacturing Company (TSMC) is a leading semiconductor manufacturing company that produces integrated circuits for various applications.",
+      "earning_model": "TSMC generates revenue by manufacturing semiconductor products for its clients, including major tech companies.",
+      "opinion": "1. TSMC operates in a competitive and rapidly evolving semiconductor industry, and its performance is closely tied to tech industry trends.\n2. The company faces geopolitical and supply chain risks."
+    }
+  },
+  "8DF3N2P": {
+    "name": "Samsung Electronics Co., Ltd.",
+    "symbol": "005930.KS",
+    "logo": "",
+    "price": 1000.00, 
+    "market_status": "closed",
+    "percent_change": "+1.15%",
+    "risk_level": "moderate",
+    "prospectus": "https://www.krx.co.kr/eng/main.jsp",
+    "details": {
+      "about": "Samsung Electronics is a South Korean multinational conglomerate known for its electronics, mobile devices, and semiconductor products.",
+      "earning_model": "Samsung generates revenue from a wide range of products, including smartphones, TVs, and semiconductor components.",
+      "opinion": "1. Samsung operates in competitive global markets, facing challenges in the smartphone and semiconductor industries.\n2. The company is exposed to market trends, supply chain disruptions, and legal issues."
+    }
+  },
+  "4AC7L6M": {
+    "name": "ASML Holding N.V.",
+    "symbol": "ASML",
+    "logo": "",
+    "price": 768.54,
+    "market_status": "closed",
+    "percent_change": "+0.87%",
+    "risk_level": "moderate",
+    "prospectus": "https://www.euronext.com/en/products/equities/NL0000230274-XAMS/company-information",
+    "details": {
+      "about": "ASML Holding N.V. is a Dutch company that specializes in photolithography equipment used in the semiconductor manufacturing process.",
+      "earning_model": "ASML generates revenue by manufacturing and selling advanced semiconductor manufacturing equipment to its clients, primarily semiconductor manufacturers.",
+      "opinion": "1. ASML operates in a specialized niche of the semiconductor industry and is a key supplier for major semiconductor manufacturers.\n2. The company's performance is closely tied to the semiconductor industry's health and technological advancements."
+    }
+  }
+}

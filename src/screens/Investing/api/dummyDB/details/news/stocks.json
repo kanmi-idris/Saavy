@@ -1,0 +1,62 @@
+{
+  "8KJ2Y9R": [
+    {
+      "headline": "Microsoft Announces Record-breaking Quarterly Earnings",
+      "timestamp": "2023-10-12T08:00:00Z",
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/microsoft-earnings-record"
+    },
+    {
+      "headline": "Microsoft Unveils New Cloud Computing Innovation",
+      "timestamp": "2023-10-12T09:15:00Z",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/microsoft-cloud-innovation"
+    },
+    {
+      "headline": "Microsoft Acquires Promising AI Startup",
+      "timestamp": "2023-10-12T10:30:00Z",
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/microsoft-acquires-ai-startup"
+    }
+  ],
+  "4ZP7C1W": [
+    {
+      "headline": "Alphabet Reports Impressive Growth in Q3 2023",
+      "timestamp": "2023-10-12T08:00:00Z",
+      "source": "reuters.com",
+      "url": "https://www.reuters.com/alphabet-q3-2023-growth"
+    },
+    {
+      "headline": "Google's New Product Lineup Receives Positive Reviews",
+      "timestamp": "2023-10-12T09:15:00Z",
+      "source": "theverge.com",
+      "url": "https://www.theverge.com/google-new-products-reviews"
+    },
+    {
+      "headline": "Alphabet Invests in Renewable Energy Projects",
+      "timestamp": "2023-10-12T10:30:00Z",
+      "source": "forbes.com",
+      "url": "https://www.forbes.com/alphabet-renewable-energy-investments"
+    }
+  ],
+  "6QH5D8N": [
+    {
+      "headline": "Spotify Announces Record Number of Subscribers",
+      "timestamp": "2023-10-12T08:00:00Z",
+      "source": "billboard.com",
+      "url": "https://www.billboard.com/spotify-record-subscribers"
+    },
+    {
+      "headline": "Spotify Launches New Podcasting Platform",
+      "timestamp": "2023-10-12T09:15:00Z",
+      "source": "variety.com",
+      "url": "https://variety.com/spotify-new-podcasting-platform"
+    },
+    {
+      "headline": "Spotify Partners with Leading Artists for Exclusive Content",
+      "timestamp": "2023-10-12T10:30:00Z",
+      "source": "rollingstone.com",
+      "url": "https://www.rollingstone.com/spotify-exclusive-content"
+    }
+  ]
+}

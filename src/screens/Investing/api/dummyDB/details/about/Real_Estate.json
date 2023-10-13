@@ -1,0 +1,316 @@
+{
+  "B234XCF": {
+    "name": "Project Balogun 3.0",
+    "logo": "",
+    "video": ["","",""],
+    "type": "Two Storey Apartment Complex",
+    "location": {
+      "address": "10, Abudu Street, Abule Oja, Akoka, Yaba, Lagos",
+      "landmarks": [
+        "Unilag",
+        "Yabatech",
+        "FCET(Akoka)",
+        "Third Mainland bridge",
+        "Papies Maestro",
+        "I-Fitness Gym",
+        "The Place Restaurant"
+      ]
+    },
+    "occupancy_rate": "98%",
+    "condition": "New Construction",
+    "commencement_date": "5th Jan 2023",
+    "completion_date": "4th Aug 2023",
+    "features": [
+      "Car park",
+      "Spacious Rooms",
+      "Borehole water",
+      "Cross ventilated Rooms"
+    ],
+    "maintained_by": "Cbc_africa",
+    "market": [
+      {
+        "High demand for student accommodation": "Yaba is home to over 40% of the tertiary institutions in Lagos, including the University of Lagos, Yaba College of Technology, and the Federal College of Education, Akoka."
+      },
+      {
+        "High demand for student accommodation": "Yaba is home to over 40% of the tertiary institutions in Lagos, including the University of Lagos, Yaba College of Technology, and the Federal College of Education, Akoka."
+      },
+      {
+        "High demand for student accommodation": "Yaba is home to over 40% of the tertiary institutions in Lagos, including the University of Lagos, Yaba College of Technology, and the Federal College of Education, Akoka."
+      }
+    ],
+    "track_record": [
+      "A beach vacation rental in Holden Beach, NC, that we purchased for $275,000 and generated a cash-on-cash return of 25% in the first year.",
+      "A beach vacation rental in Holden Beach, NC, that we purchased for $275,000 and generated a cash-on-cash return of 25% in the first year.",
+      "A beach vacation rental in Holden Beach, NC, that we purchased for $275,000 and generated a cash-on-cash return of 25% in the first year."
+    ],
+    "team": [
+      {
+        "name": "Hammed Olawale",
+        "title": "CEO",
+        "phone": "+234 8105410146",
+        "bio": "Hammed Olawale is a seasoned real estate investor and entrepreneur who has completed 18 real estate transactions in the past three years, transacting over $5.3 million in real estate deals.",
+        "image": ""
+      },
+      {
+        "name": "Jane Doe",
+        "title": "COO",
+        "phone": "+234 8105410147",
+        "bio": "Jane Doe is a seasoned real estate professional with over 10 years of experience in the industry. She has a proven track record of success in managing and developing real estate projects.",
+        "image": ""
+      },
+      {
+        "name": "John Smith",
+        "title": "CFO",
+        "phone": "+234 8105410148",
+        "bio": "John Smith is a seasoned financial professional with over 15 years of experience in the real estate industry. He has a proven track record of success in managing the finances of real estate projects.",
+        "image": ""
+      }
+    ],
+    "company": {
+      "legal_name": "Catalyst Business Consult",
+      "employees": 30,
+      "website": "www.cbc_africa.com",
+      "phone": ["0812 035 3382", "0816 272 6997"],
+      "socials": [],
+      "founded": 2016
+    },
+    "testimonials": [
+      {
+        "name": "Fisayo Fosudo",
+        "title": "Investor",
+        "testimonial": "I am so happy with my purchase of Project Balogun 3.0. It is a great investment opportunity that offers me a steady income and a hassle-free experience. The apartments are well-maintained and the management team is very responsive.",
+        "image": ""
+      },
+      {
+        "name": "Jane Doe",
+        "title": "Investor",
+        "testimonial": "Project Balogun 3.0 is a fantastic investment opportunity. The project is well-managed and the team is experienced and knowledgeable. I am confident that this project will be a success and I am excited to be a part of it.",
+        "image": ""
+      },
+      {
+        "name": "John Smith",
+        "title": "Investor",
+        "testimonial": "I am very impressed with Project Balogun 3.0. The project is well-planned and the team is highly motivated. I am confident that this project will be a success and I am excited to be a part of it.",
+        "image": ""
+      }
+    ],
+    "documents": [
+      {
+        "name": "Certificate of Ownership",
+        "description": "This document proves that Catalyst Business Consult is the legal owner of Project Balogun 3.0.",
+        "url": "https://example.com/certificate_of_ownership.pdf"
+      },
+      {
+        "name": "Building Permit",
+        "description": "This document authorizes the construction of Project Balogun 3.0. It is issued by the Lagos State Building Control Agency.",
+        "url": "https://example.com/building_permit.pdf"
+      },
+      {
+        "name": "Environmental Impact Assessment",
+        "description": "This document assesses the environmental impact of Project Balogun 3.0. It was prepared by a qualified environmental consultant.",
+        "url": "https://example.com/environmental_impact_assessment.pdf"
+      },
+      {
+        "name": "Project Feasibility Study",
+        "description": "This document analyzes the financial and economic feasibility of Project Balogun 3.0. It was prepared by a qualified financial analyst.",
+        "url": "https://example.com/project_feasibility_study.pdf"
+      }
+    ]
+  },
+  "AX321OPS": {
+    "name": "Project Balogun 3.0",
+    "logo": "",
+    "video": ["", "", ""],
+    "type": "Two Storey Apartment Complex",
+    "location": {
+      "address": "10, Abudu Street, Abule Oja, Akoka, Yaba, Lagos",
+      "landmarks": [
+        "Unilag",
+        "Yabatech",
+        "FCET(Akoka)",
+        "Third Mainland bridge",
+        "Papies Maestro",
+        "I-Fitness Gym",
+        "The Place Restaurant"
+      ]
+    },
+    "occupancy_rate": "98%",
+    "condition": "New Construction",
+    "commencement_date": "5th Jan 2023",
+    "completion_date": "4th Aug 2023",
+    "features": [
+      "Car park",
+      "Spacious Rooms",
+      "Borehole water",
+      "Cross ventilated Rooms"
+    ],
+    "maintained_by": "Cbc_africa",
+    "market": "High demand for student accommodation: Yaba is home to over 40% of the tertiary institutions in Lagos, including the University of Lagos, Yaba College of Technology, and the Federal College of Education, Akoka.",
+    "track_record": "A beach vacation rental in Holden Beach, NC, that we purchased for $275,000 and generated a cash-on-cash return of 25% in the first year.",
+    "team": [
+      {
+        "name": "Hammed Olawale",
+        "title": "CEO",
+        "phone": "+234 8105410146",
+        "bio": "Hammed Olawale is a seasoned real estate investor and entrepreneur who has completed 18 real estate transactions in the past three years, transacting over $5.3 million in real estate deals."
+      },
+      {
+        "name": "Jane Doe",
+        "title": "COO",
+        "phone": "+234 8105410147",
+        "bio": "Jane Doe is a seasoned real estate professional with over 10 years of experience in the industry. She has a proven track record of success in managing and developing real estate projects."
+      },
+      {
+        "name": "John Smith",
+        "title": "CFO",
+        "phone": "+234 8105410148",
+        "bio": "John Smith is a seasoned financial professional with over 15 years of experience in the real estate industry. He has a proven track record of success in managing the finances of real estate projects."
+      }
+    ],
+    "company": {
+      "legal_name": "Catalyst Business Consult",
+      "employees": 30,
+      "website": "www.cbc_africa.com",
+      "phone": ["0812 035 3382", "0816 272 6997"],
+      "socials": [],
+      "founded": 2016
+    },
+    "testimonials": [
+      {
+        "name": "Fisayo Fosudo",
+        "title": "Investor",
+        "testimonial": "I am so happy with my purchase of Project Balogun 3.0. It is a great investment opportunity that offers me a steady income and a hassle-free experience. The apartments are well-maintained and the management team is very responsive."
+      },
+      {
+        "name": "Jane Doe",
+        "title": "Investor",
+        "testimonial": "Project Balogun 3.0 is a fantastic investment opportunity. The project is well-managed and the team is experienced and knowledgeable. I am confident that this project will be a success and I am excited to be a part of it."
+      },
+      {
+        "name": "John Smith",
+        "title": "Investor",
+        "testimonial": "I am very impressed with Project Balogun 3.0. The project is well-planned and the team is highly motivated. I am confident that this project will be a success and I am excited to be a part of it."
+      }
+    ],
+    "documents": [
+      {
+        "name": "Certificate of Ownership",
+        "description": "This document proves that Catalyst Business Consult is the legal owner of Project Balogun 3.0.",
+        "url": "https://example.com/certificate_of_ownership.pdf"
+      },
+      {
+        "name": "Building Permit",
+        "description": "This document authorizes the construction of Project Balogun 3.0. It is issued by the Lagos State Building Control Agency.",
+        "url": "https://example.com/building_permit.pdf"
+      },
+      {
+        "name": "Environmental Impact Assessment",
+        "description": "This document assesses the environmental impact of Project Balogun 3.0. It was prepared by a qualified environmental consultant.",
+        "url": "https://example.com/environmental_impact_assessment.pdf"
+      },
+      {
+        "name": "Project Feasibility Study",
+        "description": "This document analyzes the financial and economic feasibility of Project Balogun 3.0. It was prepared by a qualified financial analyst.",
+        "url": "https://example.com/project_feasibility_study.pdf"
+      }
+    ]
+  },
+  "B3HA1L8": {
+    "name": "Project Balogun 3.0",
+    "logo": "",
+    "video": ["", "", ""],
+    "type": "Two Storey Apartment Complex",
+    "location": {
+      "address": "10, Abudu Street, Abule Oja, Akoka, Yaba, Lagos",
+      "landmarks": [
+        "Unilag",
+        "Yabatech",
+        "FCET(Akoka)",
+        "Third Mainland bridge",
+        "Papies Maestro",
+        "I-Fitness Gym",
+        "The Place Restaurant"
+      ]
+    },
+    "occupancy_rate": "98%",
+    "condition": "New Construction",
+    "commencement_date": "5th Jan 2023",
+    "completion_date": "4th Aug 2023",
+    "features": [
+      "Car park",
+      "Spacious Rooms",
+      "Borehole water",
+      "Cross ventilated Rooms"
+    ],
+    "maintained_by": "Cbc_africa",
+    "market": "High demand for student accommodation: Yaba is home to over 40% of the tertiary institutions in Lagos, including the University of Lagos, Yaba College of Technology, and the Federal College of Education, Akoka.",
+    "track_record": "A beach vacation rental in Holden Beach, NC, that we purchased for $275,000 and generated a cash-on-cash return of 25% in the first year.",
+    "team": [
+      {
+        "name": "Hammed Olawale",
+        "title": "CEO",
+        "phone": "+234 8105410146",
+        "bio": "Hammed Olawale is a seasoned real estate investor and entrepreneur who has completed 18 real estate transactions in the past three years, transacting over $5.3 million in real estate deals."
+      },
+      {
+        "name": "Jane Doe",
+        "title": "COO",
+        "phone": "+234 8105410147",
+        "bio": "Jane Doe is a seasoned real estate professional with over 10 years of experience in the industry. She has a proven track record of success in managing and developing real estate projects."
+      },
+      {
+        "name": "John Smith",
+        "title": "CFO",
+        "phone": "+234 8105410148",
+        "bio": "John Smith is a seasoned financial professional with over 15 years of experience in the real estate industry. He has a proven track record of success in managing the finances of real estate projects."
+      }
+    ],
+    "company": {
+      "legal_name": "Catalyst Business Consult",
+      "employees": 30,
+      "website": "www.cbc_africa.com",
+      "phone": ["0812 035 3382", "0816 272 6997"],
+      "socials": [],
+      "founded": 2016
+    },
+    "testimonials": [
+      {
+        "name": "Fisayo Fosudo",
+        "title": "Investor",
+        "testimonial": "I am so happy with my purchase of Project Balogun 3.0. It is a great investment opportunity that offers me a steady income and a hassle-free experience. The apartments are well-maintained and the management team is very responsive."
+      },
+      {
+        "name": "Jane Doe",
+        "title": "Investor",
+        "testimonial": "Project Balogun 3.0 is a fantastic investment opportunity. The project is well-managed and the team is experienced and knowledgeable. I am confident that this project will be a success and I am excited to be a part of it."
+      },
+      {
+        "name": "John Smith",
+        "title": "Investor",
+        "testimonial": "I am very impressed with Project Balogun 3.0. The project is well-planned and the team is highly motivated. I am confident that this project will be a success and I am excited to be a part of it."
+      }
+    ],
+    "documents": [
+      {
+        "name": "Certificate of Ownership",
+        "description": "This document proves that Catalyst Business Consult is the legal owner of Project Balogun 3.0.",
+        "url": "https://example.com/certificate_of_ownership.pdf"
+      },
+      {
+        "name": "Building Permit",
+        "description": "This document authorizes the construction of Project Balogun 3.0. It is issued by the Lagos State Building Control Agency.",
+        "url": "https://example.com/building_permit.pdf"
+      },
+      {
+        "name": "Environmental Impact Assessment",
+        "description": "This document assesses the environmental impact of Project Balogun 3.0. It was prepared by a qualified environmental consultant.",
+        "url": "https://example.com/environmental_impact_assessment.pdf"
+      },
+      {
+        "name": "Project Feasibility Study",
+        "description": "This document analyzes the financial and economic feasibility of Project Balogun 3.0. It was prepared by a qualified financial analyst.",
+        "url": "https://example.com/project_feasibility_study.pdf"
+      }
+    ]
+  }
+}

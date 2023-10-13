@@ -1,0 +1,44 @@
+{
+  "ASQ109K": [
+    {
+      "headline": "Fairlock Introduces Innovative Investment Features",
+      "timestamp": "2023-10-12T08:00:00Z",
+      "source": "example.com",
+      "url": "https://example.com/news/fairlock-innovative-features"
+    },
+    {
+      "headline": "Fairlock's Sustainable Investment Approach Recognized",
+      "timestamp": "2023-10-12T09:15:00Z",
+      "source": "example.com",
+      "url": "https://example.com/news/fairlock-sustainable-investment-recognized"
+    }
+  ],
+  "ASQ109I": [
+    {
+      "headline": "CashBox Announces New Savings and Payment Solutions",
+      "timestamp": "2023-10-12T08:00:00Z",
+      "source": "example.com",
+      "url": "https://example.com/news/cashbox-new-savings-payment-solutions"
+    },
+    {
+      "headline": "Maximize Your Savings with CashBox Accounts",
+      "timestamp": "2023-10-12T09:15:00Z",
+      "source": "example.com",
+      "url": "https://example.com/news/cashbox-maximize-savings"
+    }
+  ],
+  "ASQ109J": [
+    {
+      "headline": "Unlock the Potential of Your Savings with PiggyLock",
+      "timestamp": "2023-10-12T08:00:00Z",
+      "source": "example.com",
+      "url": "https://example.com/news/piggylock-unlock-savings-potential"
+    },
+    {
+      "headline": "PiggyLock's Flexible Savings Options for All",
+      "timestamp": "2023-10-12T09:15:00Z",
+      "source": "example.com",
+      "url": "https://example.com/news/piggylock-flexible-savings-options"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "funds" : [
+    {
+      "symbol": "PAXLX",
+      "name": "Pax Large Cap Fund",
+      "return_rate": 16.96,
+      "min_investment": 12.4,
+      "maturity_structure": "Open-End",
+      "distribution_frequency": "Monthly",
+      "id": "ASQ108F",
+      "logo": ""
+    },
+    {
+      "symbol": "NILCG",
+      "name": "Nippon India Large Cap Growth",
+      "return_rate": 16.83,
+      "min_investment": 1000.0,
+      "maturity_structure": "5-yr maturity",
+      "distribution_frequency": "Annually",
+      "id": "ASQ108G",
+      "logo": ""
+    },
+    {
+      "symbol": "OBMCX",
+      "name": "Oberweis Micro-Cap",
+      "return_rate": 22.2,
+      "min_investment": 2500.5,
+      "maturity_structure": "5-yr maturity",
+      "distribution_frequency": "Quarterly",
+      "id": "ASQ108H",
+      "logo": ""
+    },
+    {
+      "symbol": "DHS",
+      "name": "WisdomTree U.S. High Dividend ETF",
+      "return_rate": 5.9,
+      "min_investment": 100.0,
+      "maturity_structure": "1-yr maturity",
+      "distribution_frequency": "Monthly",
+      "id": "ASQ108F",
+      "logo": ""
+    },
+    {
+      "symbol": "GCGIX",
+      "name": "Large Cap Growth Insights",
+      "return_rate": 22.46,
+      "min_investment": 499.99,
+      "maturity_structure": "Open-End",
+      "distribution_frequency": "Annually",
+      "id": "ASQ108F",
+      "logo": ""
+    },
+    {
+      "symbol": "PAXLX",
+      "name": "Pax Large Cap Fund",
+      "return_rate": 16.96,
+      "min_investment": 12.4,
+      "maturity_structure": "Open-End",
+      "distribution_frequency": "Monthly",
+      "id": "ASQ108F",
+      "logo": ""
+    },
+    {
+      "symbol": "NILCG",
+      "name": "Nippon India Large Cap Growth",
+      "return_rate": 16.83,
+      "min_investment": 1000.0,
+      "maturity_structure": "5-yr maturity",
+      "distribution_frequency": "Annually",
+      "id": "ASQ108G",
+      "logo": ""
+    },
+    {
+      "symbol": "OBMCX",
+      "name": "Oberweis Micro-Cap",
+      "return_rate": 22.2,
+      "min_investment": 2500.5,
+      "maturity_structure": "5-yr maturity",
+      "distribution_frequency": "Quarterly",
+      "id": "ASQ108H",
+      "logo": ""
+    },
+    {
+      "symbol": "DHS",
+      "name": "WisdomTree U.S. High Dividend ETF",
+      "return_rate": 5.9,
+      "min_investment": 100.0,
+      "maturity_structure": "1-yr maturity",
+      "distribution_frequency": "Monthly",
+      "id": "ASQ108F",
+      "logo": ""
+    },
+    {
+      "symbol": "GCGIX",
+      "name": "Large Cap Growth Insights",
+      "return_rate": 22.46,
+      "min_investment": 499.99,
+      "maturity_structure": "Open-End",
+      "distribution_frequency": "Annually",
+      "id": "ASQ108F",
+      "logo": ""
+    }
+  ]
+}
