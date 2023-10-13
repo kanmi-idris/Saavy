@@ -4,6 +4,9 @@ import typography from '@/assets/Typography';
 import React, {createContext, useContext, useState} from 'react';
 import {View, Pressable, Text, StyleSheet, ScrollView} from 'react-native';
 import {toCamelCase} from '../utils/toCamelCase';
+import {useNavigation} from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {RootStackParams} from '@/navigation/RootStackNavigator';
 
 /*This is a component that displays different investment suites for the user
  * It takes two props: heading and auxButton
@@ -59,6 +62,9 @@ const InvestmentSuites = ({heading, auxButton}: InvestmentSuitesProps) => {
     stroke: colors.link,
   };
 
+  const navigation =
+    useNavigation<NativeStackNavigationProp<RootStackParams>>();
+
   return (
     <View style={styles.container}>
       <View style={styles.headingWrapper}>
@@ -67,7 +73,12 @@ const InvestmentSuites = ({heading, auxButton}: InvestmentSuitesProps) => {
           <Pressable
             style={styles.defaultLink}
             onPressIn={() => setPressed(true)}
-            onPressOut={() => setPressed(false)}>
+            onPressOut={() => setPressed(false)}
+            onPress={() =>
+              navigation.navigate('UserIsLoggedInStack', {
+                screen: 'LearningStack',
+              })
+            }>
             <Icon name="helpCircle" {...iconProps} />
             <Text
               style={
