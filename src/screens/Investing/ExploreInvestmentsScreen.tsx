@@ -3,12 +3,14 @@ import strings from '@/assets/Strings';
 import MiniInvestmentDetailCard from '@/lib/components/Cards/MiniInvestmentDetailCard';
 import RecommendationCard from '@/lib/components/Cards/RecommendationCard';
 import BasicInput from '@/lib/components/FormInputs/BasicInput';
-import InvestmentSuites from '@/lib/components/InvestmentSuitesScroll';
+import InvestmentSuites, {
+  InvestmentContext,
+} from '@/lib/components/InvestmentSuitesScroll';
 import {ScrollableSection} from '@/lib/layout/Section';
 import {UserIsLoggedInStackParams} from '@/navigation/UserIsLoggedInScreensStack';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
-import React, {useCallback, useState} from 'react';
+import React, {useCallback, useContext, useState} from 'react';
 import {
   SafeAreaView,
   View,
@@ -27,6 +29,7 @@ const ExploreInvestmentsScreen = () => {
   const navigation =
     useNavigation<NativeStackNavigationProp<UserIsLoggedInStackParams>>();
 
+  // amt of cards in a screen increases as screen length increases
   const {height} = useWindowDimensions();
   const [screenHeight, setScreenHeight] = useState(600);
   const [amtOfCardsShown, setAmtOfCardsShown] = useState(3);
@@ -39,8 +42,12 @@ const ExploreInvestmentsScreen = () => {
   }, [screenHeight, amtOfCardsShown, height]);
   cardsToBeShown();
 
+  // render the columns for horizontal scroll
   const amtOfColumns = mutual_funds_api.funds.length / amtOfCardsShown;
   const AllColumns = Array(Math.floor(amtOfColumns)).fill(null);
+
+  // use the investments suites scroll to set the  investment type
+  const {chosenInvestment} = useContext(InvestmentContext);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -97,7 +104,17 @@ const ExploreInvestmentsScreen = () => {
                         amtRaised={0}
                         price={content.min_investment}
                         rate={content.return_rate}
-                        type="mutualFunds"
+                        type={
+                          chosenInvestment === 'stocks'
+                            ? 'stocks'
+                            : chosenInvestment === 'realEstate'
+                            ? 'realEstate'
+                            : chosenInvestment === 'startups'
+                            ? 'startups'
+                            : chosenInvestment === 'savingsLock'
+                            ? 'savingsLock'
+                            : 'mutualFunds'
+                        }
                         valueCap={0}
                         term={content.distribution_frequency}
                         maturityStructure={content.maturity_structure}

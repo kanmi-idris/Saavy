@@ -28,7 +28,7 @@ interface InvestmentContextProps {
   chosenInvestment: string;
   setChosenInvestment?: React.Dispatch<React.SetStateAction<string>>;
 }
-const InvestmentContext = createContext<InvestmentContextProps>({
+export const InvestmentContext = createContext<InvestmentContextProps>({
   chosenInvestment: 'mutualFunds',
 });
 
