@@ -30,6 +30,7 @@ const UserDashboardScreen = () => {
           />
         </View>
         <View style={styles.scrollables}>
+          {/* Portfolio Display Start */}
           <ScrollableSection fillScreen horizontal>
             <DisplayCard
               label="Portfolio Value"
@@ -54,6 +55,7 @@ const UserDashboardScreen = () => {
             />
             <DisplayCard label="Startups" key={Math.random()} trend="upward" />
           </ScrollableSection>
+          {/* Portfolio Display End */}
           <ScrollableSection
             heading="Recommendations For You"
             horizontal
@@ -78,6 +80,7 @@ const UserDashboardScreen = () => {
               />
             ))}
           </ScrollableSection>
+          {/* Continue Learning Start */}
           <ScrollableSection
             heading="Continue Learning"
             horizontal
@@ -85,13 +88,14 @@ const UserDashboardScreen = () => {
             pagingEnabled>
             {strings.learning.continue.map(content => (
               <ContinueLearningCard
-                key={content.id}
+                key={Math.random()}
                 heading={content.heading}
                 subheading={content.text}
                 percentCompleted={content.percentCompleted}
               />
             ))}
           </ScrollableSection>
+          {/* Continue Learning End */}
         </View>
         <View style={styles.staticSection}>
           <StaticSection heading="Your Top Performers" gap={8}>
