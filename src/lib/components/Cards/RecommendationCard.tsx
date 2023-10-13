@@ -1,7 +1,7 @@
 import colors from '@/assets/Colors';
 import typography from '@/assets/Typography';
 import React from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Dimensions, Image, StyleSheet, Text, View} from 'react-native';
 
 interface RecommendationCardProps {
   title: string;
@@ -11,6 +11,9 @@ interface RecommendationCardProps {
   type: string;
   image: number;
 }
+
+const {width: SCREEN_WIDTH} = Dimensions.get('window');
+const CARD_WIDTH = (SCREEN_WIDTH - 56) / 2;
 
 const RecommendationCard = ({
   title,
@@ -101,7 +104,8 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     padding: 12,
     gap: 8,
-    maxWidth: 150,
+    minWidth: CARD_WIDTH,
+    maxWidth: 200,
     backgroundColor: colors.black_4,
   },
   btnLabel: {

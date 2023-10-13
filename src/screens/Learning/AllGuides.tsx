@@ -1,44 +1,42 @@
 import colors from '@/assets/Colors';
 import BasicInput from '@/lib/components/FormInputs/BasicInput';
-import InvestmentSuites from '@/lib/components/InvestmentSuitesScroll';
-import React from 'react';
+import InvestmentSuites, {
+  InvestmentContext,
+} from '@/lib/components/InvestmentSuitesScroll';
+import React, {useContext} from 'react';
 import {View, SafeAreaView, ScrollView, StyleSheet} from 'react-native';
 import GuideCard from './components/GuideCard';
+import guides from './api/learning_guides.json';
 
 const AllGuidesScreen = () => {
+  const {chosenInvestment} = useContext(InvestmentContext);
+
+  interface Prop {
+    [key: string]: any[];
+  }
+  let guidesAPI: Prop = {
+    realEstate: guides.real_estate,
+    stocks: guides.stocks,
+    savingsLock: guides.savings_lock,
+    startups: guides.startups,
+    mutualFunds: guides.mutual_funds,
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.head}>
         <BasicInput placeholder="Search" iconStart="search" type="text" />
-        <InvestmentSuites heading="What to Learn" />
+        <InvestmentSuites heading="What to Learn" noEndSpacing />
       </View>
       <ScrollView
         contentContainerStyle={styles.contentWrap}
         showsVerticalScrollIndicator={false}>
-        <GuideCard
-          image={require('@/assets/images/ardent-server.png')}
-          content="What are the benefits and risks of investing in mutual funds?"
-        />
-        <GuideCard
-          image={require('@/assets/images/ardent-server.png')}
-          content="What are the different types of mutual funds and how to choose the best one for your goals?"
-        />
-        <GuideCard
-          image={require('@/assets/images/ardent-server.png')}
-          content="How to avoid common mistakes and pitfalls when investing in mutual funds?"
-        />
-        <GuideCard
-          image={require('@/assets/images/ardent-server.png')}
-          content="How to plan for taxes and retirement with mutual funds?"
-        />
-        <GuideCard
-          image={require('@/assets/images/ardent-server.png')}
-          content="What are mutual funds and how do they work?"
-        />
-        <GuideCard
-          image={require('@/assets/images/ardent-server.png')}
-          content="What are mutual funds and how do they work?"
-        />
+        {guidesAPI[chosenInvestment].map(guide => (
+          <GuideCard
+            image={require('@/assets/images/ardent-server.png') || guide.image}
+            content={guide.title}
+          />
+        ))}
       </ScrollView>
     </SafeAreaView>
   );

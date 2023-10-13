@@ -1,7 +1,8 @@
+/* eslint-disable react-native/no-inline-styles */
 import colors from '@/assets/Colors';
 import Icon from '@/assets/Icons';
 import typography from '@/assets/Typography';
-import React from 'react';
+import React, {useRef, useState} from 'react';
 import {
   FlatList,
   Pressable,
@@ -9,7 +10,9 @@ import {
   Text,
   View,
   Dimensions,
+  Animated,
 } from 'react-native';
+import ScrollProgress from '../components/ScrollProgress';
 
 interface SectionProps {
   children: React.ReactNode;
@@ -19,6 +22,7 @@ interface SectionProps {
   fillScreen?: boolean;
   gap?: number;
   pagingEnabled?: boolean;
+  scrollData?: any[];
 }
 
 export const ScrollableSection = ({
@@ -28,13 +32,15 @@ export const ScrollableSection = ({
   horizontal,
   fillScreen,
   pagingEnabled,
+  scrollData,
 }: SectionProps) => {
-  const {width} = Dimensions.get('window');
+  const {width: SCREEN_WIDTH} = Dimensions.get('window');
 
   const data = React.Children.toArray(children);
   const renderItem = ({item}: {item: React.ReactNode}) => {
     return (
-      <View style={[fillScreen ? {width: width - 50} : null, styles.item]}>
+      <View
+        style={[fillScreen ? {width: SCREEN_WIDTH - 50} : null, styles.item]}>
         {item}
       </View>
     );
@@ -47,11 +53,22 @@ export const ScrollableSection = ({
     viewBox: '0 0 20 20',
   };
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const scrollX = useRef(new Animated.Value(0)).current;
+
+  const slidesRef = useRef<FlatList | null>(null);
+
+  const viewableItemsChanged = useRef(({viewableItems}: any) => {
+    setCurrentIndex(viewableItems[0].index);
+  }).current;
+
+  const viewConfig = useRef({viewAreaCoveragePercentThreshold: 50}).current;
+
   return (
     <View style={styles.container}>
       <View
         style={[
-          fillScreen ? {width: width - 50} : null,
+          fillScreen ? {width: SCREEN_WIDTH - 50} : null,
           styles.headingWrapper,
         ]}>
         {heading && <Text style={styles.heading}>{heading}</Text>}
@@ -75,7 +92,21 @@ export const ScrollableSection = ({
         overScrollMode="never"
         pagingEnabled={pagingEnabled}
         scrollEventThrottle={32}
+        onScroll={Animated.event(
+          [{nativeEvent: {contentOffset: {x: scrollX}}}],
+          {useNativeDriver: false},
+        )}
+        onViewableItemsChanged={viewableItemsChanged}
+        viewabilityConfig={viewConfig}
+        ref={slidesRef}
       />
+      {scrollData && (
+        <ScrollProgress
+          data={scrollData}
+          scrollX={scrollX}
+          style={{marginStart: '35%', marginTop: 4}}
+        />
+      )}
     </View>
   );
 };
@@ -134,7 +165,7 @@ const styles = StyleSheet.create({
     marginRight: 12,
   },
   list: {
-    overflow: 'visible',
+    // overflow: 'visible',
   },
   flatlist: {
     alignItems: 'stretch',

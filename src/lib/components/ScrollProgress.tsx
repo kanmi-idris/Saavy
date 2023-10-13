@@ -1,17 +1,25 @@
 import colors from '@/assets/Colors';
 import React from 'react';
-import {StyleSheet, View, Animated, useWindowDimensions} from 'react-native';
+import {
+  StyleSheet,
+  View,
+  Animated,
+  useWindowDimensions,
+  StyleProp,
+  ViewStyle,
+} from 'react-native';
 
 interface ScrollProgressParams {
   data: Array<any>;
   scrollX: any;
+  style?: StyleProp<ViewStyle>;
 }
 
-const ScrollProgress = ({data, scrollX}: ScrollProgressParams) => {
+const ScrollProgress = ({data, scrollX, style}: ScrollProgressParams) => {
   const {width} = useWindowDimensions();
 
   return (
-    <View style={styles.component1}>
+    <View style={[styles.component1, style]}>
       {data.map((_: any, i: number) => {
         const inputRange = [(i - 1) * width, i * width, (i + 1) * width];
 

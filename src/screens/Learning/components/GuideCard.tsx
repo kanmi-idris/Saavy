@@ -5,7 +5,7 @@ import React from 'react';
 import {View, StyleSheet, Text, Image, Pressable} from 'react-native';
 
 interface GuideCardProps {
-  image: number;
+  image: number | string;
   content: string;
 }
 
@@ -16,7 +16,7 @@ const GuideCard = ({image, content}: GuideCardProps) => {
   return (
     <View style={styles.container}>
       <View style={styles.imgContainer}>
-        <Image source={image} />
+        <Image source={typeof image === 'number' ? image : {uri: image}} />
       </View>
       <View style={styles.wrap}>
         <Text style={styles.content}>{content}</Text>

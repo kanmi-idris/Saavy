@@ -1,0 +1,138 @@
+{
+  "mutual_funds": [
+    {
+      "id": "mf1",
+      "image": "mutual_funds.jpg",
+      "title": "What are mutual funds and how do they work?",
+      "content": "Mutual funds are investment vehicles that pool money from multiple investors..."
+    },
+    {
+      "id": "mf2",
+      "image": "mutual_funds.jpg",
+      "title": "Benefits and Risks",
+      "content": "Investing in mutual funds offers various benefits such as diversification..."
+    },
+    {
+      "id": "mf3",
+      "image": "mutual_funds.jpg",
+      "title": "Types of Mutual Funds",
+      "content": "There are different types of mutual funds, including equity funds, bond funds..."
+    },
+    {
+      "id": "mf4",
+      "image": "mutual_funds.jpg",
+      "title": "Common Mistakes and Pitfalls",
+      "content": "Avoid common mistakes like not researching the fund, overtrading, or investing based on past performance."
+    },
+    {
+      "id": "mf5",
+      "image": "mutual_funds.jpg",
+      "title": "Taxes and Retirement",
+      "content": "Learn how to plan for taxes and retirement using mutual funds, including strategies for tax efficiency."
+    }
+  ],
+  "stocks": [
+    {
+      "id": "stocks1",
+      "image": "stocks.jpg",
+      "title": "Introduction to Stocks",
+      "content": "Stocks represent ownership in a company and are traded on stock exchanges..."
+    },
+    {
+      "id": "stocks2",
+      "image": "stocks.jpg",
+      "title": "Stock Valuation",
+      "content": "Discover how to evaluate the value of stocks, including fundamental and technical analysis."
+    },
+    {
+      "id": "stocks3",
+      "image": "stocks.jpg",
+      "title": "Risk Management",
+      "content": "Understand the risks associated with stock investing and how to manage them..."
+    },
+    {
+      "id": "stocks4",
+      "image": "stocks.jpg",
+      "title": "Portfolio Diversification",
+      "content": "Learn about the importance of diversifying your stock portfolio to reduce risk."
+    },
+    {
+      "id": "stocks5",
+      "image": "stocks.jpg",
+      "title": "Stock Trading Strategies",
+      "content": "Explore various stock trading strategies, such as day trading, value investing, and growth investing."
+    }
+  ],
+  "real_estate": [
+    {
+      "id": "re1",
+      "image": "real_estate.jpg",
+      "title": "Real Estate Investments",
+      "content": "Real estate investments involve buying, owning, and managing properties for profit..."
+    },
+    {
+      "id": "re2",
+      "image": "real_estate.jpg",
+      "title": "Types of Real Estate",
+      "content": "Learn about different types of real estate investments, including residential, commercial, and industrial properties..."
+    },
+    {
+      "id": "re3",
+      "image": "real_estate.jpg",
+      "title": "Risks and Rewards",
+      "content": "Understand the risks and rewards of real estate investing, including factors like location and market trends..."
+    },
+    {
+      "id": "re4",
+      "image": "real_estate.jpg",
+      "title": "Real Estate Financing",
+      "content": "Explore financing options for real estate investments, such as mortgages, loans, and leverage..."
+    }
+  ],
+  "savings_lock": [
+    {
+      "id": "sl1",
+      "image": "fixed_returns.jpg",
+      "title": "What Are Savings Lock?",
+      "content": "Fixed returns are investments that offer a predetermined rate of return..."
+    },
+    {
+      "id": "sl2",
+      "image": "fixed_returns.jpg",
+      "title": "Types of Savings Lock",
+      "content": "Discover different types of fixed return investments, including certificates of deposit (CDs)..."
+    },
+    {
+      "id": "sl3",
+      "image": "fixed_returns.jpg",
+      "title": "Risk and Liquidity",
+      "content": "Understand the trade-offs between fixed returns, risk, and liquidity..."
+    }
+  ],
+  "startups": [
+    {
+      "id": "su1",
+      "image": "startups_invest.jpg",
+      "title": "Investing in Startups",
+      "content": "Investing in startups involves providing capital to early-stage companies in exchange for equity..."
+    },
+    {
+      "id": "su2",
+      "image": "startups_invest.jpg",
+      "title": "Startup Valuation",
+      "content": "Learn how to evaluate the value of startups and assess their growth potential..."
+    },
+    {
+      "id": "su3",
+      "image": "startups_invest.jpg",
+      "title": "Risks and Rewards",
+      "content": "Understand the risks and rewards of investing in startups, including the high potential for returns..."
+    },
+    {
+      "id": "su4",
+      "image": "startups_invest.jpg",
+      "title": "Startup Investing Strategies",
+      "content": "Explore strategies for investing in startups, such as angel investing, venture capital, and crowdfunding..."
+    }
+  ]
+}

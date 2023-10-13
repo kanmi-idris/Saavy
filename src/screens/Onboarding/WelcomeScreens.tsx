@@ -57,6 +57,7 @@ const WelcomeScreen = () => {
         showsHorizontalScrollIndicator={false}
         pagingEnabled
         bounces={false}
+        overScrollMode="never"
         keyExtractor={item => item.id.toString()}
         onScroll={Animated.event(
           [{nativeEvent: {contentOffset: {x: scrollX}}}],

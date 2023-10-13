@@ -56,10 +56,7 @@ const UserDashboardScreen = () => {
             <DisplayCard label="Startups" key={Math.random()} trend="upward" />
           </ScrollableSection>
           {/* Portfolio Display End */}
-          <ScrollableSection
-            heading="Recommendations For You"
-            horizontal
-            pagingEnabled>
+          <ScrollableSection heading="Recommendations For You" horizontal>
             {strings.recommendations.map(recommendation => (
               <RecommendationCard
                 key={recommendation.id}
@@ -81,11 +78,7 @@ const UserDashboardScreen = () => {
             ))}
           </ScrollableSection>
           {/* Continue Learning Start */}
-          <ScrollableSection
-            heading="Continue Learning"
-            horizontal
-            fillScreen
-            pagingEnabled>
+          <ScrollableSection heading="Continue Learning" horizontal fillScreen>
             {strings.learning.continue.map(content => (
               <ContinueLearningCard
                 key={Math.random()}

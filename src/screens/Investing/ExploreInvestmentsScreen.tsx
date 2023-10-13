@@ -93,12 +93,13 @@ const ExploreInvestmentsScreen = () => {
             horizontal
             auxBtn
             fillScreen
+            scrollData={AllColumns}
             gap={4}>
             {AllColumns.map((val, index) => {
               let start = index * amtOfCardsShown;
               let end = start + amtOfCardsShown;
               return (
-                <View style={{gap: 12}} key={index}>
+                <View style={{gap: 8}} key={index}>
                   {API.slice(start, end).map((content, id) => {
                     return (
                       <MiniInvestmentDetailCard

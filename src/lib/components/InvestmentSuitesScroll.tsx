@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import colors from '@/assets/Colors';
 import Icon from '@/assets/Icons';
 import typography from '@/assets/Typography';
@@ -26,6 +27,7 @@ import {RootStackParams} from '@/navigation/RootStackNavigator';
 interface InvestmentSuitesProps {
   auxButton?: boolean;
   heading: string;
+  noEndSpacing?: boolean;
 }
 interface InvestmentContextProps {
   chosenInvestment: string;
@@ -44,7 +46,11 @@ export const InvestmentProvider = ({children}: {children: React.ReactNode}) => {
   );
 };
 
-const InvestmentSuites = ({heading, auxButton}: InvestmentSuitesProps) => {
+const InvestmentSuites = ({
+  heading,
+  auxButton,
+  noEndSpacing,
+}: InvestmentSuitesProps) => {
   const label = [
     'Mutual Funds',
     'Stocks',
@@ -90,7 +96,10 @@ const InvestmentSuites = ({heading, auxButton}: InvestmentSuitesProps) => {
         )}
       </View>
       <ScrollView
-        contentContainerStyle={styles.btnWrapper}
+        contentContainerStyle={[
+          styles.btnWrapper,
+          {paddingEnd: noEndSpacing ? 0 : 24},
+        ]}
         horizontal={true}
         bounces={false}
         overScrollMode="never"
@@ -143,7 +152,6 @@ const styles = StyleSheet.create({
   },
   btnWrapper: {
     gap: 8,
-    paddingEnd: 24,
   },
   baseBtnStyle: {
     borderRadius: 8,
