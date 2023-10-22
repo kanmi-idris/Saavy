@@ -136,7 +136,7 @@ const MainInfoCard = ({
                     gap: 2,
                   }}>
                   <Icon
-                    name={marketStatus === 'open' ? 'lock-open' : 'lock-closed'}
+                    name={marketStatus === 'open' ? 'lock_open' : 'lock_closed'}
                     {...{
                       strokeWidth: 1.2,
                       stroke:

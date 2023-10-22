@@ -10,7 +10,7 @@ import {
   Linking,
   TouchableOpacity,
 } from 'react-native';
-import React, {useContext, useEffect, useRef, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import MainInfoCard from './components/MainInfoCard';
 import colors from '@/assets/Colors';
 import {ScrollableSection, StaticSection} from '@/lib/layout/Section';
@@ -57,7 +57,7 @@ const PageContent = ({contentId}: {contentId: string}) => {
       return <SavingsLock content={content} />;
     case 'realEstate':
       return <RealEstate content={content} />;
-    // case 'stocks':
+    // case 'startups':
     //   return <MutualFunds api={API} />;
     default:
       return (
@@ -613,7 +613,7 @@ const RealEstate = ({content}: {content: any}) => {
             <View style={[styles.cardBG, {gap: 8, minHeight: 180}]} key={index}>
               <View
                 style={{flexDirection: 'row', gap: 12, alignItems: 'center'}}>
-                <Icon name="document-outline" />
+                <Icon name="document_outline" />
                 <Text
                   style={[
                     styles.infoOneMain,

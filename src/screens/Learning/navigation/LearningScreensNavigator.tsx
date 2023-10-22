@@ -122,17 +122,17 @@ const Menu = () => {
         </Pressable>
         <View style={{gap: 12}}>
           <Pressable style={styles.row}>
-            <Icon name="square-message" />
+            <Icon name="square_message" />
             <Text style={[styles.text]}>What are mutual Funds</Text>
           </Pressable>
           <Pressable style={styles.row}>
-            <Icon name="square-message" />
+            <Icon name="square_message" />
             <Text style={[styles.text]}>
               Why should I invest in tesla stocks
             </Text>
           </Pressable>
           <Pressable style={styles.row}>
-            <Icon name="square-message" />
+            <Icon name="square_message" />
             <Text style={[styles.text]}>
               This startups invest that you have, how does it work
             </Text>

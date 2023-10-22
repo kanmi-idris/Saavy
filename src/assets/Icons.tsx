@@ -1,6 +1,6 @@
 import React from 'react';
 import HomeIcon from './icons/fi_home';
-import SaavyLogo from './images/Logo.svg';
+import SaavyLogo from './images/Logo';
 import DollarIcon from './icons/fi_dollar';
 import ChatIcon from './icons/Chat';
 import BriefcaseIcon from './icons/fi_briefcase';
@@ -60,121 +60,79 @@ interface IconProp {
   onPress?: any;
 }
 
+interface map {
+  [key: string]: (props: any, {onPress}?: any) => React.JSX.Element;
+}
+const iconMap: map = {
+  home: HomeIcon,
+  logo: SaavyLogo,
+  dollar: DollarIcon,
+  chat: ChatIcon,
+  briefcase: BriefcaseIcon,
+  arrowRight: ArrowRight,
+  arrowUp: ArrowUp,
+  arrowDown: ArrowDown,
+  helpCircle: HelpCircle,
+  naira: Naira,
+  search: Search,
+  phoneCall: PhoneCall,
+  calendar: Calendar,
+  chevronDown: ChevronDown,
+  chevronLeft: ChevronLeft,
+  chevronRight: ChevronRight,
+  uploadCloud: UploadCloud,
+  eye: Eye,
+  eyeOff: EyeOff,
+  check: Check,
+  InvestmentIllustration: InvestmentIllustration,
+  LearningIllustration: LearningIllustration,
+  BusinessSuccess: BusinessSuccess,
+  DiverseOpportunities: DiverseOpportunities,
+  GoogleLogo: GoogleLogo,
+  CheckCircle: CheckCircle,
+  X_Circle: X_Circle,
+  home_2: Home_2,
+  plusCircle_1: PlusCircle_1,
+  plusCircle_2: PlusCircle_2,
+  ai_icon: Ai_Icon,
+  ai_icon_active: Ai_Icon_Active,
+  user: User,
+  userActive: UserActive,
+  playCircle: PlayCircle,
+  displayCardChart: DisplayCardChart,
+  bell: NotificationBell,
+  ai_send: Ai_Send,
+  menu: Menu,
+  thumbs_up: ThumbsUp,
+  thumbs_down: ThumbsDown,
+  clipboard: Clipboard,
+  plus: Plus,
+  square_message: MessageSquare,
+  trash: Trash_2,
+  list: List,
+  shield: Shield,
+  share: Share,
+  lock_closed: LockClosed,
+  lock_open: LockOpen,
+  facebook: Facebook,
+  twitter: Twitter,
+  instagram: Instagram,
+  document_outline: DocumentOutline,
+  copy: Copy,
+};
+
 const Icon = ({name, onPress, ...props}: IconProp) => {
-  switch (name) {
-    case 'home':
-      return <HomeIcon {...props} />;
-    case 'logo':
-      return <SaavyLogo {...props} />;
-    case 'dollar':
-      return <DollarIcon {...props} />;
-    case 'chat':
-      return <ChatIcon {...props} />;
-    case 'briefcase':
-      return <BriefcaseIcon {...props} />;
-    case 'arrowRight':
-      return <ArrowRight {...props} />;
-    case 'arrowUp':
-      return <ArrowUp {...props} />;
-    case 'arrowDown':
-      return <ArrowDown {...props} />;
-    case 'helpCircle':
-      return <HelpCircle {...props} />;
-    case 'naira':
-      return <Naira {...props} />;
-    case 'search':
-      return <Search {...props} />;
-    case 'phoneCall':
-      return <PhoneCall {...props} />;
-    case 'calendar':
-      return <Calendar {...props} />;
-    case 'chevronDown':
-      return <ChevronDown {...props} />;
-    case 'chevronLeft':
-      return <ChevronLeft onPress={onPress} {...props} />;
-    case 'chevronRight':
-      return <ChevronRight {...props} />;
-    case 'uploadCloud':
-      return <UploadCloud {...props} />;
-    case 'eye':
-      return <Eye {...props} />;
-    case 'eyeOff':
-      return <EyeOff {...props} />;
-    case 'check':
-      return <Check {...props} />;
-    case 'InvestmentIllustration':
-      return <InvestmentIllustration {...props} />;
-    case 'LearningIllustration':
-      return <LearningIllustration {...props} />;
-    case 'BusinessSuccess':
-      return <BusinessSuccess {...props} />;
-    case 'DiverseOpportunities':
-      return <DiverseOpportunities {...props} />;
-    case 'GoogleLogo':
-      return <GoogleLogo {...props} />;
-    case 'CheckCircle':
-      return <CheckCircle {...props} />;
-    case 'X_Circle':
-      return <X_Circle {...props} />;
-    case 'home_2':
-      return <Home_2 {...props} />;
-    case 'plusCircle_1':
-      return <PlusCircle_1 {...props} />;
-    case 'plusCircle_2':
-      return <PlusCircle_2 {...props} />;
-    case 'ai_icon':
-      return <Ai_Icon {...props} />;
-    case 'ai_icon_active':
-      return <Ai_Icon_Active {...props} />;
-    case 'user':
-      return <User {...props} />;
-    case 'userActive':
-      return <UserActive {...props} />;
-    case 'playCircle':
-      return <PlayCircle {...props} />;
-    case 'displayCardChart':
-      return <DisplayCardChart {...props} />;
-    case 'bell':
-      return <NotificationBell {...props} />;
-    case 'ai_send':
-      return <Ai_Send {...props} />;
-    case 'menu':
-      return <Menu {...props} />;
-    case 'thumbs-up':
-      return <ThumbsUp {...props} />;
-    case 'thumbs-down':
-      return <ThumbsDown {...props} />;
-    case 'clipboard':
-      return <Clipboard {...props} />;
-    case 'plus':
-      return <Plus {...props} />;
-    case 'square-message':
-      return <MessageSquare {...props} />;
-    case 'trash':
-      return <Trash_2 {...props} />;
-    case 'list':
-      return <List {...props} />;
-    case 'shield':
-      return <Shield {...props} />;
-    case 'share':
-      return <Share {...props} />;
-    case 'lock-closed':
-      return <LockClosed {...props} />;
-    case 'lock-open':
-      return <LockOpen {...props} />;
-    case 'facebook':
-      return <Facebook {...props} />;
-    case 'twitter':
-      return <Twitter {...props} />;
-    case 'instagram':
-      return <Instagram {...props} />;
-    case 'document-outline':
-      return <DocumentOutline {...props} />;
-    case 'copy':
-      return <Copy {...props} />;
-    default:
-      return null;
+  // Use the object to get the component by name
+  const IconComponent = iconMap[name];
+
+  // If the component exists, return it with the props
+  if (IconComponent) {
+    return <IconComponent onPress={onPress} {...props} />;
   }
+
+  // Otherwise, return null
+  return null;
 };
 
 export default Icon;
+

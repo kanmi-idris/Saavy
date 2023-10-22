@@ -58,13 +58,13 @@ const ChatCards = ({
               onPress={() =>
                 pressed[1] === false ? handlePress(0) : undefined
               }>
-              <Icon name="thumbs-up" {...toolsIcon(0)} />
+              <Icon name="thumbs_up" {...toolsIcon(0)} />
             </Pressable>
             <Pressable
               onPress={() =>
                 pressed[0] === false ? handlePress(1) : undefined
               }>
-              <Icon name="thumbs-down" {...toolsIcon(1)} />
+              <Icon name="thumbs_down" {...toolsIcon(1)} />
             </Pressable>
           </View>
           <Pressable onPress={() => handlePress(2)}>
