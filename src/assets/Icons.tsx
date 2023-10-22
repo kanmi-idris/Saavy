@@ -122,17 +122,13 @@ const iconMap: map = {
 };
 
 const Icon = ({name, onPress, ...props}: IconProp) => {
-  // Use the object to get the component by name
   const IconComponent = iconMap[name];
 
-  // If the component exists, return it with the props
   if (IconComponent) {
     return <IconComponent onPress={onPress} {...props} />;
   }
 
-  // Otherwise, return null
   return null;
 };
 
 export default Icon;
-
