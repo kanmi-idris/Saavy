@@ -31,7 +31,7 @@ const UserDashboardScreen = () => {
         </View>
         <View style={styles.scrollables}>
           {/* Portfolio Display Start */}
-          <ScrollableSection fillScreen horizontal>
+          <ScrollableSection fillScreen horizontal offset={38}>
             <DisplayCard
               label="Portfolio Value"
               key={Math.random()}
@@ -56,7 +56,10 @@ const UserDashboardScreen = () => {
             <DisplayCard label="Startups" key={Math.random()} trend="upward" />
           </ScrollableSection>
           {/* Portfolio Display End */}
-          <ScrollableSection heading="Recommendations For You" horizontal>
+          <ScrollableSection
+            heading="Recommendations For You"
+            horizontal
+            offset={30}>
             {strings.recommendations.map(recommendation => (
               <RecommendationCard
                 key={recommendation.id}
@@ -78,7 +81,11 @@ const UserDashboardScreen = () => {
             ))}
           </ScrollableSection>
           {/* Continue Learning Start */}
-          <ScrollableSection heading="Continue Learning" horizontal fillScreen>
+          <ScrollableSection
+            heading="Continue Learning"
+            horizontal
+            fillScreen
+            offset={35}>
             {strings.learning.continue.map(content => (
               <ContinueLearningCard
                 key={Math.random()}

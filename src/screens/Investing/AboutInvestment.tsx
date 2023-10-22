@@ -11,19 +11,21 @@ import {
   Linking,
   TouchableOpacity,
 } from 'react-native';
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useCallback, useContext, useEffect, useState} from 'react';
 import MainInfoCard from './components/MainInfoCard';
 import colors from '@/assets/Colors';
 import {ScrollableSection, StaticSection} from '@/lib/layout/Section';
 import typography from '@/assets/Typography';
 import CustomButton from '@/lib/components/Button/CustomButton';
+import Icon from '@/assets/Icons';
+import formatAmt from '@/lib/utils/formatAmount';
+import {copyToClipboard} from '@/lib/utils/copyToClipboard';
+import YoutubePlayer from 'react-native-youtube-iframe';
 // dummy APIs
 import {InvestmentContext} from '@/lib/components/InvestmentSuitesScroll';
 import {GetContent, findById} from './utils/utils';
 import {AboutInvestmentAPIs} from './navigation/InvestmentDetailScreensNavigator';
-import Icon from '@/assets/Icons';
-import formatAmt from '@/lib/utils/formatAmount';
-import {copyToClipboard} from '@/lib/utils/copyToClipboard';
+import { useIsFocused } from '@react-navigation/native';
 
 const {width: SCREEN_WIDTH} = Dimensions.get('window');
 
@@ -337,7 +339,7 @@ const Market = ({content}: {content: any}) => {
             const keys = Object.keys(item);
             return keys.map(key => {
               return (
-                <View>
+                <View key={index}>
                   <Text
                     style={[
                       styles.cardText,
@@ -389,9 +391,35 @@ const RealEstate = ({content}: {content: any}) => {
     setCopied(true);
   };
 
+  // Playing Videos using youtube Iframe
+  const isFocused = useIsFocused();
+  const [playing, setPlaying] = useState(false);
+  const onStateChange = useCallback((state: string) => {
+    if (state === 'ended') {
+      setPlaying(false);
+    }
+  }, []);
+
   return (
     <View style={[styles.mainContent, {paddingRight: 0}]}>
       {/* Video Begins */}
+      <ScrollableSection
+        horizontal
+        fillScreen
+        scrollData={content.videos}
+        offset={38}>
+        {content.videos.map((video: string, index: number) => (
+          <View key={index} style={styles.video}>
+            <YoutubePlayer
+              height={175}
+              play={isFocused && playing}
+              videoId={video}
+              onChangeState={onStateChange}
+              initialPlayerParams={{controls: false, rel: true}}
+            />
+          </View>
+        ))}
+      </ScrollableSection>
       {/* Video Ends */}
       <View style={{marginRight: 24}}>
         <MainInfoCard
@@ -725,5 +753,11 @@ const styles = StyleSheet.create({
     fontSize: 10,
     marginStart: 5,
     color: colors.black_1,
+  },
+  video: {
+    borderRadius: 8,
+    flexShrink: 0,
+    height: 175,
+    overflow: 'hidden',
   },
 });

@@ -23,6 +23,7 @@ interface SectionProps {
   gap?: number;
   pagingEnabled?: boolean;
   scrollData?: any[];
+  offset?: number;
 }
 
 export const ScrollableSection = ({
@@ -32,6 +33,7 @@ export const ScrollableSection = ({
   horizontal,
   fillScreen,
   pagingEnabled,
+  offset,
   scrollData,
 }: SectionProps) => {
   const {width: SCREEN_WIDTH} = Dimensions.get('window');
@@ -90,7 +92,7 @@ export const ScrollableSection = ({
         showsHorizontalScrollIndicator={false}
         bounces={false}
         overScrollMode="never"
-        pagingEnabled={pagingEnabled}
+        // pagingEnabled={pagingEnabled}
         scrollEventThrottle={32}
         onScroll={Animated.event(
           [{nativeEvent: {contentOffset: {x: scrollX}}}],
@@ -99,12 +101,16 @@ export const ScrollableSection = ({
         onViewableItemsChanged={viewableItemsChanged}
         viewabilityConfig={viewConfig}
         ref={slidesRef}
+        // The following props are related to the snap feature
+        snapToInterval={offset && SCREEN_WIDTH - offset} // The interval to snap to, in pixels
+        snapToAlignment="center" // The alignment of the snapped item, can be "start", "center" or "end"
+        decelerationRate="fast" // The speed of the scroll deceleration, can be a number or "normal" or "fast"
       />
       {scrollData && (
         <ScrollProgress
           data={scrollData}
           scrollX={scrollX}
-          style={{marginStart: '35%', marginTop: 4}}
+          style={{marginTop: 4, alignSelf: 'center'}}
         />
       )}
     </View>

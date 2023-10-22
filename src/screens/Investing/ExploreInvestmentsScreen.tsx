@@ -66,7 +66,7 @@ const ExploreInvestmentsScreen = () => {
         <InvestmentSuites heading="Investment Suites" auxButton />
       </View>
       <View style={styles.margin}>
-        <ScrollableSection heading="Highest Investors" horizontal>
+        <ScrollableSection heading="Highest Investors" horizontal offset={30}>
           {strings.recommendations.map(recommendation => (
             <RecommendationCard
               key={recommendation.id}
@@ -94,6 +94,7 @@ const ExploreInvestmentsScreen = () => {
             auxBtn
             fillScreen
             scrollData={AllColumns}
+            offset={35}
             gap={4}>
             {AllColumns.map((val, index) => {
               let start = index * amtOfCardsShown;

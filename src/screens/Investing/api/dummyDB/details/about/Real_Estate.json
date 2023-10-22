@@ -4,7 +4,13 @@
       "id": "B234XCF",
       "name": "Project Balogun 2.0",
       "logo": "https://i0.wp.com/catalystbusinessconsult.com/wp-content/uploads/2021/03/cropped-Cbc-favicon.png?fit=32%2C32&ssl=1",
-      "video": ["", "", ""],
+      "videos": [
+        "SL-hiT8fG20",
+        "9pBh44qegCs",
+        "Heg8SXiSDXE",
+        "8j4nHvgE1Zs",
+        "wCBpfRIEHvo"
+      ],
       "min_investment": 250,
       "interest_rate": "22.0%",
       "interest_duration": "annual",
@@ -128,7 +134,13 @@
       "id": "ASQ102B",
       "name": "Project Lacasa",
       "logo": "https://i0.wp.com/catalystbusinessconsult.com/wp-content/uploads/2021/03/cropped-Cbc-favicon.png?fit=32%2C32&ssl=1",
-      "video": ["", "", ""],
+      "videos": [
+        "SL-hiT8fG20",
+        "9pBh44qegCs",
+        "Heg8SXiSDXE",
+        "8j4nHvgE1Zs",
+        "wCBpfRIEHvo"
+      ],
       "type": "Two Storey Apartment Complex",
       "min_investment": 250,
       "interest_rate": "22.0%",
@@ -177,44 +189,54 @@
           "name": "Hammed Olawale",
           "title": "CEO",
           "phone": "+234 8105410146",
-          "bio": "Hammed Olawale is a seasoned real estate investor and entrepreneur who has completed 18 real estate transactions in the past three years, transacting over $5.3 million in real estate deals."
+          "bio": "Hammed Olawale is a seasoned real estate investor and entrepreneur who has completed 18 real estate transactions in the past three years, transacting over $5.3 million in real estate deals.Hammed Olawale is a seasoned real estate investor and entrepreneur who has completed 18 real estate transactions in the past three years, transacting over $5.3 million in real estate deals.",
+          "image": "https://scontent.cdninstagram.com/v/t51.2885-15/348715445_3739962562954106_512101096701636176_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyIn0&_nc_ht=scontent.cdninstagram.com&_nc_cat=102&_nc_ohc=OLlUnbiDmTkAX-y5qh2&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzExMDAyNDUxMzk3MzE2NzYzNA%3D%3D.2-ccb7-5&oh=00_AfAPpU-jm_1a2QKCtrGUKJADfgTrm8uMTNqy33iuc_L_MQ&oe=6538CF96&_nc_sid=10d13b"
         },
         {
           "name": "Jane Doe",
           "title": "COO",
           "phone": "+234 8105410147",
-          "bio": "Jane Doe is a seasoned real estate professional with over 10 years of experience in the industry. She has a proven track record of success in managing and developing real estate projects."
+          "bio": "Jane Doe is a seasoned real estate professional with over 10 years of experience in the industry. She has a proven track record of success in managing and developing real estate projects.Jane Doe is a seasoned real estate professional with over 10 years of experience in the industry. She has a proven track record of success in managing and developing real estate projects.",
+          "image": "https://th.bing.com/th/id/OIP.lryzAGhJy9keOjo2QLvIQwHaJQ?w=144&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7"
         },
         {
           "name": "John Smith",
           "title": "CFO",
           "phone": "+234 8105410148",
-          "bio": "John Smith is a seasoned financial professional with over 15 years of experience in the real estate industry. He has a proven track record of success in managing the finances of real estate projects."
+          "bio": "John Smith is a seasoned financial professional with over 15 years of experience in the real estate industry. He has a proven track record of success in managing the finances of real estate projects.John Smith is a seasoned financial professional with over 15 years of experience in the real estate industry. He has a proven track record of success in managing the finances of real estate projects.",
+          "image": "https://th.bing.com/th/id/OIP.lryzAGhJy9keOjo2QLvIQwHaJQ?w=144&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7"
         }
       ],
       "company": {
         "legal_name": "Catalyst Business Consult",
         "employees": 30,
         "website": "www.cbc_africa.com",
-        "phone": ["0812 035 3382", "0816 272 6997"],
-        "socials": [],
+        "phone": ["2348120353382", "2348162726997"],
+        "socials": [
+          "https://www.instagram.com/cbc_africa/",
+          "https://web.facebook.com/profile.php?id=100083122972699",
+          "https://twitter.com/cbc_africa"
+        ],
         "founded": 2016
       },
       "testimonials": [
         {
           "name": "Fisayo Fosudo",
           "title": "Investor",
-          "testimonial": "I am so happy with my purchase of Project Balogun 3.0. It is a great investment opportunity that offers me a steady income and a hassle-free experience. The apartments are well-maintained and the management team is very responsive."
+          "testimonial": "I am so happy with my purchase of Project Balogun 3.0. It is a great investment opportunity that offers me a steady income and a hassle-free experience. The apartments are well-maintained and the management team is very responsive.",
+          "image": "https://th.bing.com/th/id/OIP.lryzAGhJy9keOjo2QLvIQwHaJQ?w=144&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7"
         },
         {
           "name": "Jane Doe",
           "title": "Investor",
-          "testimonial": "Project Balogun 3.0 is a fantastic investment opportunity. The project is well-managed and the team is experienced and knowledgeable. I am confident that this project will be a success and I am excited to be a part of it."
+          "testimonial": "Project Balogun 3.0 is a fantastic investment opportunity. The project is well-managed and the team is experienced and knowledgeable. I am confident that this project will be a success and I am excited to be a part of it.",
+          "image": "https://th.bing.com/th/id/OIP.7GwXIBXKJjrbG2XwQZBJ6gHaHa?w=185&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"
         },
         {
           "name": "John Smith",
           "title": "Investor",
-          "testimonial": "I am very impressed with Project Balogun 3.0. The project is well-planned and the team is highly motivated. I am confident that this project will be a success and I am excited to be a part of it."
+          "testimonial": "I am very impressed with Project Balogun 3.0. The project is well-planned and the team is highly motivated. I am confident that this project will be a success and I am excited to be a part of it.",
+          "image": "https://th.bing.com/th/id/OIP.UouRUKDSRs8vHIaxCRQSUAHaKk?w=202&h=288&c=7&r=0&o=5&dpr=1.3&pid=1.7"
         }
       ],
       "documents": [
@@ -244,7 +266,13 @@
       "id": "B3HA1L8",
       "name": "Project Balogun 3.0",
       "logo": "https://i0.wp.com/catalystbusinessconsult.com/wp-content/uploads/2021/03/cropped-Cbc-favicon.png?fit=32%2C32&ssl=1",
-      "video": ["", "", ""],
+      "videos": [
+        "SL-hiT8fG20",
+        "9pBh44qegCs",
+        "Heg8SXiSDXE",
+        "8j4nHvgE1Zs",
+        "wCBpfRIEHvo"
+      ],
       "type": "Two Acre Luxury Estate",
       "min_investment": 250,
       "interest_rate": "22.0%",
@@ -293,44 +321,54 @@
           "name": "Hammed Olawale",
           "title": "CEO",
           "phone": "+234 8105410146",
-          "bio": "Hammed Olawale is a seasoned real estate investor and entrepreneur who has completed 18 real estate transactions in the past three years, transacting over $5.3 million in real estate deals."
+          "bio": "Hammed Olawale is a seasoned real estate investor and entrepreneur who has completed 18 real estate transactions in the past three years, transacting over $5.3 million in real estate deals.Hammed Olawale is a seasoned real estate investor and entrepreneur who has completed 18 real estate transactions in the past three years, transacting over $5.3 million in real estate deals.",
+          "image": "https://scontent.cdninstagram.com/v/t51.2885-15/348715445_3739962562954106_512101096701636176_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyIn0&_nc_ht=scontent.cdninstagram.com&_nc_cat=102&_nc_ohc=OLlUnbiDmTkAX-y5qh2&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzExMDAyNDUxMzk3MzE2NzYzNA%3D%3D.2-ccb7-5&oh=00_AfAPpU-jm_1a2QKCtrGUKJADfgTrm8uMTNqy33iuc_L_MQ&oe=6538CF96&_nc_sid=10d13b"
         },
         {
           "name": "Jane Doe",
           "title": "COO",
           "phone": "+234 8105410147",
-          "bio": "Jane Doe is a seasoned real estate professional with over 10 years of experience in the industry. She has a proven track record of success in managing and developing real estate projects."
+          "bio": "Jane Doe is a seasoned real estate professional with over 10 years of experience in the industry. She has a proven track record of success in managing and developing real estate projects.Jane Doe is a seasoned real estate professional with over 10 years of experience in the industry. She has a proven track record of success in managing and developing real estate projects.",
+          "image": "https://th.bing.com/th/id/OIP.lryzAGhJy9keOjo2QLvIQwHaJQ?w=144&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7"
         },
         {
           "name": "John Smith",
           "title": "CFO",
           "phone": "+234 8105410148",
-          "bio": "John Smith is a seasoned financial professional with over 15 years of experience in the real estate industry. He has a proven track record of success in managing the finances of real estate projects."
+          "bio": "John Smith is a seasoned financial professional with over 15 years of experience in the real estate industry. He has a proven track record of success in managing the finances of real estate projects.John Smith is a seasoned financial professional with over 15 years of experience in the real estate industry. He has a proven track record of success in managing the finances of real estate projects.",
+          "image": "https://th.bing.com/th/id/OIP.lryzAGhJy9keOjo2QLvIQwHaJQ?w=144&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7"
         }
       ],
       "company": {
         "legal_name": "Catalyst Business Consult",
         "employees": 30,
         "website": "www.cbc_africa.com",
-        "phone": ["0812 035 3382", "0816 272 6997"],
-        "socials": [],
+        "phone": ["2348120353382", "2348162726997"],
+        "socials": [
+          "https://www.instagram.com/cbc_africa/",
+          "https://web.facebook.com/profile.php?id=100083122972699",
+          "https://twitter.com/cbc_africa"
+        ],
         "founded": 2016
       },
       "testimonials": [
         {
           "name": "Fisayo Fosudo",
           "title": "Investor",
-          "testimonial": "I am so happy with my purchase of Project Balogun 3.0. It is a great investment opportunity that offers me a steady income and a hassle-free experience. The apartments are well-maintained and the management team is very responsive."
+          "testimonial": "I am so happy with my purchase of Project Balogun 3.0. It is a great investment opportunity that offers me a steady income and a hassle-free experience. The apartments are well-maintained and the management team is very responsive.",
+          "image": "https://th.bing.com/th/id/OIP.lryzAGhJy9keOjo2QLvIQwHaJQ?w=144&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7"
         },
         {
           "name": "Jane Doe",
           "title": "Investor",
-          "testimonial": "Project Balogun 3.0 is a fantastic investment opportunity. The project is well-managed and the team is experienced and knowledgeable. I am confident that this project will be a success and I am excited to be a part of it."
+          "testimonial": "Project Balogun 3.0 is a fantastic investment opportunity. The project is well-managed and the team is experienced and knowledgeable. I am confident that this project will be a success and I am excited to be a part of it.",
+          "image": "https://th.bing.com/th/id/OIP.7GwXIBXKJjrbG2XwQZBJ6gHaHa?w=185&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"
         },
         {
           "name": "John Smith",
           "title": "Investor",
-          "testimonial": "I am very impressed with Project Balogun 3.0. The project is well-planned and the team is highly motivated. I am confident that this project will be a success and I am excited to be a part of it."
+          "testimonial": "I am very impressed with Project Balogun 3.0. The project is well-planned and the team is highly motivated. I am confident that this project will be a success and I am excited to be a part of it.",
+          "image": "https://th.bing.com/th/id/OIP.UouRUKDSRs8vHIaxCRQSUAHaKk?w=202&h=288&c=7&r=0&o=5&dpr=1.3&pid=1.7"
         }
       ],
       "documents": [
