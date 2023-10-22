@@ -3,7 +3,7 @@
     {
       "id": "B234XCF",
       "name": "Project Balogun 2.0",
-      "logo": "https://instagram.flos5-3.fna.fbcdn.net/v/t51.2885-19/270209770_635243147625071_6868328297614047075_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.flos5-3.fna.fbcdn.net&_nc_cat=111&_nc_ohc=6slUxLQtIfMAX_JScsE&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfANJ6YRAXKpiFXWlaAzPROy8wCv-364oL2kDAXscqKxJQ&oe=653319B3&_nc_sid=8b3546",
+      "logo": "https://i0.wp.com/catalystbusinessconsult.com/wp-content/uploads/2021/03/cropped-Cbc-favicon.png?fit=32%2C32&ssl=1",
       "video": ["", "", ""],
       "min_investment": 250,
       "interest_rate": "22.0%",
@@ -127,7 +127,7 @@
     {
       "id": "ASQ102B",
       "name": "Project Lacasa",
-      "logo": "https://instagram.flos5-3.fna.fbcdn.net/v/t51.2885-19/270209770_635243147625071_6868328297614047075_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.flos5-3.fna.fbcdn.net&_nc_cat=111&_nc_ohc=6slUxLQtIfMAX_JScsE&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfANJ6YRAXKpiFXWlaAzPROy8wCv-364oL2kDAXscqKxJQ&oe=653319B3&_nc_sid=8b3546",
+      "logo": "https://i0.wp.com/catalystbusinessconsult.com/wp-content/uploads/2021/03/cropped-Cbc-favicon.png?fit=32%2C32&ssl=1",
       "video": ["", "", ""],
       "type": "Two Storey Apartment Complex",
       "min_investment": 250,
@@ -160,7 +160,17 @@
         "Cross ventilated Rooms"
       ],
       "maintained_by": "Cbc Africa",
-      "market": "High demand for student accommodation: Yaba is home to over 40% of the tertiary institutions in Lagos, including the University of Lagos, Yaba College of Technology, and the Federal College of Education, Akoka.",
+      "market": [
+        {
+          "High demand for student accommodation": "Yaba is home to over 40% of the tertiary institutions in Lagos, including the University of Lagos, Yaba College of Technology, and the Federal College of Education, Akoka. This means that there is a high demand for student accommodation in the area, which can be a good investment opportunity for landlords."
+        },
+        {
+          "High demand for rental properties": "In addition to the high demand for student accommodation, Yaba is also a popular destination for young professionals and families. This is due to its proximity to major business hubs and educational institutions. As a result, there is also a high demand for rental properties in the area."
+        },
+        {
+          "Limited supply of new properties": "The supply of new properties in Yaba is limited, which is another factor that contributes to the high demand for real estate in the area. This makes it a good time to invest in property in Yaba, as the value of properties is likely to continue to increase in the future."
+        }
+      ],
       "track_record": "A beach vacation rental in Holden Beach, NC, that we purchased for $275,000 and generated a cash-on-cash return of 25% in the first year.",
       "team": [
         {
@@ -233,7 +243,7 @@
     {
       "id": "B3HA1L8",
       "name": "Project Balogun 3.0",
-      "logo": "https://instagram.flos5-3.fna.fbcdn.net/v/t51.2885-19/270209770_635243147625071_6868328297614047075_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.flos5-3.fna.fbcdn.net&_nc_cat=111&_nc_ohc=6slUxLQtIfMAX_JScsE&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfANJ6YRAXKpiFXWlaAzPROy8wCv-364oL2kDAXscqKxJQ&oe=653319B3&_nc_sid=8b3546",
+      "logo": "https://i0.wp.com/catalystbusinessconsult.com/wp-content/uploads/2021/03/cropped-Cbc-favicon.png?fit=32%2C32&ssl=1",
       "video": ["", "", ""],
       "type": "Two Acre Luxury Estate",
       "min_investment": 250,
@@ -266,7 +276,17 @@
         "Cross ventilated Rooms"
       ],
       "maintained_by": "Cbc_africa",
-      "market": "High demand for student accommodation: Yaba is home to over 40% of the tertiary institutions in Lagos, including the University of Lagos, Yaba College of Technology, and the Federal College of Education, Akoka.",
+      "market": [
+        {
+          "High demand for student accommodation": "Yaba is home to over 40% of the tertiary institutions in Lagos, including the University of Lagos, Yaba College of Technology, and the Federal College of Education, Akoka. This means that there is a high demand for student accommodation in the area, which can be a good investment opportunity for landlords."
+        },
+        {
+          "High demand for rental properties": "In addition to the high demand for student accommodation, Yaba is also a popular destination for young professionals and families. This is due to its proximity to major business hubs and educational institutions. As a result, there is also a high demand for rental properties in the area."
+        },
+        {
+          "Limited supply of new properties": "The supply of new properties in Yaba is limited, which is another factor that contributes to the high demand for real estate in the area. This makes it a good time to invest in property in Yaba, as the value of properties is likely to continue to increase in the future."
+        }
+      ],
       "track_record": "A beach vacation rental in Holden Beach, NC, that we purchased for $275,000 and generated a cash-on-cash return of 25% in the first year.",
       "team": [
         {
