@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable react-native/no-inline-styles */
 import {
   StyleSheet,
@@ -390,6 +391,8 @@ const RealEstate = ({content}: {content: any}) => {
 
   return (
     <View style={[styles.mainContent, {paddingRight: 0}]}>
+      {/* Video Begins */}
+      {/* Video Ends */}
       <View style={{marginRight: 24}}>
         <MainInfoCard
           type="real-estate"
