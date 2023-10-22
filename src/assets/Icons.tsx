@@ -48,6 +48,12 @@ import Share from './icons/fi_share';
 import ArrowUp from './icons/fi_arrow-up';
 import ArrowDown from './icons/fi_arrow-down';
 import LockClosed from './icons/fi_lock-closed';
+import LockOpen from './icons/fi_lock-open';
+import Facebook from './icons/fi_facebook';
+import Twitter from './icons/fi_twitter';
+import Instagram from './icons/fi_instagram';
+import DocumentOutline from './icons/fi_document_outline';
+import Copy from './icons/fi_copy';
 
 interface IconProp {
   name: string;
@@ -154,6 +160,18 @@ const Icon = ({name, onPress, ...props}: IconProp) => {
       return <Share {...props} />;
     case 'lock-closed':
       return <LockClosed {...props} />;
+    case 'lock-open':
+      return <LockOpen {...props} />;
+    case 'facebook':
+      return <Facebook {...props} />;
+    case 'twitter':
+      return <Twitter {...props} />;
+    case 'instagram':
+      return <Instagram {...props} />;
+    case 'document-outline':
+      return <DocumentOutline {...props} />;
+    case 'copy':
+      return <Copy {...props} />;
     default:
       return null;
   }

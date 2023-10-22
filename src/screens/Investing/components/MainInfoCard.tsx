@@ -13,12 +13,13 @@ interface Props {
   label1: string;
   value2: string;
   label2: string;
-  value3: string;
-  label3: string;
-  value4: string;
-  label4: string;
-  status: 'gain' | 'loss';
-  marketStatus: string;
+  value3?: string;
+  label3?: string;
+  value4?: string;
+  label4?: string;
+  status?: 'gain' | 'loss';
+  marketStatus?: string;
+  image: string;
 }
 
 const MainInfoCard = ({
@@ -34,6 +35,7 @@ const MainInfoCard = ({
   value4,
   label4,
   status,
+  image,
   marketStatus,
 }: Props) => {
   return (
@@ -48,8 +50,8 @@ const MainInfoCard = ({
         }}>
         <View style={styles.img}>
           <Image
-            source={require('@/assets/images/cbcAfrica.png')}
-            style={{width: 24, height: 24}}
+            source={{uri: image}}
+            style={{width: 24, height: 24, borderRadius: 24}}
           />
         </View>
         <View style={{gap: 4, flex: 1}}>
@@ -81,7 +83,7 @@ const MainInfoCard = ({
                 justifyContent: 'center',
                 alignSelf: 'flex-end',
               }}>
-              <Icon
+              {/* <Icon
                 name={status === 'gain' ? 'arrowUp' : 'arrowDown'}
                 {...{
                   strokeWidth: 1.2,
@@ -90,7 +92,7 @@ const MainInfoCard = ({
                   width: 12,
                   height: 12,
                 }}
-              />
+              /> */}
               <Text
                 style={[
                   styles.infoOneMain,
@@ -131,6 +133,7 @@ const MainInfoCard = ({
                     alignItems: 'center',
                     justifyContent: 'center',
                     alignSelf: 'flex-end',
+                    gap: 2,
                   }}>
                   <Icon
                     name={marketStatus === 'open' ? 'lock-open' : 'lock-closed'}
@@ -211,5 +214,6 @@ const styles = StyleSheet.create({
   infoSub: {
     color: colors.black_6,
     ...typography.regular.paragraphSmall,
+    textTransform: 'capitalize',
   },
 });

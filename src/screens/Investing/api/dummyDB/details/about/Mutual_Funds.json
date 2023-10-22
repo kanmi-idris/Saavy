@@ -1,50 +1,55 @@
 {
-  "A239NMF1":  {
-    "name": "Pax Large Cap Fund",
-    "symbol": "PAXLX",
-    "manager": "Impax Asset Management LLC",
-    "logo": "",
-    "interest_rate": "6.49%",
-    "duration": "monthly",
-    "percent_change": "+2.15%",
-    "risk_level": "moderate",
-    "prospectus": "https://impaxam.com/assets/pdfs/general-documents/pax_world_prospectus.pdf?pwm=5867",
-    "details": {
-      "about": "The Pax Large Cap Fund (PAXLX) is a mutual fund that seeks long-term growth of capital by investing in large-cap companies that have positive environmental, social, and governance (ESG) characteristics. The fund follows a sustainable investing approach that integrates ESG analysis with fundamental research and active engagement with portfolio companies.",
-      "earning_model": "Daily, the fund’s unit price changes. These changes determine your returns. For example, if the price was N 100 yesterday and N 120 today, you have gained N20. However, there can be losses too. That’s why some investors use the buy and hold strategy. This is a strategy where you buy units of a fund and keep them for at least five years. This can help you benefit from time and compound interest, and avoid missing out on chances for high annual returns.",
-      "opinion": "The Pax Large Cap Fund is suitable for investors who want to participate in the growth potential of large-cap companies that have positive ESG characteristics, while also supporting positive social and environmental outcomes. The fund has a moderate risk profile, as it may experience volatility due to market fluctuations, sector concentration, and ESG criteria. You should be comfortable with this level of risk and have a long-term investment horizon."
+  "funds": [
+    {
+      "id": "A239NMF1",
+      "name": "Pax Large Cap Fund",
+      "symbol": "PAXLX",
+      "manager": "Impax Asset Management LLC",
+      "logo": "https://impaxam.com/favicon.ico",
+      "interest_rate": "6.49%",
+      "duration": "monthly returns",
+      "percent_change": 2.15,
+      "risk_level": "moderate",
+      "prospectus": "https://impaxam.com/assets/pdfs/general-documents/pax_world_prospectus.pdf?pwm=5867",
+      "details": {
+        "about": "The Pax Large Cap Fund (PAXLX) is a mutual fund that seeks long-term growth of capital by investing in large-cap companies that have positive environmental, social, and governance (ESG) characteristics. The fund follows a sustainable investing approach that integrates ESG analysis with fundamental research and active engagement with portfolio companies.",
+        "earning_model": "Daily, the fund’s unit price changes. These changes determine your returns. For example, if the price was N 100 yesterday and N 120 today, you have gained N20. However, there can be losses too. That’s why some investors use the buy and hold strategy. This is a strategy where you buy units of a fund and keep them for at least five years. This can help you benefit from time and compound interest, and avoid missing out on chances for high annual returns.",
+        "opinion": "The Pax Large Cap Fund is suitable for investors who want to participate in the growth potential of large-cap companies that have positive ESG characteristics, while also supporting positive social and environmental outcomes. The fund has a moderate risk profile, as it may experience volatility due to market fluctuations, sector concentration, and ESG criteria. You should be comfortable with this level of risk and have a long-term investment horizon."
+      }
+    },
+    {
+      "id": "G213OEW1",
+      "name": "Oberweis Micro-Cap Fund",
+      "symbol": "OBMCX",
+      "manager": "Oberweis Asset Management",
+      "logo": "https://oberweisfunds.com/favicon.ico",
+      "interest_rate": "22.20%",
+      "duration": "annual returns",
+      "percent_change": -3.25,
+      "risk_level": "high",
+      "prospectus": "https://www.oberweis.com/funds/oberweis-micro-cap-fund/",
+      "details": {
+        "about": "The Oberweis Micro-Cap Fund (OBMCX) is a mutual fund that seeks long-term capital growth by investing in small-cap companies with high growth potential. The fund invests in a variety of industries, including technology, healthcare, and consumer discretionary.",
+        "earning_model": "The fund's unit price changes daily. These changes determine your returns. For example, if the price was N 100 yesterday and N 120 today, you have gained N20. However, there can also be losses.",
+        "opinion": "The Oberweis Micro-Cap Fund is suitable for investors who are willing to take on more risk in order to achieve higher potential returns. The fund has a high risk profile, as it is more volatile than the overall market. You should be comfortable with this level of risk and have a long-term investment horizon."
+      }
+    },
+    {
+      "id": "ASQ108F",
+      "name": "Large Cap Growth Insights Fund",
+      "symbol": "GCGIX",
+      "manager": "Goldman Sachs Asset Management Quantitative Investment Strategies (QIS) Team",
+      "logo": "https://www.gsam.com/favicon.ico",
+      "interest_rate": "0.34%",
+      "duration": "annual returns",
+      "percent_change": -0.63,
+      "risk_level": "low",
+      "prospectus": "https://www.fidelity.com/mutual-funds/summary/316138316",
+      "details": {
+        "about": "The Large Cap Growth Insights Fund (GCGIX) is a mutual fund that seeks long-term capital growth by investing in large-cap companies that are expected to grow faster than the overall market. The fund invests in a variety of industries, including technology, healthcare, and consumer discretionary.",
+        "earning_model": "The fund’s unit price changes daily. These changes determine your returns. For example, if the price was N 100 yesterday and N 120 today, you have gained N 20. However, there can be losses too. That’s why some investors use the buy and hold strategy. This is a strategy where you buy units of a fund and keep them for at least five years. This can help you benefit from time and compound interest, and avoid missing out on chances for high annual returns.",
+        "opinion": "The Large Cap Growth Insights Fund (GCGIX) is suitable for investors who want to participate in the growth potential of large-cap companies that have positive ESG characteristics, while also supporting positive social and environmental outcomes. The fund has a low risk profile, as it has less volatility than the overall market and its peers. You should be comfortable with this level of risk and have a long-term investment horizon."
+      }
     }
-  },
-  "G213OEW1":{
-    "name": "Oberweis Micro-Cap Fund",
-    "symbol": "OBMCX",
-    "manager": "Oberweis Asset Management",
-    "logo": "",
-    "interest_rate": "22.20%",
-    "duration": "annual",
-    "percent_change": "-3.25%",
-    "risk_level": "high",
-    "prospectus": "https://www.oberweis.com/funds/oberweis-micro-cap-fund/",
-    "details": {
-      "about": "The Oberweis Micro-Cap Fund (OBMCX) is a mutual fund that seeks long-term capital growth by investing in small-cap companies with high growth potential. The fund invests in a variety of industries, including technology, healthcare, and consumer discretionary.",
-      "earning_model": "The fund's unit price changes daily. These changes determine your returns. For example, if the price was N 100 yesterday and N 120 today, you have gained N20. However, there can also be losses.",
-      "opinion": "The Oberweis Micro-Cap Fund is suitable for investors who are willing to take on more risk in order to achieve higher potential returns. The fund has a high risk profile, as it is more volatile than the overall market. You should be comfortable with this level of risk and have a long-term investment horizon."
-    }
-  },
-  "ASQ108F":{
-    "name": "Large Cap Growth Insights Fund",
-    "symbol": "GCGIX",
-    "manager": "Fidelity Management & Research Company",
-    "logo": "",
-    "interest_rate": "0.34%",
-    "duration": "annual",
-    "percent_change": "-0.63%",
-    "risk_level": "low",
-    "prospectus": "https://www.fidelity.com/mutual-funds/summary/316138316",
-    "details": {
-      "about": "The Large Cap Growth Insights Fund (GCGIX) is a mutual fund that seeks long-term capital growth by investing in large-cap companies that are expected to grow faster than the overall market. The fund invests in a variety of industries, including technology, healthcare, and consumer discretionary.",
-      "earning_model": "The fund’s unit price changes daily. These changes determine your returns. For example, if the price was N 100 yesterday and N 120 today, you have gained N 20. However, there can be losses too. That’s why some investors use the buy and hold strategy. This is a strategy where you buy units of a fund and keep them for at least five years. This can help you benefit from time and compound interest, and avoid missing out on chances for high annual returns.",
-      "opinion": "The Large Cap Growth Insights Fund (GCGIX) is suitable for investors who want to participate in the growth potential of large-cap companies that have positive ESG characteristics, while also supporting positive social and environmental outcomes. The fund has a low risk profile, as it has less volatility than the overall market and its peers. You should be comfortable with this level of risk and have a long-term investment horizon."
-    }
-  }
+  ]
 }

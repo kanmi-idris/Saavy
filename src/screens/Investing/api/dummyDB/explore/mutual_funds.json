@@ -1,5 +1,5 @@
 {
-  "funds" : [
+  "funds": [
     {
       "symbol": "PAXLX",
       "name": "Pax Large Cap Fund",
@@ -7,8 +7,8 @@
       "min_investment": 12.4,
       "maturity_structure": "Open-End",
       "distribution_frequency": "Monthly",
-      "id": "ASQ108F",
-      "logo": ""
+      "id": "A239NMF1",
+      "logo": "https://impaxam.com/favicon.ico"
     },
     {
       "symbol": "NILCG",
@@ -17,8 +17,8 @@
       "min_investment": 1000.0,
       "maturity_structure": "5-yr maturity",
       "distribution_frequency": "Annually",
-      "id": "ASQ108G",
-      "logo": ""
+      "id": "ASQ108F",
+      "logo": "https://mf.nipponindiaim.com/SiteCollectionImages/SiteImages/favicon.ico"
     },
     {
       "symbol": "OBMCX",
@@ -27,8 +27,8 @@
       "min_investment": 2500.5,
       "maturity_structure": "5-yr maturity",
       "distribution_frequency": "Quarterly",
-      "id": "ASQ108H",
-      "logo": ""
+      "id": "G213OEW1",
+      "logo": "https://oberweisfunds.com/favicon.ico"
     },
     {
       "symbol": "DHS",
@@ -38,7 +38,7 @@
       "maturity_structure": "1-yr maturity",
       "distribution_frequency": "Monthly",
       "id": "ASQ108F",
-      "logo": ""
+      "logo": "https://www.wisdomtree.com/favicon.ico"
     },
     {
       "symbol": "GCGIX",
@@ -48,7 +48,7 @@
       "maturity_structure": "Open-End",
       "distribution_frequency": "Annually",
       "id": "ASQ108F",
-      "logo": ""
+      "logo": "https://www.gsam.com/favicon.ico"
     },
     {
       "symbol": "PAXLX",
@@ -58,7 +58,7 @@
       "maturity_structure": "Open-End",
       "distribution_frequency": "Monthly",
       "id": "ASQ108F",
-      "logo": ""
+      "logo": "https://impaxam.com/favicon.ico"
     },
     {
       "symbol": "NILCG",
@@ -68,7 +68,7 @@
       "maturity_structure": "5-yr maturity",
       "distribution_frequency": "Annually",
       "id": "ASQ108G",
-      "logo": ""
+      "logo": "https://mf.nipponindiaim.com/SiteCollectionImages/SiteImages/favicon.ico"
     },
     {
       "symbol": "OBMCX",
@@ -78,7 +78,7 @@
       "maturity_structure": "5-yr maturity",
       "distribution_frequency": "Quarterly",
       "id": "ASQ108H",
-      "logo": ""
+      "logo": "https://oberweisfunds.com/favicon.ico"
     },
     {
       "symbol": "DHS",
@@ -88,7 +88,7 @@
       "maturity_structure": "1-yr maturity",
       "distribution_frequency": "Monthly",
       "id": "ASQ108F",
-      "logo": ""
+      "logo": "https://www.wisdomtree.com/favicon.ico"
     },
     {
       "symbol": "GCGIX",
@@ -98,7 +98,7 @@
       "maturity_structure": "Open-End",
       "distribution_frequency": "Annually",
       "id": "ASQ108F",
-      "logo": ""
+      "logo": "https://www.gsam.com/favicon.ico"
     }
   ]
 }

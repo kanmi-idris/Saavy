@@ -1,7 +1,7 @@
 import React from 'react';
 import Svg, {Path} from 'react-native-svg';
 
-export default function LockClosed(props: any) {
+export default function LockOpen(props: any) {
   const {
     width = 24,
     height = 24,
@@ -23,7 +23,7 @@ export default function LockClosed(props: any) {
         strokeLinejoin={strokeLinejoin}
       />
       <Path
-        d="M3.5 5.5V3.5C3.5 2.83696 3.76339 2.20107 4.23223 1.73223C4.70107 1.26339 5.33696 1 6 1C6.66304 1 7.29893 1.26339 7.76777 1.73223C8.23661 2.20107 8.5 2.83696 8.5 3.5V5.5"
+        d="M3.5 5.49959V3.49959C3.49938 2.87961 3.72914 2.28152 4.14469 1.82142C4.56023 1.36132 5.13192 1.07204 5.74875 1.00973C6.36559 0.947426 6.98357 1.11654 7.48274 1.48425C7.9819 1.85195 8.32663 2.39201 8.45 2.99959"
         stroke={stroke}
         strokeWidth={strokeWidth}
         strokeLinecap={strokeLinecap}

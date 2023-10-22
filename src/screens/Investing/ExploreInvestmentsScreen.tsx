@@ -118,7 +118,7 @@ const ExploreInvestmentsScreen = () => {
                             ? content.provider
                             : content.name
                         }
-                        image={require('@/assets/images/MicrosoftLogo.png')}
+                        image={content.logo}
                         amtRaised={content.funds_raised}
                         price={
                           chosenInvestment === 'stocks'
@@ -153,7 +153,10 @@ const ExploreInvestmentsScreen = () => {
                         onPress={() =>
                           navigation.navigate('InvestingStack', {
                             screen: 'InvestmentDetailScreen',
-                            params: {InvestmentName: 'FairLock'},
+                            params: {
+                              InvestmentId: content.id,
+                              InvestmentType: chosenInvestment,
+                            },
                           })
                         }
                       />

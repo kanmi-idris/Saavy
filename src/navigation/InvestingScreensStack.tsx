@@ -10,7 +10,8 @@ import React from 'react';
 export type InvestingStackParams = {
   ExploreInvestmentsScreen: undefined;
   InvestmentDetailScreen: {
-    InvestmentName: string;
+    InvestmentId: string;
+    InvestmentType: string;
   };
   EnterInvestmentAmountScreen: {
     MinimumInvestmentAmount: number;

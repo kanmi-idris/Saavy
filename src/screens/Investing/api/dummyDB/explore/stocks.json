@@ -3,7 +3,7 @@
     {
       "name": "Microsoft Corp.",
       "symbol": "MSFT",
-      "logo": "",
+      "logo": "https://www.microsoft.com/favicon.ico?v2",
       "price": 285.72,
       "percent_change": 0.6,
       "id": "8KJ2Y9R"
@@ -11,7 +11,7 @@
     {
       "name": "Alphabet Inc.",
       "symbol": "GOOGL",
-      "logo": "",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjzC2JyZDZ_RaWf0qp11K0lcvB6b6kYNMoqtZAQ9hiPZ4cTIOB",
       "price": 103.92,
       "percent_change": 0.14,
       "id": "4ZP7C1W"
@@ -19,7 +19,7 @@
     {
       "name": "Spotify Group.",
       "symbol": "SPOT",
-      "logo": "",
+      "logo": "https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png",
       "price": 98.01,
       "percent_change": 1.68,
       "id": "6QH5D8N"
@@ -27,7 +27,7 @@
     {
       "name": "Amazon",
       "symbol": "AMZN",
-      "logo": "",
+      "logo": "https://th.bing.com/th/id/OIP.QqeGG7GkA69TSxiYarThmAHaFj?pid=ImgDet&rs=1",
       "price": 114.95,
       "percent_change": -0.93,
       "id": "2TJ9R5M"
@@ -35,7 +35,7 @@
     {
       "name": "Apple",
       "symbol": "AAPL",
-      "logo": "",
+      "logo": "https://th.bing.com/th/id/R.66dacd13d1a786cad40e9197159da06a?rik=6q8PoTr4wsCZCg&pid=ImgRaw&r=0",
       "price": 152.73,
       "percent_change": 0.46,
       "id": "7XN3P4L"
@@ -43,7 +43,7 @@
     {
       "name": "Tesla",
       "symbol": "TSLA",
-      "logo": "",
+      "logo": "https://pngimg.com/uploads/tesla_logo/tesla_logo_PNG19.png",
       "price": 214.36,
       "percent_change": -0.41,
       "id": "1FZ6G2V"
@@ -51,7 +51,7 @@
     {
       "name": "Meta",
       "symbol": "META",
-      "logo": "",
+      "logo": "https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/y4/r/WUJbsVI4ruF.png",
       "price": 129.91,
       "percent_change": -0.32,
       "id": "5MW8T7Q"
@@ -59,7 +59,7 @@
     {
       "name": "Netflix",
       "symbol": "NFLX",
-      "logo": "",
+      "logo": "https://th.bing.com/th/id/R.d9997090d39314f0e5a978744de965a2?rik=ijg2cz9HpxQZbA&pid=ImgRaw&r=0",
       "price": 226.76,
       "percent_change": 0.27,
       "id": "3VS2K6H"
@@ -67,7 +67,7 @@
     {
       "name": "Nvidia",
       "symbol": "NVDA",
-      "logo": "",
+      "logo": "https://th.bing.com/th/id/R.a300d6197a4f287675f890261cac18e1?rik=ZDSCyw89nWfNYQ&riu=http%3a%2f%2fwww.hdwallpaper.nu%2fwp-content%2fuploads%2f2015%2f02%2fkgSykPh.jpg&ehk=ifbmhyad2UPYw42D1rhJWWPkUEJf9eTwZtvZjGwZtKA%3d&risl=&pid=ImgRaw&r=0",
       "price": 167.85,
       "percent_change": -0.15,
       "id": "9YZ4E7S"
@@ -75,7 +75,7 @@
     {
       "name": "Taiwan Semiconductor Manufacturing Company",
       "symbol": "TSM",
-      "logo": "",
+      "logo": "https://th.bing.com/th/id/OIP.duLUWhKwXQBQNTe_Nh0FQgHaE8?pid=ImgDet&rs=1",
       "price": 79.32,
       "percent_change": -0.67,
       "id": "0UQ1I3O"
@@ -83,7 +83,7 @@
     {
       "name": "Samsung Electronics",
       "symbol": "005930.KS",
-      "logo": "",
+      "logo": "https://th.bing.com/th/id/OIP.0hgVG82XJ2K2pp3tR2k8HQAAAA?pid=ImgDet&rs=1",
       "price": 58.3,
       "percent_change": -0.53,
       "id": "8DF3N2P"
@@ -91,7 +91,7 @@
     {
       "name": "ASML Holding",
       "symbol": "ASML",
-      "logo": "",
+      "logo": "https://th.bing.com/th/id/R.a1526e21e510d31f78eff8c488f75052?rik=ac2RTUVcoFkslg&pid=ImgRaw&r=0",
       "price": 416.5,
       "percent_change": -0.25,
       "id": "4AC7L6M"
@@ -99,7 +99,7 @@
     {
       "name": "Nvidia",
       "symbol": "NVDA",
-      "logo": "",
+      "logo": "https://th.bing.com/th/id/R.a300d6197a4f287675f890261cac18e1?rik=ZDSCyw89nWfNYQ&riu=http%3a%2f%2fwww.hdwallpaper.nu%2fwp-content%2fuploads%2f2015%2f02%2fkgSykPh.jpg&ehk=ifbmhyad2UPYw42D1rhJWWPkUEJf9eTwZtvZjGwZtKA%3d&risl=&pid=ImgRaw&r=0",
       "price": 167.85,
       "percent_change": -0.15,
       "id": "9YZ4E7S"
@@ -107,7 +107,7 @@
     {
       "name": "Amazon",
       "symbol": "AMZN",
-      "logo": "",
+      "logo": "https://th.bing.com/th/id/OIP.QqeGG7GkA69TSxiYarThmAHaFj?pid=ImgDet&rs=1",
       "price": 114.95,
       "percent_change": -0.93,
       "id": "2TJ9R5M"
@@ -115,7 +115,7 @@
     {
       "name": "Microsoft Corp.",
       "symbol": "MSFT",
-      "logo": "",
+      "logo": "https://www.microsoft.com/favicon.ico?v2",
       "price": 285.72,
       "percent_change": 0.6,
       "id": "8KJ2Y9R"
