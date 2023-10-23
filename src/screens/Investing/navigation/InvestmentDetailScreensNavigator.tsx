@@ -76,6 +76,7 @@ const InvestmentDetailScreensNavigator = () => {
                 textTransform: 'uppercase',
               }}>
               {chosenInvestment === 'savingsLock' ||
+              chosenInvestment === 'startups' ||
               chosenInvestment === 'realEstate'
                 ? content.name
                 : content.symbol}

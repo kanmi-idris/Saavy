@@ -71,7 +71,8 @@ const MainInfoCard = ({
           <Text style={styles.infoSub}>{label1}</Text>
         </View>
         <View style={{flex: 2}}>
-          {type === 'savings-lock' ? null : type === 'real-estate' ? (
+          {type === 'savings-lock' ? null : type === 'real-estate' ||
+            type === 'startups' ? (
             <Text style={[styles.infoOneMain, {textAlign: 'right'}]}>
               {value2}
             </Text>
@@ -122,7 +123,8 @@ const MainInfoCard = ({
               <Text style={styles.infoSub}>{label3}</Text>
             </View>
             <View style={{flex: 2}}>
-              {type === 'savings-lock' ? null : type === 'real-estate' ? (
+              {type === 'savings-lock' ? null : type === 'real-estate' ||
+                type === 'startups' ? (
                 <Text style={[styles.infoOneMain, {textAlign: 'right'}]}>
                   {value4}
                 </Text>
@@ -135,17 +137,23 @@ const MainInfoCard = ({
                     alignSelf: 'flex-end',
                     gap: 2,
                   }}>
-                  <Icon
-                    name={marketStatus === 'open' ? 'lock_open' : 'lock_closed'}
-                    {...{
-                      strokeWidth: 1.2,
-                      stroke:
-                        marketStatus === 'open' ? colors.green_1 : colors.red_1,
-                      viewBox: '0 0 12 12',
-                      width: 12,
-                      height: 12,
-                    }}
-                  />
+                  {marketStatus && (
+                    <Icon
+                      name={
+                        marketStatus === 'open' ? 'lock_open' : 'lock_closed'
+                      }
+                      {...{
+                        strokeWidth: 1.2,
+                        stroke:
+                          marketStatus === 'open'
+                            ? colors.green_1
+                            : colors.red_1,
+                        viewBox: '0 0 12 12',
+                        width: 12,
+                        height: 12,
+                      }}
+                    />
+                  )}
                   <Text
                     style={[
                       styles.infoOneMain,

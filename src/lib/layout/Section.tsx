@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable react-native/no-inline-styles */
 import colors from '@/assets/Colors';
 import Icon from '@/assets/Icons';
@@ -11,10 +12,11 @@ import {
   View,
   Dimensions,
   Animated,
+  ScrollViewProps,
 } from 'react-native';
 import ScrollProgress from '../components/ScrollProgress';
 
-interface SectionProps {
+interface SectionProps extends ScrollViewProps {
   children: React.ReactNode;
   auxBtn?: boolean;
   heading?: string;
@@ -32,7 +34,7 @@ export const ScrollableSection = ({
   auxBtn,
   horizontal,
   fillScreen,
-  pagingEnabled,
+  // pagingEnabled,
   offset,
   scrollData,
 }: SectionProps) => {

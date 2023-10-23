@@ -4,8 +4,18 @@
       "id": "R232E6M",
       "name": "Rentberry",
       "tagline": "The first global home rental platform with full automation!",
+      "logo": "https://uploads.republic.com/p/offerings/logos/small/000/002/249/2249-1685972764-efc3cf60670ac1ef276b41d31ff7f41d69732c6b.png",
+      "videos": [
+        "01WsH1yqaYE",
+        "gogwzj0w1J0",
+        "ZUY4hdlU6Oc",
+        "b1WgN0q3Zj0",
+        "1ueWBHqTMGc",
+        "fjLKFDjemN4",
+        "mIjyMd8KIgM"
+      ],
       "valuation_cap": "25M",
-      "min_investment": "250$",
+      "min_investment": 250,
       "maturity_period": "7 years",
       "funding_deadline": "August 23, 2023",
       "highlights": [
@@ -15,74 +25,105 @@
         "Huge Market: 44M homes"
       ],
       "problem": {
-        "intro": "The Home Rental Market Needs Innovation",
-        "image": [""]
+        "intro": "The Home Rental Market Needs Innovation\n \nMost property listings still appear as basic online classified ads, providing a limited rental experience and offering virtually no assistance in terms of the application process or routine rental tasks.\n \nAdditionally, with each rental agreement, tenants lock billions of dollars in rental deposits. Currently, there's no internationally recognized insurance or savings program available to benefit reliable, quality tenants.",
+        "image": [
+          "https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/089/858/89858-1684775930-20880885af313aa3230fecbea431251fb877b9e3.jpg"
+        ]
       },
       "solution": {
         "intro": "Despite many other industries having been successfully disrupted in recent years (such as retail, social media, and transportation), the home rental market has remained largely unchanged. Rentberry is changing that with its fully digital rental experience.",
-        "image": [""]
+        "image": [
+          "https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/089/363/89363-1684273207-88b0e0bb9a1774e44f5e9344bba81ff6c5a1f51e.png",
+          "https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/089/859/89859-1684775962-64b82f428050f98a81e491320d9fba730f0645f0.jpg",
+          "https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/089/864/89864-1684780322-50328a3d91d04eb82e601df687b7d58423f01922.jpg",
+          "https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/089/864/89864-1684780322-50328a3d91d04eb82e601df687b7d58423f01922.jpg"
+        ]
       },
       "product": {
-        "intro": "Fully Digital Rental Experience, Despite many other industries having been successfully disrupted in recent years (such as retail, social media.",
-        "image": [""]
+        "intro": "Fully Digital Rental Experience,\n \nDespite many other industries having been successfully disrupted in recent years (such as retail, social media, and transportation), the home rental space lacks comparable innovation.\n \nThe process of long-term rentals still causes frustration and wasted time for both homeowners and tenants. So far, there has not yet been a technological disruption significant enough to usher in a new – and better – way to rent.\n \nHere at Rentberry, we aim to change that! Rentberry is the first global home rental platform that makes the long-term rental process transparent and safe, offering an all-in-one rental ecosystem and helping properties realize their true market price.",
+        "image": [
+          "https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/089/866/89866-1684780420-60ce3e7c09c096b0c6bdb1581152221010e09a1f.jpg"
+        ]
       },
       "traction": {
-        "intro": "We are proud of the fact that many prominent individuals from the real estate, legal, and finance sectors have shared our vision for the future of the home rental industry, entrusting us with their investments.",
-        "image": [""]
+        "intro": "We are proud of the fact that many prominent individuals from the real estate, legal, and finance sectors have shared our vision for the future of the home rental industry, entrusting Rentberry with over $25 million, which is now fueling our growth.\n \nIn 2022 alone, we achieved:\n \n •  9 million customers\n•  39 million properties\n •  137,000 locations\n•  191% revenue growth",
+        "image": [
+          "https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/089/868/89868-1684780813-6e4d1c213a5f2fc782808c607c9adcfd96d511f5.jpg",
+          "https://uploads.republic.com/p/images/attachments/original/000/089/799/89799-1684715914-e4c99b8862ee46e6c34989e1bc27d0d73ad0afa8.jpeg"
+        ]
       },
       "partnerships": {
         "intro": "More than 60 established partnerships!",
-        "image": [""]
+        "image": [
+          "https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/089/869/89869-1684780940-a9e571630e95c9f19161b17456e52764fa196710.jpg"
+        ]
       },
       "customers": {
-        "intro": "In 2022, Rentberry had more than 2 million monthly active users (MAU) from over 50 countries. The top five locations included New York, Los Angeles, London, Berlin, and Paris.",
-        "image": [""]
+        "intro": "In 2022, Rentberry had more than 2 million monthly active users (MAU) from over 50 countries. The top five locations included New York, Los Angeles, London, Berlin, and Sydney. During the first quarter of 2023, we continue to experience phenomenal user growth of 162% quarter-over-quarter.",
+        "image": [
+          "https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/089/934/89934-1684866537-9c3f8c35a0e1f53037a349cf4c51237236f94996.jpg"
+        ]
       },
       "business_model": {
-        "intro": "Rentberry utilizes the 'Freemium' business model, which allows for several tasks to be performed free of charge. The Rentberry platform has a great value proposition for both landlords and tenants.",
-        "image": [""]
+        "intro": "$7 Billion Yearly Market Opportunity in the US Alone!\n \nRentberry utilizes the 'Freemium' business model, which allows for several tasks to be performed free of charge. The Rentberry platform has a great variety of monetization channels that generate revenue from landlords, tenants, agents, and enterprise clients. In 2022, the company experienced a 191% year-over-year revenue growth. In 2023, after the acquisition, we expect the yearly revenue to exceed $10 million!\n \nAdditional revenue sources include the sale of insurance products, leads to moving companies and local businesses, integration with third-party service providers (such as plumbers and handymen), as well as revenue generation from the Happy Seniors platform.",
+        "image": [
+          "https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/090/029/90029-1684910273-ce7c13e0a256c36c64b8e87d73edccb748da63ad.png",
+          "https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/090/029/90029-1684910273-ce7c13e0a256c36c64b8e87d73edccb748da63ad.png"
+        ]
       },
       "market": {
         "intro": "Home renting has become an economic and lifestyle choice for 41% of Americans, 56% of the Swiss, and 40% of Germans, to name just a few countries. Currently, there are over 641 million rental units worldwide, with around 2.3 billion people living in long-term rentals. The market is massive and is only getting bigger!",
-        "image": ["", ""]
+        "image": [
+          "https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/089/871/89871-1684781041-b47e2ef12785d39d78e3f6ed80ab2282327478f7.jpg",
+          "https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/086/793/86793-1681211524-9848e51c043ca37b3210260eaff9f194692e610a.png"
+        ]
       },
       "competition": {
         "intro": "Rentberry's main competitors include Zillow, Trulia, and StreetEasy. However, Rentberry differentiates itself from these competitors by offering a fully digital rental experience and by being the only global home rental platform.",
-        "image": [""]
+        "image": [
+          "https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/090/032/90032-1684931449-31b9c1822e320ff1963bd0e2b4b8a511f102db09.png"
+        ]
       },
       "vision_and_strategy": {
-        "intro": "Rentberry has developed technology that disrupts the residential and senior housing rental markets: \n\n 1.The Rentberry platform, which provides a fully digital rental experience for both landlords and tenants.",
-        "image": [""]
+        "intro": "Rentberry has developed technology that disrupts the residential and senior housing rental markets:\n \n•  The Rentberry platform, the company's main product, is a home rental solution designed to make the rental process less costly, more convenient, and secure\n \n•  The Happy Seniors platform, which is 100% owned by the company, is designed to help make the lives of millions of senior individuals more social and engaging while keeping them connected to their loved ones\n \n•  Flexible Living is designed to allow millennials to work and travel from various locations",
+        "image": [
+          "https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/089/930/89930-1684865517-7171f64d27387cb85a9e29046f84cf65ba17d5a7.jpg",
+          "https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/089/802/89802-1684719863-c396d4629b0c71544030cd41c12d0b76f3f556a9.jpg"
+        ]
       },
       "team": [
         {
-          "name": "Alex Lubinsky",
+          "name": "Hammed Olawale",
           "title": "CEO",
           "phone": "+234 8105410146",
-          "bio": "Hammed Olawale is a seasoned real estate investor and entrepreneur who has completed 18 real estate transactions in the past three years, transacting over $5.3 million in real estate deals.",
-          "image": ""
+          "bio": "Hammed Olawale is a seasoned real estate investor and entrepreneur who has completed 18 real estate transactions in the past three years, transacting over $5.3 million in real estate deals.Hammed Olawale is a seasoned real estate investor and entrepreneur who has completed 18 real estate transactions in the past three years, transacting over $5.3 million in real estate deals.",
+          "image": "https://scontent.cdninstagram.com/v/t51.2885-15/348715445_3739962562954106_512101096701636176_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyIn0&_nc_ht=scontent.cdninstagram.com&_nc_cat=102&_nc_ohc=OLlUnbiDmTkAX-y5qh2&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzExMDAyNDUxMzk3MzE2NzYzNA%3D%3D.2-ccb7-5&oh=00_AfAPpU-jm_1a2QKCtrGUKJADfgTrm8uMTNqy33iuc_L_MQ&oe=6538CF96&_nc_sid=10d13b"
         },
         {
           "name": "Jane Doe",
           "title": "COO",
           "phone": "+234 8105410147",
-          "bio": "Jane Doe is a seasoned real estate professional with over 10 years of experience in the industry. She has a proven track record of success in managing and developing real estate projects.",
-          "image": ""
+          "bio": "Jane Doe is a seasoned real estate professional with over 10 years of experience in the industry. She has a proven track record of success in managing and developing real estate projects.Jane Doe is a seasoned real estate professional with over 10 years of experience in the industry. She has a proven track record of success in managing and developing real estate projects.",
+          "image": "https://th.bing.com/th/id/OIP.lryzAGhJy9keOjo2QLvIQwHaJQ?w=144&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7"
         },
         {
           "name": "John Smith",
           "title": "CFO",
           "phone": "+234 8105410148",
-          "bio": "John Smith is a seasoned financial professional with over 15 years of experience in the real estate industry. He has a proven track record of success in managing the finances of real estate projects.",
-          "image": ""
+          "bio": "John Smith is a seasoned financial professional with over 15 years of experience in the real estate industry. He has a proven track record of success in managing the finances of real estate projects.John Smith is a seasoned financial professional with over 15 years of experience in the real estate industry. He has a proven track record of success in managing the finances of real estate projects.",
+          "image": "https://th.bing.com/th/id/OIP.lryzAGhJy9keOjo2QLvIQwHaJQ?w=144&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7"
         }
       ],
-      "company_details": {
+      "company": {
         "legal_name": "Catalyst Business Consult",
         "employees": 30,
         "website": "www.cbc_africa.com",
-        "phone": ["0812 035 3382", "0816 272 6997"],
-        "socials": [],
+        "phone": ["2348120353382", "2348162726997"],
+        "socials": [
+          "https://www.instagram.com/cbc_africa/",
+          "https://web.facebook.com/profile.php?id=100083122972699",
+          "https://twitter.com/cbc_africa"
+        ],
         "founded": 2016
       },
       "testimonials": [
@@ -90,19 +131,19 @@
           "name": "Fisayo Fosudo",
           "title": "Investor",
           "testimonial": "I am so happy with my purchase of Project Balogun 3.0. It is a great investment opportunity that offers me a steady income and a hassle-free experience. The apartments are well-maintained and the management team is very responsive.",
-          "image": ""
+          "image": "https://th.bing.com/th/id/OIP.lryzAGhJy9keOjo2QLvIQwHaJQ?w=144&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7"
         },
         {
           "name": "Jane Doe",
           "title": "Investor",
           "testimonial": "Project Balogun 3.0 is a fantastic investment opportunity. The project is well-managed and the team is experienced and knowledgeable. I am confident that this project will be a success and I am excited to be a part of it.",
-          "image": ""
+          "image": "https://th.bing.com/th/id/OIP.7GwXIBXKJjrbG2XwQZBJ6gHaHa?w=185&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"
         },
         {
           "name": "John Smith",
           "title": "Investor",
           "testimonial": "I am very impressed with Project Balogun 3.0. The project is well-planned and the team is highly motivated. I am confident that this project will be a success and I am excited to be a part of it.",
-          "image": ""
+          "image": "https://th.bing.com/th/id/OIP.UouRUKDSRs8vHIaxCRQSUAHaKk?w=202&h=288&c=7&r=0&o=5&dpr=1.3&pid=1.7"
         }
       ],
       "documents": [
@@ -122,7 +163,7 @@
           "url": "https://example.com/certificate_of_ownership.pdf"
         }
       ],
-      "prospectus": "https://invest.rentberry.com/"
+      "opinion": "We think Rentberry is a promising investment opportunity. The company has a strong team, a large addressable market, and a number of competitive advantages. However"
     }
   ]
 }
