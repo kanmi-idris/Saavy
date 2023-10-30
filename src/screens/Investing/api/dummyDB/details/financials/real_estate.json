@@ -1,76 +1,118 @@
 {
-  "ASQ101A": {
-    "project_cost": "₦600 million",
-    "funding_goal": "₦300 million",
-    "min_investment": "₦1 million",
-    "maturity_period": "15 years",
-    "annual_dividends": "32.5% - 96%",
-    "amount_raised_so_far": "₦150 million",
-    "security_type": "Debt Instrument",
-    "funding_deadline": "March 31, 2023",
-    "proposed_use_of_funds": {
-      "construction_costs": {
-        "amount": "₦500 million",
-        "percentage": "98.4%"
+  "real_estate": [
+    {
+      "id": "B234XCF",
+      "project_cost": 600000000,
+      "funding_goal": 5000,
+      "min_investment": 1000000,
+      "maturity_period": "15 years",
+      "annual_dividends": "32.5% - 96%",
+      "amount_raised_so_far": 150000000,
+      "security_type": "Debt Instrument",
+      "funding_deadline": "March 31, 2023",
+      "proposed_use_of_funds": {
+        "construction_costs": {
+          "amount": "₦500 million",
+          "percentage": "98.4%"
+        },
+        "marketing_costs": {
+          "amount": "₦10 million",
+          "percentage": "1.67%"
+        },
+        "maintenance_costs": {
+          "amount": "₦5 million",
+          "percentage": "0.83%"
+        },
+        "taxes": {
+          "amount": "₦15 million",
+          "percentage": "2.5%"
+        },
+        "contingency_costs": {
+          "amount": "₦10 million",
+          "percentage": "1.67%"
+        }
       },
-      "marketing_costs": {
-        "amount": "₦10 million",
-        "percentage": "1.67%"
-      },
-      "maintenance_costs": {
-        "amount": "₦5 million",
-        "percentage": "0.83%"
-      },
-      "taxes": {
-        "amount": "₦15 million",
-        "percentage": "2.5%"
-      },
-      "contingency_costs": {
-        "amount": "₦10 million",
-        "percentage": "1.67%"
+      "business_plan": {
+        "title": "Business Plan",
+        "description": "Here is a detailed document showing the business plan.",
+        "url": "https://example.com"
       }
     },
-    "business_plan": {
-      "title": "Business Plan",
-      "description": "Here is a detailed document showing the business plan.",
-      "url": "https://example.com"
-    }
-  },
-  "ASQ102B": {
-    "project_cost": "₦600 million",
-    "funding_goal": "₦300 million",
-    "min_investment": "₦1 million",
-    "maturity_period": "15 years",
-    "annual_dividends": "32.5% - 96%",
-    "amount_raised_so_far": "₦150 million",
-    "security_type": "Debt Instrument",
-    "funding_deadline": "March 31, 2023",
-    "proposed_use_of_funds": {
-      "construction_costs": {
-        "amount": "₦500 million",
-        "percentage": "98.4%"
+    {
+      "id": "ASQ102B",
+      "project_cost": 600000000,
+      "funding_goal": 5000,
+      "min_investment": 1000000,
+      "maturity_period": "15 years",
+      "annual_dividends": "32.5% - 96%",
+      "amount_raised_so_far": 150000000,
+      "security_type": "Debt Instrument",
+      "funding_deadline": "March 31, 2023",
+      "proposed_use_of_funds": {
+        "construction_costs": {
+          "amount": "₦500 million",
+          "percentage": "98.4%"
+        },
+        "marketing_costs": {
+          "amount": "₦10 million",
+          "percentage": "1.67%"
+        },
+        "maintenance_costs": {
+          "amount": "₦5 million",
+          "percentage": "0.83%"
+        },
+        "taxes": {
+          "amount": "₦15 million",
+          "percentage": "2.5%"
+        },
+        "contingency_costs": {
+          "amount": "₦10 million",
+          "percentage": "1.67%"
+        }
       },
-      "marketing_costs": {
-        "amount": "₦10 million",
-        "percentage": "1.67%"
-      },
-      "maintenance_costs": {
-        "amount": "₦5 million",
-        "percentage": "0.83%"
-      },
-      "taxes": {
-        "amount": "₦15 million",
-        "percentage": "2.5%"
-      },
-      "contingency_costs": {
-        "amount": "₦10 million",
-        "percentage": "1.67%"
+      "business_plan": {
+        "title": "Business Plan",
+        "description": "Here is a detailed document showing the business plan.",
+        "url": "https://example.com"
       }
     },
-    "business_plan": {
-      "title": "Business Plan",
-      "description": "Here is a detailed document showing the business plan.",
-      "url": "https://example.com"
+    {
+      "id": "B3HA1L8",
+      "project_cost": 600000000,
+      "funding_goal": 5000,
+      "min_investment": 1000000,
+      "maturity_period": "15 years",
+      "annual_dividends": "32.5% - 96%",
+      "amount_raised_so_far": 150000000,
+      "security_type": "Debt Instrument",
+      "funding_deadline": "March 31, 2023",
+      "proposed_use_of_funds": {
+        "construction_costs": {
+          "amount": "₦500 million",
+          "percentage": "98.4%"
+        },
+        "marketing_costs": {
+          "amount": "₦10 million",
+          "percentage": "1.67%"
+        },
+        "maintenance_costs": {
+          "amount": "₦5 million",
+          "percentage": "0.83%"
+        },
+        "taxes": {
+          "amount": "₦15 million",
+          "percentage": "2.5%"
+        },
+        "contingency_costs": {
+          "amount": "₦10 million",
+          "percentage": "1.67%"
+        }
+      },
+      "business_plan": {
+        "title": "Business Plan",
+        "description": "Here is a detailed document showing the business plan.",
+        "url": "https://example.com"
+      }
     }
-  }
+  ]
 }

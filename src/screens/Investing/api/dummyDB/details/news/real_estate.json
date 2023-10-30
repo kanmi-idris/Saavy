@@ -1,50 +1,63 @@
 {
-  "ASQ101A": [
+  "real_estate": [
     {
+      "id": "B234XCF",
       "headline": "Fixed Returns Savings Lock Launches New Investment Product",
       "timestamp": "2023-10-12T08:00:00Z",
       "source": "example.com",
       "url": "https://example.com/news/fixed-returns-savings-lock-launches-new-investment-product"
     },
     {
+      "id": "B234XCF",
       "headline": "Project Lacasa Announces Milestone Achievement",
       "timestamp": "2023-10-12T09:15:00Z",
       "source": "example.com",
       "url": "https://example.com/news/project-lacasa-announces-milestone"
     },
     {
+      "id": "B234XCF",
       "headline": "Project Balogun 3.0 Gains Recognition for Innovation",
       "timestamp": "2023-10-12T10:30:00Z",
       "source": "example.com",
       "url": "https://example.com/news/project-balogun-3.0-gains-recognition"
     },
     {
+      "id": "B3HA1L8",
       "headline": "Lagos State Housing Project Marks Progress in Affordable Housing",
       "timestamp": "2023-10-12T11:45:00Z",
       "source": "example.com",
       "url": "https://example.com/news/lagos-state-housing-project-marks-progress"
-    }
-  ],
-  "ASQ102B": [
+    },
     {
+      "id": "ASQ102B",
       "headline": "Fixed Returns Savings Lock Launches New Investment Product",
       "timestamp": "2023-10-12T08:00:00Z",
       "source": "example.com",
       "url": "https://example.com/news/fixed-returns-savings-lock-launches-new-investment-product"
     },
     {
+      "id": "ASQ102B",
       "headline": "Project Lacasa Announces Milestone Achievement",
       "timestamp": "2023-10-12T09:15:00Z",
       "source": "example.com",
       "url": "https://example.com/news/project-lacasa-announces-milestone"
     },
     {
+      "id": "ASQ102B",
       "headline": "Project Balogun 3.0 Gains Recognition for Innovation",
       "timestamp": "2023-10-12T10:30:00Z",
       "source": "example.com",
       "url": "https://example.com/news/project-balogun-3.0-gains-recognition"
     },
     {
+      "id": "B3HA1L8",
+      "headline": "Lagos State Housing Project Marks Progress in Affordable Housing",
+      "timestamp": "2023-10-12T11:45:00Z",
+      "source": "example.com",
+      "url": "https://example.com/news/lagos-state-housing-project-marks-progress"
+    },
+    {
+      "id": "B3HA1L8",
       "headline": "Lagos State Housing Project Marks Progress in Affordable Housing",
       "timestamp": "2023-10-12T11:45:00Z",
       "source": "example.com",

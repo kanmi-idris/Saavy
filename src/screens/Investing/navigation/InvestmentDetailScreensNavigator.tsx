@@ -34,7 +34,7 @@ export type InvestmentDetailParams = {
   };
 };
 
-interface InvestmentAPIs {
+export interface InvestmentAPIs {
   [key: string]: any[];
 }
 export const AboutInvestmentAPIs: InvestmentAPIs = {

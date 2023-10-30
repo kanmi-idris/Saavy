@@ -1,77 +1,82 @@
 {
-  "ASQ108F": {
-    "fund_size": {
-      "amount": "$1.3 billion",
-      "date": "06/30/2021"
-    },
-    "trustee": "State Street Bank and Trust Company",
-    "custodian": "State Street Bank and Trust Company",
-    "management_fee": "0.75% for institutional class shares",
-    "10_year_avg_annual_return": "12.31%",
-    "exchange_fee": "2.00%",
-    "expense_ratio": "0.97%",
-    "fund_composition": [
-      {
-        "asset_type": "Stocks",
-        "percentage": "98.4%"
+  "funds": [
+    {
+      "id": "A239NMF1",
+      "fund_size": {
+        "amount": "$1.3 billion",
+        "date": "06/30/2021"
       },
-      {
-        "asset_type": "Cash",
-        "percentage": "1.6%"
-      }
-    ],
-    "strategy_and_holdings": "The Pax Large Cap Fund invests in large-cap companies with strong ESG practices, attractive valuations, and competitive advantages. The fund's investment team conducts in-depth research on each company to identify potential investments. The team also considers the company's environmental, social, and governance (ESG) performance when making investment decisions.",
-    "performance_and_fees": "The Pax Large Cap Fund has outperformed its benchmark, the S&P 500 Index, over the past 10 years. The fund's expense ratio is slightly higher than the average for large-cap funds, but its performance has justified the higher fee.",
-    "trading_rules_and_restrictions": "The Pax Large Cap Fund is not designed to be traded frequently. Frequent trading can increase transaction costs and disrupt the fund's investment strategy. The fund has a minimum investment of $1,000 and a $25 fee for early redemptions."
-  },
-  "ASQ108G": {
-    "fund_size": {
-      "amount": "$5 million",
-      "date": "06/30/2021"
+      "trustee": "State Street Bank and Trust Company",
+      "custodian": "State Street Bank and Trust Company",
+      "management_fee": "0.75% for institutional class shares",
+      "ten_year_avg_annual_return": "12.31%",
+      "exchange_fee": "2.00%",
+      "expense_ratio": "0.97%",
+      "fund_composition": [
+        {
+          "asset_type": "Stocks",
+          "percentage": 98.4
+        },
+        {
+          "asset_type": "Cash",
+          "percentage": 1.6
+        }
+      ],
+      "strategy_and_holdings": "The Pax Large Cap Fund invests in large-cap companies with strong ESG practices, attractive valuations, and competitive advantages. The fund's investment team conducts in-depth research on each company to identify potential investments. The team also considers the company's environmental, social, and governance (ESG) performance when making investment decisions.",
+      "performance_and_fees": "The Pax Large Cap Fund has outperformed its benchmark, the S&P 500 Index, over the past 10 years. The fund's expense ratio is slightly higher than the average for large-cap funds, but its performance has justified the higher fee.",
+      "trading_rules_and_restrictions": "The Pax Large Cap Fund is not designed to be traded frequently. Frequent trading can increase transaction costs and disrupt the fund's investment strategy. The fund has a minimum investment of $1,000 and a $25 fee for early redemptions."
     },
-    "trustee": "State Street Bank and Trust Company",
-    "custodian": "State Street Bank and Trust Company",
-    "management_fee": "0.75% for institutional class shares",
-    "10_year_avg_annual_return": "12.31%",
-    "exchange_fee": "2.00%",
-    "expense_ratio": "0.97%",
-    "fund_composition": [
-      {
-        "asset_type": "Stocks",
-        "percentage": "98.4%"
+    {
+      "id": "G213OEW1",
+      "fund_size": {
+        "amount": "$5 million",
+        "date": "06/30/2021"
       },
-      {
-        "asset_type": "Cash",
-        "percentage": "1.6%"
-      }
-    ],
-    "strategy_and_holdings": "The Pax Large Cap Fund invests in large-cap companies with strong ESG practices, attractive valuations, and competitive advantages. The fund's investment team conducts in-depth research on each company to identify potential investments. The team also considers the company's environmental, social, and governance (ESG) performance when making investment decisions.",
-    "performance_and_fees": "The Pax Large Cap Fund has outperformed its benchmark, the S&P 500 Index, over the past 10 years. The fund's expense ratio is slightly higher than the average for large-cap funds, but its performance has justified the higher fee.",
-    "trading_rules_and_restrictions": "The Pax Large Cap Fund is not designed to be traded frequently. Frequent trading can increase transaction costs and disrupt the fund's investment strategy. The fund has a minimum investment of $1,000 and a $25 fee for early redemptions."
-  },
-  "ASQ108H": {
-    "fund_size": {
-      "amount": "$2 billion",
-      "date": "06/30/2021"
+      "trustee": "State Street Bank and Trust Company",
+      "custodian": "State Street Bank and Trust Company",
+      "management_fee": "0.75% for institutional class shares",
+      "ten_year_avg_annual_return": "12.31%",
+      "exchange_fee": "2.00%",
+      "expense_ratio": "0.97%",
+      "fund_composition": [
+        {
+          "asset_type": "Stocks",
+          "percentage": "98.4%"
+        },
+        {
+          "asset_type": "Cash",
+          "percentage": "1.6%"
+        }
+      ],
+      "strategy_and_holdings": "The Pax Large Cap Fund invests in large-cap companies with strong ESG practices, attractive valuations, and competitive advantages. The fund's investment team conducts in-depth research on each company to identify potential investments. The team also considers the company's environmental, social, and governance (ESG) performance when making investment decisions.",
+      "performance_and_fees": "The Pax Large Cap Fund has outperformed its benchmark, the S&P 500 Index, over the past 10 years. The fund's expense ratio is slightly higher than the average for large-cap funds, but its performance has justified the higher fee.",
+      "trading_rules_and_restrictions": "The Pax Large Cap Fund is not designed to be traded frequently. Frequent trading can increase transaction costs and disrupt the fund's investment strategy. The fund has a minimum investment of $1,000 and a $25 fee for early redemptions."
     },
-    "trustee": "State Street Bank and Trust Company",
-    "custodian": "State Street Bank and Trust Company",
-    "management_fee": "0.75% for institutional class shares",
-    "10_year_avg_annual_return": "12.31%",
-    "exchange_fee": "2.00%",
-    "expense_ratio": "0.97%",
-    "fund_composition": [
-      {
-        "asset_type": "Stocks",
-        "percentage": "98.4%"
+    {
+      "id": "ASQ108F",
+      "fund_size": {
+        "amount": "$2 billion",
+        "date": "06/30/2021"
       },
-      {
-        "asset_type": "Cash",
-        "percentage": "1.6%"
-      }
-    ],
-    "strategy_and_holdings": "The Pax Large Cap Fund invests in large-cap companies with strong ESG practices, attractive valuations, and competitive advantages. The fund's investment team conducts in-depth research on each company to identify potential investments. The team also considers the company's environmental, social, and governance (ESG) performance when making investment decisions.",
-    "performance_and_fees": "The Pax Large Cap Fund has outperformed its benchmark, the S&P 500 Index, over the past 10 years. The fund's expense ratio is slightly higher than the average for large-cap funds, but its performance has justified the higher fee.",
-    "trading_rules_and_restrictions": "The Pax Large Cap Fund is not designed to be traded frequently. Frequent trading can increase transaction costs and disrupt the fund's investment strategy. The fund has a minimum investment of $1,000 and a $25 fee for early redemptions."
-  }
+      "trustee": "State Street Bank and Trust Company",
+      "custodian": "State Street Bank and Trust Company",
+      "management_fee": "0.75% for institutional class shares",
+      "ten_year_avg_annual_return": "12.31%",
+      "exchange_fee": "2.00%",
+      "expense_ratio": "0.97%",
+      "fund_composition": [
+        {
+          "asset_type": "Stocks",
+          "percentage": "98.4%"
+        },
+        {
+          "asset_type": "Cash",
+          "percentage": "1.6%"
+        }
+      ],
+      "strategy_and_holdings": "The Pax Large Cap Fund invests in large-cap companies with strong ESG practices, attractive valuations, and competitive advantages. The fund's investment team conducts in-depth research on each company to identify potential investments. The team also considers the company's environmental, social, and governance (ESG) performance when making investment decisions.",
+      "performance_and_fees": "The Pax Large Cap Fund has outperformed its benchmark, the S&P 500 Index, over the past 10 years. The fund's expense ratio is slightly higher than the average for large-cap funds, but its performance has justified the higher fee.",
+      "trading_rules_and_restrictions": "The Pax Large Cap Fund is not designed to be traded frequently. Frequent trading can increase transaction costs and disrupt the fund's investment strategy. The fund has a minimum investment of $1,000 and a $25 fee for early redemptions."
+    }
+  ]
 }

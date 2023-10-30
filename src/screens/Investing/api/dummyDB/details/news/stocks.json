@@ -1,62 +1,137 @@
 {
-  "8KJ2Y9R": [
+  "stocks": [
     {
+      "id": "8KJ2Y9R",
       "headline": "Microsoft Announces Record-breaking Quarterly Earnings",
       "timestamp": "2023-10-12T08:00:00Z",
       "source": "cnbc.com",
       "url": "https://www.cnbc.com/microsoft-earnings-record"
     },
     {
+      "id": "8KJ2Y9R",
       "headline": "Microsoft Unveils New Cloud Computing Innovation",
       "timestamp": "2023-10-12T09:15:00Z",
       "source": "techcrunch.com",
       "url": "https://techcrunch.com/microsoft-cloud-innovation"
     },
     {
+      "id": "8KJ2Y9R",
       "headline": "Microsoft Acquires Promising AI Startup",
       "timestamp": "2023-10-12T10:30:00Z",
       "source": "bloomberg.com",
       "url": "https://www.bloomberg.com/microsoft-acquires-ai-startup"
-    }
-  ],
-  "4ZP7C1W": [
+    },
     {
+      "id": "4ZP7C1W",
       "headline": "Alphabet Reports Impressive Growth in Q3 2023",
       "timestamp": "2023-10-12T08:00:00Z",
       "source": "reuters.com",
       "url": "https://www.reuters.com/alphabet-q3-2023-growth"
     },
     {
+      "id": "4ZP7C1W",
       "headline": "Google's New Product Lineup Receives Positive Reviews",
       "timestamp": "2023-10-12T09:15:00Z",
       "source": "theverge.com",
       "url": "https://www.theverge.com/google-new-products-reviews"
     },
     {
+      "id": "4ZP7C1W",
       "headline": "Alphabet Invests in Renewable Energy Projects",
       "timestamp": "2023-10-12T10:30:00Z",
       "source": "forbes.com",
       "url": "https://www.forbes.com/alphabet-renewable-energy-investments"
-    }
-  ],
-  "6QH5D8N": [
+    },
     {
+      "id": "6QH5D8N",
       "headline": "Spotify Announces Record Number of Subscribers",
       "timestamp": "2023-10-12T08:00:00Z",
       "source": "billboard.com",
       "url": "https://www.billboard.com/spotify-record-subscribers"
     },
     {
+      "id": "6QH5D8N",
       "headline": "Spotify Launches New Podcasting Platform",
       "timestamp": "2023-10-12T09:15:00Z",
       "source": "variety.com",
       "url": "https://variety.com/spotify-new-podcasting-platform"
     },
     {
+      "id": "6QH5D8N",
       "headline": "Spotify Partners with Leading Artists for Exclusive Content",
       "timestamp": "2023-10-12T10:30:00Z",
       "source": "rollingstone.com",
       "url": "https://www.rollingstone.com/spotify-exclusive-content"
+    },
+    {
+      "id": "2TJ9R5M",
+      "headline": "Spotify Launches New Podcasting Platform",
+      "timestamp": "2023-10-12T09:15:00Z",
+      "source": "variety.com",
+      "url": "https://variety.com/spotify-new-podcasting-platform"
+    },
+    {
+      "id": "7XN3P4L",
+      "headline": "Spotify Launches New Podcasting Platform",
+      "timestamp": "2023-10-12T09:15:00Z",
+      "source": "variety.com",
+      "url": "https://variety.com/spotify-new-podcasting-platform"
+    },
+    {
+      "id": "1FZ6G2V",
+      "headline": "Spotify Launches New Podcasting Platform",
+      "timestamp": "2023-10-12T09:15:00Z",
+      "source": "variety.com",
+      "url": "https://variety.com/spotify-new-podcasting-platform"
+    },
+    {
+      "id": "5MW8T7Q",
+      "headline": "Spotify Launches New Podcasting Platform",
+      "timestamp": "2023-10-12T09:15:00Z",
+      "source": "variety.com",
+      "url": "https://variety.com/spotify-new-podcasting-platform"
+    },
+    {
+      "id": "3VS2K6H",
+      "headline": "Spotify Launches New Podcasting Platform",
+      "timestamp": "2023-10-12T09:15:00Z",
+      "source": "variety.com",
+      "url": "https://variety.com/spotify-new-podcasting-platform"
+    },
+    {
+      "id": "9YZ4E7S",
+      "headline": "Spotify Launches New Podcasting Platform",
+      "timestamp": "2023-10-12T09:15:00Z",
+      "source": "variety.com",
+      "url": "https://variety.com/spotify-new-podcasting-platform"
+    },
+    {
+      "id": "0UQ1I3O",
+      "headline": "Spotify Launches New Podcasting Platform",
+      "timestamp": "2023-10-12T09:15:00Z",
+      "source": "variety.com",
+      "url": "https://variety.com/spotify-new-podcasting-platform"
+    },
+    {
+      "id": "8DF3N2P",
+      "headline": "Spotify Launches New Podcasting Platform",
+      "timestamp": "2023-10-12T09:15:00Z",
+      "source": "variety.com",
+      "url": "https://variety.com/spotify-new-podcasting-platform"
+    },
+    {
+      "id": "4AC7L6M",
+      "headline": "Spotify Launches New Podcasting Platform",
+      "timestamp": "2023-10-12T09:15:00Z",
+      "source": "variety.com",
+      "url": "https://variety.com/spotify-new-podcasting-platform"
+    },
+    {
+      "id": "9YZ4E7S",
+      "headline": "Spotify Launches New Podcasting Platform",
+      "timestamp": "2023-10-12T09:15:00Z",
+      "source": "variety.com",
+      "url": "https://variety.com/spotify-new-podcasting-platform"
     }
   ]
 }

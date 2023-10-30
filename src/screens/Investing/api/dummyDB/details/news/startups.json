@@ -1,65 +1,73 @@
 {
-  "AX34MNO": [
+  "startups": [
     {
+      "id": "R232E6M",
       "headline": "Rentberry Launches Innovative Rental Platform",
       "timestamp": "2023-10-12T08:00:00Z",
       "source": "rentberry.com",
       "url": "https://www.rentberry.com/news/innovative-rental-platform-launch"
     },
     {
+      "id": "R232E6M",
       "headline": "Tiny Organics Announces Expansion of Baby Food Line",
       "timestamp": "2023-10-12T09:15:00Z",
       "source": "tinyorganics.com",
       "url": "https://www.tinyorganics.com/news/baby-food-line-expansion"
     },
     {
+      "id": "R232E6M",
       "headline": "Bioverge Secures Funding for Biotechnology Breakthrough",
       "timestamp": "2023-10-12T10:30:00Z",
       "source": "bioverge.com",
       "url": "https://www.bioverge.com/news/funding-biotechnology-breakthrough"
     },
     {
+      "id": "R232E6M",
       "headline": "Rentberry Expands into International Markets",
       "timestamp": "2023-10-12T11:45:00Z",
       "source": "rentberry.com",
       "url": "https://www.rentberry.com/news/expansion-international-markets"
     },
     {
+      "id": "R232E6M",
       "headline": "Tiny Organics Recognized as Top Innovator in Baby Food Industry",
       "timestamp": "2023-10-12T13:00:00Z",
       "source": "tinyorganics.com",
       "url": "https://www.tinyorganics.com/news/top-innovator-baby-food-industry"
-    }
-  ],
-  "AX12JKL": [
+    },
     {
+      "id": "R232E6M",
       "headline": "Tiny Organics Announces Expansion of Baby Food Line",
       "timestamp": "2023-10-12T09:15:00Z",
-      "source": "tinyorganics.com",
+      "source": "Tinyorganics.com",
       "url": "https://www.tinyorganics.com/news/baby-food-line-expansion"
     },
     {
+      "id": "R232E6M",
       "headline": "Rentberry Launches Innovative Rental Platform",
       "timestamp": "2023-10-12T08:00:00Z",
-      "source": "rentberry.com",
+      "source": "Rentberry.com",
       "url": "https://www.rentberry.com/news/innovative-rental-platform-launch"
     },
     {
+      "id": "R232E6M",
       "headline": "Bioverge Secures Funding for Biotechnology Breakthrough",
       "timestamp": "2023-10-12T10:30:00Z",
-      "source": "bioverge.com",
+      "source": "Bioverge.com",
       "url": "https://www.bioverge.com/news/funding-biotechnology-breakthrough"
     },
     {
+      "id": "R232E6M",
       "headline": "Rentberry Expands into International Markets",
       "timestamp": "2023-10-12T11:45:00Z",
-      "source": "rentberry.com",
+      "source": "Rentberry.com",
       "url": "https://www.rentberry.com/news/expansion-international-markets"
     },
     {
+      "id": "R232E6M",
       "headline": "Tiny Organics Recognized as Top Innovator in Baby Food Industry",
       "timestamp": "2023-10-12T13:00:00Z",
-      "source": "tinyorganics.com",
+      "source": "Tinyorganics.com",
       "url": "https://www.tinyorganics.com/news/top-innovator-baby-food-industry"
     }
   ]

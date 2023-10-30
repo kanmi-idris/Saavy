@@ -27,7 +27,6 @@ import {AboutInvestmentAPIs} from './navigation/InvestmentDetailScreensNavigator
 import {useIsFocused} from '@react-navigation/native';
 import Pinchable from 'react-native-pinchable';
 
-
 const {width: SCREEN_WIDTH} = Dimensions.get('window');
 
 const AboutInvestment = ({route}: {route: any}) => {
@@ -712,21 +711,32 @@ const Startups = ({content}: {content: any}) => {
 };
 
 // Real Estate Component Starts
-const Characteristics = ({
+export const Characteristics = ({
   label,
   value,
   row,
+  split,
 }: {
   label: string;
   value: string;
   row?: boolean;
+  split?: boolean;
 }) => (
   <View
     style={
-      row ? {flexDirection: 'row', justifyContent: 'space-between'} : {gap: 4}
+      row ? {flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'} : {gap: 4}
     }>
     <Text style={styles.infoSub}>{label}</Text>
-    <Text style={styles.infoOneMain}>{value}</Text>
+    <Text
+      style={[
+        styles.infoOneMain,
+        {
+          width: split ? '50%' : undefined,
+          textAlign: split ? 'right' : undefined,
+        },
+      ]}>
+      {value}
+    </Text>
   </View>
 );
 

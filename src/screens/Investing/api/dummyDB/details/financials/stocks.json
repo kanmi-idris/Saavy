@@ -1,54 +1,231 @@
 {
-  "8KJ2Y9R": {
-    "stock_symbol": "MSFT",
-    "stock_price": {
-      "current_price": "$194.48",
-      "high_price": "$123.64",
-      "low_price": "$52.00",
-      "52_week_high": "$349.95",
-      "52_week_low": "$212.25"
+  "stocks": [
+    {
+      "id": "8KJ2Y9R",
+      "stock_symbol": "MSFT",
+      "stock_price": {
+        "current_price": 194.48,
+        "high_price": 123.64,
+        "low_price": 52.0,
+        "fiftyTwo_week_high": 349.95,
+        "fiftyTwo_week_low": 212.25
+      },
+      "stock_stats": {
+        "volume": "56.66M",
+        "market_cap": "$3,020.30B",
+        "PE_ratio": 32.66,
+        "dividend_yield": "0.50%"
+      },
+      "stock_composition": "The MSFT stock is composed of shares of common stock issued by Microsoft Corporation. Each share of common stock entitles the holder to one vote on matters submitted to shareholders at annual or special meetings. Shareholders also have the right to receive dividends when declared by the board of directors",
+      "stock_performance_and_fees": "In fiscal year 2021 (ended June 30), Microsoft reported revenue of $168.1 billion (up 18% year-over-year), operating income of $69.9 billion (up 32% year-over-year), net income of $61.3 billion (up 38% year-over-year), and diluted earnings per share of $8.05 (up 40% year-over-year)",
+      "trading_rules_and_restrictions": "The MSFT stock is traded on the NASDAQ stock exchange under the symbol MSFT. As a publicly traded company, Microsoft is subject to various rules and regulations that govern its corporate governance, financial reporting, disclosure, insider trading, and other aspects of its"
     },
-    "stock_stats": {
-      "volume": "56.66M",
-      "market_cap": "$3,020.30B",
-      "P/E_ratio": 32.66,
-      "dividend_yield": "0.50%"
+    {
+      "id": "4ZP7C1W",
+      "stock_symbol": "GOOGL",
+      "stock_price": {
+        "current_price": "$194.48",
+        "high_price": "$123.64",
+        "low_price": "$52.00",
+        "fiftyTwo_week_high": "$349.95",
+        "fiftyTwo_week_low": "$212.25"
+      },
+      "stock_stats": {
+        "volume": "56.66M",
+        "market_cap": "$3,020.30B",
+        "PE_ratio": 32.66,
+        "dividend_yield": "0.50%"
+      },
+      "stock_composition": "The GOOGL stock is composed of shares of common stock issued by Microsoft Corporation. Each share of common stock entitles the holder to one vote on matters submitted to shareholders at annual or special meetings. Shareholders also have the right to receive dividends when declared by the board of directors.... more",
+      "stock_performance_and_fees": {
+        "fiscal_year_2021": {
+          "revenue": "$168.1 billion",
+          "operating_income": "$69.9 billion",
+          "net_income": "$61.3 billion",
+          "diluted_earnings_per_share": "$8.05"
+        }
+      },
+      "trading_rules_and_restrictions": "The GOOGL stock is traded on the NASDAQ stock exchange under the symbol MSFT. As a publicly traded company, Microsoft is subject to various rules and regulations that govern its corporate governance, financial reporting, disclosure, insider trading, and other aspects of its...."
     },
-    "stock_composition": "The MSFT stock is composed of shares of common stock issued by Microsoft Corporation. Each share of common stock entitles the holder to one vote on matters submitted to shareholders at annual or special meetings. Shareholders also have the right to receive dividends when declared by the board of directors.... more",
-    "stock_performance_and_fees": {
-      "fiscal_year_2021": {
-        "revenue": "$168.1 billion",
-        "operating_income": "$69.9 billion",
-        "net_income": "$61.3 billion",
-        "diluted_earnings_per_share": "$8.05"
-      }
+    {
+      "id": "6QH5D8N",
+      "stock_symbol": "MSFT",
+      "stock_price": {
+        "current_price": 194.48,
+        "high_price": 123.64,
+        "low_price": 52.0,
+        "fiftyTwo_week_high": 349.95,
+        "fiftyTwo_week_low": 212.25
+      },
+      "stock_stats": {
+        "volume": "56.66M",
+        "market_cap": "$3,020.30B",
+        "PE_ratio": 32.66,
+        "dividend_yield": "0.50%"
+      },
+      "stock_composition": "The MSFT stock is composed of shares of common stock issued by Microsoft Corporation. Each share of common stock entitles the holder to one vote on matters submitted to shareholders at annual or special meetings. Shareholders also have the right to receive dividends when declared by the board of directors",
+      "stock_performance_and_fees": "In fiscal year 2021 (ended June 30), Microsoft reported revenue of $168.1 billion (up 18% year-over-year), operating income of $69.9 billion (up 32% year-over-year), net income of $61.3 billion (up 38% year-over-year), and diluted earnings per share of $8.05 (up 40% year-over-year)",
+      "trading_rules_and_restrictions": "The MSFT stock is traded on the NASDAQ stock exchange under the symbol MSFT. As a publicly traded company, Microsoft is subject to various rules and regulations that govern its corporate governance, financial reporting, disclosure, insider trading, and other aspects of its"
     },
-    "trading_rules_and_restrictions": "The MSFT stock is traded on the NASDAQ stock exchange under the symbol MSFT. As a publicly traded company, Microsoft is subject to various rules and regulations that govern its corporate governance, financial reporting, disclosure, insider trading, and other aspects of its...."
-  },
-  "4ZP7C1W": {
-    "stock_symbol": "GOOGL",
-    "stock_price": {
-      "current_price": "$194.48",
-      "high_price": "$123.64",
-      "low_price": "$52.00",
-      "52_week_high": "$349.95",
-      "52_week_low": "$212.25"
+    {
+      "id": "2TJ9R5M",
+      "stock_symbol": "MSFT",
+      "stock_price": {
+        "current_price": 194.48,
+        "high_price": 123.64,
+        "low_price": 52.0,
+        "fiftyTwo_week_high": 349.95,
+        "fiftyTwo_week_low": 212.25
+      },
+      "stock_stats": {
+        "volume": "56.66M",
+        "market_cap": "$3,020.30B",
+        "PE_ratio": 32.66,
+        "dividend_yield": "0.50%"
+      },
+      "stock_composition": "The MSFT stock is composed of shares of common stock issued by Microsoft Corporation. Each share of common stock entitles the holder to one vote on matters submitted to shareholders at annual or special meetings. Shareholders also have the right to receive dividends when declared by the board of directors",
+      "stock_performance_and_fees": "In fiscal year 2021 (ended June 30), Microsoft reported revenue of $168.1 billion (up 18% year-over-year), operating income of $69.9 billion (up 32% year-over-year), net income of $61.3 billion (up 38% year-over-year), and diluted earnings per share of $8.05 (up 40% year-over-year)",
+      "trading_rules_and_restrictions": "The MSFT stock is traded on the NASDAQ stock exchange under the symbol MSFT. As a publicly traded company, Microsoft is subject to various rules and regulations that govern its corporate governance, financial reporting, disclosure, insider trading, and other aspects of its"
     },
-    "stock_stats": {
-      "volume": "56.66M",
-      "market_cap": "$3,020.30B",
-      "P/E_ratio": 32.66,
-      "dividend_yield": "0.50%"
+    {
+      "id": "7XN3P4L",
+      "stock_symbol": "MSFT",
+      "stock_price": {
+        "current_price": 194.48,
+        "high_price": 123.64,
+        "low_price": 52.0,
+        "fiftyTwo_week_high": 349.95,
+        "fiftyTwo_week_low": 212.25
+      },
+      "stock_stats": {
+        "volume": "56.66M",
+        "market_cap": "$3,020.30B",
+        "PE_ratio": 32.66,
+        "dividend_yield": "0.50%"
+      },
+      "stock_composition": "The MSFT stock is composed of shares of common stock issued by Microsoft Corporation. Each share of common stock entitles the holder to one vote on matters submitted to shareholders at annual or special meetings. Shareholders also have the right to receive dividends when declared by the board of directors",
+      "stock_performance_and_fees": "In fiscal year 2021 (ended June 30), Microsoft reported revenue of $168.1 billion (up 18% year-over-year), operating income of $69.9 billion (up 32% year-over-year), net income of $61.3 billion (up 38% year-over-year), and diluted earnings per share of $8.05 (up 40% year-over-year)",
+      "trading_rules_and_restrictions": "The MSFT stock is traded on the NASDAQ stock exchange under the symbol MSFT. As a publicly traded company, Microsoft is subject to various rules and regulations that govern its corporate governance, financial reporting, disclosure, insider trading, and other aspects of its"
     },
-    "stock_composition": "The GOOGL stock is composed of shares of common stock issued by Microsoft Corporation. Each share of common stock entitles the holder to one vote on matters submitted to shareholders at annual or special meetings. Shareholders also have the right to receive dividends when declared by the board of directors.... more",
-    "stock_performance_and_fees": {
-      "fiscal_year_2021": {
-        "revenue": "$168.1 billion",
-        "operating_income": "$69.9 billion",
-        "net_income": "$61.3 billion",
-        "diluted_earnings_per_share": "$8.05"
-      }
+    {
+      "id": "1FZ6G2V",
+      "stock_symbol": "MSFT",
+      "stock_price": {
+        "current_price": 194.48,
+        "high_price": 123.64,
+        "low_price": 52.0,
+        "fiftyTwo_week_high": 349.95,
+        "fiftyTwo_week_low": 212.25
+      },
+      "stock_stats": {
+        "volume": "56.66M",
+        "market_cap": "$3,020.30B",
+        "PE_ratio": 32.66,
+        "dividend_yield": "0.50%"
+      },
+      "stock_composition": "The MSFT stock is composed of shares of common stock issued by Microsoft Corporation. Each share of common stock entitles the holder to one vote on matters submitted to shareholders at annual or special meetings. Shareholders also have the right to receive dividends when declared by the board of directors",
+      "stock_performance_and_fees": "In fiscal year 2021 (ended June 30), Microsoft reported revenue of $168.1 billion (up 18% year-over-year), operating income of $69.9 billion (up 32% year-over-year), net income of $61.3 billion (up 38% year-over-year), and diluted earnings per share of $8.05 (up 40% year-over-year)",
+      "trading_rules_and_restrictions": "The MSFT stock is traded on the NASDAQ stock exchange under the symbol MSFT. As a publicly traded company, Microsoft is subject to various rules and regulations that govern its corporate governance, financial reporting, disclosure, insider trading, and other aspects of its"
     },
-    "trading_rules_and_restrictions": "The GOOGL stock is traded on the NASDAQ stock exchange under the symbol MSFT. As a publicly traded company, Microsoft is subject to various rules and regulations that govern its corporate governance, financial reporting, disclosure, insider trading, and other aspects of its...."
-  }
+    {
+      "id": "5MW8T7Q",
+      "stock_symbol": "MSFT",
+      "stock_price": {
+        "current_price": 194.48,
+        "high_price": 123.64,
+        "low_price": 52.0,
+        "fiftyTwo_week_high": 349.95,
+        "fiftyTwo_week_low": 212.25
+      },
+      "stock_stats": {
+        "volume": "56.66M",
+        "market_cap": "$3,020.30B",
+        "PE_ratio": 32.66,
+        "dividend_yield": "0.50%"
+      },
+      "stock_composition": "The MSFT stock is composed of shares of common stock issued by Microsoft Corporation. Each share of common stock entitles the holder to one vote on matters submitted to shareholders at annual or special meetings. Shareholders also have the right to receive dividends when declared by the board of directors",
+      "stock_performance_and_fees": "In fiscal year 2021 (ended June 30), Microsoft reported revenue of $168.1 billion (up 18% year-over-year), operating income of $69.9 billion (up 32% year-over-year), net income of $61.3 billion (up 38% year-over-year), and diluted earnings per share of $8.05 (up 40% year-over-year)",
+      "trading_rules_and_restrictions": "The MSFT stock is traded on the NASDAQ stock exchange under the symbol MSFT. As a publicly traded company, Microsoft is subject to various rules and regulations that govern its corporate governance, financial reporting, disclosure, insider trading, and other aspects of its"
+    },
+    {
+      "id": "3VS2K6H",
+      "stock_symbol": "MSFT",
+      "stock_price": {
+        "current_price": 194.48,
+        "high_price": 123.64,
+        "low_price": 52.0,
+        "fiftyTwo_week_high": 349.95,
+        "fiftyTwo_week_low": 212.25
+      },
+      "stock_stats": {
+        "volume": "56.66M",
+        "market_cap": "$3,020.30B",
+        "PE_ratio": 32.66,
+        "dividend_yield": "0.50%"
+      },
+      "stock_composition": "The MSFT stock is composed of shares of common stock issued by Microsoft Corporation. Each share of common stock entitles the holder to one vote on matters submitted to shareholders at annual or special meetings. Shareholders also have the right to receive dividends when declared by the board of directors",
+      "stock_performance_and_fees": "In fiscal year 2021 (ended June 30), Microsoft reported revenue of $168.1 billion (up 18% year-over-year), operating income of $69.9 billion (up 32% year-over-year), net income of $61.3 billion (up 38% year-over-year), and diluted earnings per share of $8.05 (up 40% year-over-year)",
+      "trading_rules_and_restrictions": "The MSFT stock is traded on the NASDAQ stock exchange under the symbol MSFT. As a publicly traded company, Microsoft is subject to various rules and regulations that govern its corporate governance, financial reporting, disclosure, insider trading, and other aspects of its"
+    },
+    {
+      "id": "9YZ4E7S",
+      "stock_symbol": "MSFT",
+      "stock_price": {
+        "current_price": 194.48,
+        "high_price": 123.64,
+        "low_price": 52.0,
+        "fiftyTwo_week_high": 349.95,
+        "fiftyTwo_week_low": 212.25
+      },
+      "stock_stats": {
+        "volume": "56.66M",
+        "market_cap": "$3,020.30B",
+        "PE_ratio": 32.66,
+        "dividend_yield": "0.50%"
+      },
+      "stock_composition": "The MSFT stock is composed of shares of common stock issued by Microsoft Corporation. Each share of common stock entitles the holder to one vote on matters submitted to shareholders at annual or special meetings. Shareholders also have the right to receive dividends when declared by the board of directors",
+      "stock_performance_and_fees": "In fiscal year 2021 (ended June 30), Microsoft reported revenue of $168.1 billion (up 18% year-over-year), operating income of $69.9 billion (up 32% year-over-year), net income of $61.3 billion (up 38% year-over-year), and diluted earnings per share of $8.05 (up 40% year-over-year)",
+      "trading_rules_and_restrictions": "The MSFT stock is traded on the NASDAQ stock exchange under the symbol MSFT. As a publicly traded company, Microsoft is subject to various rules and regulations that govern its corporate governance, financial reporting, disclosure, insider trading, and other aspects of its"
+    },
+    {
+      "id": "0UQ1I3O",
+      "stock_symbol": "MSFT",
+      "stock_price": {
+        "current_price": 194.48,
+        "high_price": 123.64,
+        "low_price": 52.0,
+        "fiftyTwo_week_high": 349.95,
+        "fiftyTwo_week_low": 212.25
+      },
+      "stock_stats": {
+        "volume": "56.66M",
+        "market_cap": "$3,020.30B",
+        "PE_ratio": 32.66,
+        "dividend_yield": "0.50%"
+      },
+      "stock_composition": "The MSFT stock is composed of shares of common stock issued by Microsoft Corporation. Each share of common stock entitles the holder to one vote on matters submitted to shareholders at annual or special meetings. Shareholders also have the right to receive dividends when declared by the board of directors",
+      "stock_performance_and_fees": "In fiscal year 2021 (ended June 30), Microsoft reported revenue of $168.1 billion (up 18% year-over-year), operating income of $69.9 billion (up 32% year-over-year), net income of $61.3 billion (up 38% year-over-year), and diluted earnings per share of $8.05 (up 40% year-over-year)",
+      "trading_rules_and_restrictions": "The MSFT stock is traded on the NASDAQ stock exchange under the symbol MSFT. As a publicly traded company, Microsoft is subject to various rules and regulations that govern its corporate governance, financial reporting, disclosure, insider trading, and other aspects of its"
+    },
+    {
+      "id": "8DF3N2P",
+      "stock_symbol": "MSFT",
+      "stock_price": {
+        "current_price": 194.48,
+        "high_price": 123.64,
+        "low_price": 52.0,
+        "fiftyTwo_week_high": 349.95,
+        "fiftyTwo_week_low": 212.25
+      },
+      "stock_stats": {
+        "volume": "56.66M",
+        "market_cap": "$3,020.30B",
+        "PE_ratio": 32.66,
+        "dividend_yield": "0.50%"
+      },
+      "stock_composition": "The MSFT stock is composed of shares of common stock issued by Microsoft Corporation. Each share of common stock entitles the holder to one vote on matters submitted to shareholders at annual or special meetings. Shareholders also have the right to receive dividends when declared by the board of directors",
+      "stock_performance_and_fees": "In fiscal year 2021 (ended June 30), Microsoft reported revenue of $168.1 billion (up 18% year-over-year), operating income of $69.9 billion (up 32% year-over-year), net income of $61.3 billion (up 38% year-over-year), and diluted earnings per share of $8.05 (up 40% year-over-year)",
+      "trading_rules_and_restrictions": "The MSFT stock is traded on the NASDAQ stock exchange under the symbol MSFT. As a publicly traded company, Microsoft is subject to various rules and regulations that govern its corporate governance, financial reporting, disclosure, insider trading, and other aspects of its"
+    }
+  ]
 }
