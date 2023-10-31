@@ -15,11 +15,13 @@
       "fund_composition": [
         {
           "asset_type": "Stocks",
-          "percentage": 98.4
+          "percentage": 98.4,
+          "color": "#4154FF"
         },
         {
           "asset_type": "Cash",
-          "percentage": 1.6
+          "percentage": 1.6,
+          "color": "#F59E0B"
         }
       ],
       "strategy_and_holdings": "The Pax Large Cap Fund invests in large-cap companies with strong ESG practices, attractive valuations, and competitive advantages. The fund's investment team conducts in-depth research on each company to identify potential investments. The team also considers the company's environmental, social, and governance (ESG) performance when making investment decisions.",

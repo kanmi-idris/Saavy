@@ -18,6 +18,7 @@ import {GetContent, findById} from './utils/utils';
 import Icon from '@/assets/Icons';
 import {StaticSection} from '@/lib/layout/Section';
 import formatAmt from '@/lib/utils/formatAmount';
+import {PieChart} from 'react-native-gifted-charts';
 
 // dummy APIs
 import real_estate_api from '@/screens/Investing/api/dummyDB/details/financials/real_estate.json';
@@ -26,6 +27,7 @@ import savings_lock_api from '@/screens/Investing/api/dummyDB/details/financials
 import stocks_api from '@/screens/Investing/api/dummyDB/details/financials/stocks.json';
 import mutual_funds_api from '@/screens/Investing/api/dummyDB/details/financials/mutual_funds.json';
 import {Characteristics} from './AboutInvestment';
+import {createPieData} from '@/lib/utils/CreatePieData';
 
 const FinancialAPIs: InvestmentAPIs = {
   realEstate: real_estate_api.real_estate,
@@ -92,6 +94,13 @@ const MutualFunds = ({content}: {content: any}) => {
   const strategy = GetContent(content.strategy_and_holdings);
   const performance = GetContent(content.performance_and_fees);
   const rules = GetContent(content.trading_rules_and_restrictions);
+
+  type FundCompositionItem = {
+    asset_type: string;
+    percentage: number;
+    color: string;
+  };
+
   return (
     <View style={styles.mainContent}>
       <View style={[styles.cardBG, {gap: 12}]}>
@@ -135,6 +144,43 @@ const MutualFunds = ({content}: {content: any}) => {
           value={content.expense_ratio}
         />
       </View>
+      {/* Fund Composition Chart Start */}
+      <StaticSection heading="Fund Composition" gap={24}>
+        <View
+          style={{
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}>
+          <PieChart
+            donut
+            innerRadius={60}
+            radius={100}
+            data={createPieData(content.fund_composition)}
+          />
+        </View>
+
+        <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
+          {content.fund_composition.map(
+            (value: FundCompositionItem, index: React.Key) => (
+              <View key={index} style={{flexDirection: 'row', gap: 12}}>
+                <View
+                  style={{
+                    backgroundColor: value.color,
+                    width: 16,
+                    height: 16,
+                    borderRadius: 16,
+                  }}
+                />
+                <Text style={styles.legend}>
+                  {value.asset_type + '(' + value.percentage + '%)'}
+                </Text>
+              </View>
+            ),
+          )}
+        </View>
+      </StaticSection>
+      {/* Fund Composition Chart End */}
+
       {/* Strategy and Holdings Begins */}
       <StaticSection heading="Strategy and Holdings" gap={4}>
         <View style={styles.cardBG}>
@@ -583,5 +629,9 @@ const styles = StyleSheet.create({
     flexShrink: 0,
     height: 175,
     overflow: 'hidden',
+  },
+  legend: {
+    ...typography.regular.paragraphMid,
+    color: colors.black_1,
   },
 });
