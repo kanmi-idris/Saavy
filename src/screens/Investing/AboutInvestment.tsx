@@ -298,7 +298,7 @@ const RenderImage = ({source}: {source: string[]}) => {
   return (
     <>
       {source.map((image: string, index: number) => (
-        <Pinchable>
+        <Pinchable key={index}>
           <Image
             key={index}
             source={{
