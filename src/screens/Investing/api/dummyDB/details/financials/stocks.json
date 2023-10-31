@@ -24,11 +24,11 @@
       "id": "4ZP7C1W",
       "stock_symbol": "GOOGL",
       "stock_price": {
-        "current_price": "$194.48",
-        "high_price": "$123.64",
-        "low_price": "$52.00",
-        "fiftyTwo_week_high": "$349.95",
-        "fiftyTwo_week_low": "$212.25"
+        "current_price": 194.48,
+        "high_price": 123.64,
+        "low_price": 52.0,
+        "fiftyTwo_week_high": 349.95,
+        "fiftyTwo_week_low": 212.25
       },
       "stock_stats": {
         "volume": "56.66M",
@@ -37,14 +37,7 @@
         "dividend_yield": "0.50%"
       },
       "stock_composition": "The GOOGL stock is composed of shares of common stock issued by Microsoft Corporation. Each share of common stock entitles the holder to one vote on matters submitted to shareholders at annual or special meetings. Shareholders also have the right to receive dividends when declared by the board of directors.... more",
-      "stock_performance_and_fees": {
-        "fiscal_year_2021": {
-          "revenue": "$168.1 billion",
-          "operating_income": "$69.9 billion",
-          "net_income": "$61.3 billion",
-          "diluted_earnings_per_share": "$8.05"
-        }
-      },
+      "stock_performance_and_fees": "In fiscal year 2021 (ended June 30), Microsoft reported revenue of $168.1 billion (up 18% year-over-year), operating income of $69.9 billion (up 32% year-over-year), net income of $61.3 billion (up 38% year-over-year), and diluted earnings per share of $8.05 (up 40% year-over-year)",
       "trading_rules_and_restrictions": "The GOOGL stock is traded on the NASDAQ stock exchange under the symbol MSFT. As a publicly traded company, Microsoft is subject to various rules and regulations that govern its corporate governance, financial reporting, disclosure, insider trading, and other aspects of its...."
     },
     {

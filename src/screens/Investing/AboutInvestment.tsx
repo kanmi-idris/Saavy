@@ -1,30 +1,33 @@
 /* eslint-disable prettier/prettier */
-import {
-  StyleSheet,
-  View,
-  Text,
-  ScrollView,
-  Dimensions,
-  Pressable,
-  Image,
-  Linking,
-  TouchableOpacity,
-} from 'react-native';
-import React, {useCallback, useContext, useEffect, useState} from 'react';
-import MainInfoCard from './components/MainInfoCard';
 import colors from '@/assets/Colors';
-import {ScrollableSection, StaticSection} from '@/lib/layout/Section';
+import Icon from '@/assets/Icons';
 import typography from '@/assets/Typography';
 import CustomButton from '@/lib/components/Button/CustomButton';
-import Icon from '@/assets/Icons';
-import formatAmt from '@/lib/utils/formatAmount';
-import {copyToClipboard} from '@/lib/utils/copyToClipboard';
-import YoutubePlayer from 'react-native-youtube-iframe';
 import {InvestmentContext} from '@/lib/components/InvestmentSuitesScroll';
-import {GetContent, findById} from './utils/utils';
-import {AboutInvestmentAPIs} from './navigation/InvestmentDetailScreensNavigator';
+import {ScrollableSection, StaticSection} from '@/lib/layout/Section';
+import {copyToClipboard} from '@/lib/utils/copyToClipboard';
+import formatAmt from '@/lib/utils/formatAmount';
 import {useIsFocused} from '@react-navigation/native';
+import React, {useCallback, useContext, useEffect, useState} from 'react';
+import {
+  Dimensions,
+  Image,
+  Linking,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
+import {LineChart} from 'react-native-gifted-charts';
 import Pinchable from 'react-native-pinchable';
+import YoutubePlayer from 'react-native-youtube-iframe';
+import MainInfoCard from './components/MainInfoCard';
+import {AboutInvestmentAPIs} from './navigation/InvestmentDetailScreensNavigator';
+import {GetContent, findById} from './utils/utils';
+// dummy APIs
+// import MF_chart_api from '@/screens/Investing/api/dummyDB/details/charts/PAXLX_intra_day.json';
 
 const {width: SCREEN_WIDTH} = Dimensions.get('window');
 
@@ -83,6 +86,26 @@ const MutualFunds = ({content}: {content: any}) => {
   const about = GetContent(content.details.about);
   const earningModel = GetContent(content.details.earning_model);
   const opinion = GetContent(content.details.opinion);
+
+  const [chartInView, setChartInView] = useState('3D');
+  const chartLabels = ['3D', '1W', '3W', '1M', '1Y'];
+
+  // const chartData = MF_chart_api.filter(findById(content.id));
+  // const plottedValues = [];
+  // for (const element of chartData) {
+  //   const newValue = {value: element.close};
+  //   plottedValues.push(newValue);
+  // }
+  const data = [
+    {value: 0},
+    {value: 20},
+    {value: 18},
+    {value: 40},
+    {value: 36},
+    {value: 60},
+    {value: 54},
+    {value: 85},
+  ];
   return (
     <View style={styles.mainContent}>
       <MainInfoCard
@@ -95,12 +118,52 @@ const MutualFunds = ({content}: {content: any}) => {
         value2={content.percent_change + '%'}
         label2={content.risk_level + ' risk'}
         status={Math.sign(content.percent_change) === -1 ? 'loss' : 'gain'}
-        marketStatus=""
-        label3=""
-        label4=""
-        value3=""
-        value4=""
       />
+
+      {/* Chart Begins */}
+      <View style={{marginTop: -20, marginBottom: 20}}>
+        <LineChart
+          areaChart
+          hideYAxisText
+          hideDataPoints
+          hideAxesAndRules
+          thickness={1}
+          startFillColor="rgba(22, 219, 147, 0.22)"
+          startOpacity={0.22}
+          endFillColor="rgba(61, 151, 255, 0.00)"
+          endOpacity={0.0}
+          data={data}
+          height={180}
+          adjustToWidth
+          color="#16DB93"
+          initialSpacing={0}
+          yAxisLabelWidth={0}
+        />
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            marginTop: -30,
+            paddingHorizontal: 8,
+          }}>
+          {chartLabels.map(label => (
+            <Pressable onPress={() => setChartInView(label)} key={label}>
+              <Text
+                style={[
+                  styles.chartControl,
+                  {
+                    color:
+                      chartInView === label ? colors.activeBtn : colors.black_1,
+                  },
+                ]}>
+                {label}
+              </Text>
+            </Pressable>
+          ))}
+        </View>
+      </View>
+      {/* Chart Ends */}
 
       {/* About Begins */}
       <StaticSection heading="About This Fund" gap={4}>
@@ -152,6 +215,20 @@ const Stocks = ({content}: {content: any}) => {
   const about = GetContent(content.details.about);
   const earningModel = GetContent(content.details.earning_model);
   const opinion = GetContent(content.details.opinion);
+
+  const [chartInView, setChartInView] = useState('3D');
+  const chartLabels = ['3D', '1W', '3W', '1M', '1Y'];
+
+  const data = [
+    {value: 0},
+    {value: 20},
+    {value: 18},
+    {value: 40},
+    {value: 36},
+    {value: 60},
+    {value: 54},
+    {value: 85},
+  ];
   return (
     <View style={styles.mainContent}>
       <MainInfoCard
@@ -166,10 +243,52 @@ const Stocks = ({content}: {content: any}) => {
         status={Math.sign(content.percent_change) === -1 ? 'loss' : 'gain'}
         marketStatus={content.market_status}
         label3="Market Condition"
-        label4=""
-        value3=""
-        value4=""
       />
+
+      {/* Chart Begins */}
+      <View style={{marginTop: -20, marginBottom: 20}}>
+        <LineChart
+          areaChart
+          hideYAxisText
+          hideDataPoints
+          hideAxesAndRules
+          thickness={1}
+          startFillColor="rgba(22, 219, 147, 0.22)"
+          startOpacity={0.22}
+          endFillColor="rgba(61, 151, 255, 0.00)"
+          endOpacity={0.0}
+          data={data}
+          height={180}
+          adjustToWidth
+          color="#16DB93"
+          initialSpacing={0}
+          yAxisLabelWidth={0}
+        />
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            marginTop: -30,
+            paddingHorizontal: 8,
+          }}>
+          {chartLabels.map(label => (
+            <Pressable onPress={() => setChartInView(label)} key={label}>
+              <Text
+                style={[
+                  styles.chartControl,
+                  {
+                    color:
+                      chartInView === label ? colors.activeBtn : colors.black_1,
+                  },
+                ]}>
+                {label}
+              </Text>
+            </Pressable>
+          ))}
+        </View>
+      </View>
+      {/* Chart Ends */}
 
       {/* About Begins */}
       <StaticSection heading="About This Stock" gap={4}>
@@ -723,7 +842,13 @@ export const Characteristics = ({
 }) => (
   <View
     style={
-      row ? {flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'} : {gap: 4}
+      row
+        ? {
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+          }
+        : {gap: 4}
     }>
     <Text style={styles.infoSub}>{label}</Text>
     <Text
@@ -1173,5 +1298,9 @@ const styles = StyleSheet.create({
     flexShrink: 0,
     height: 175,
     overflow: 'hidden',
+  },
+  chartControl: {
+    ...typography.regular.paragraphSmall,
+    color: colors.black_1,
   },
 });
