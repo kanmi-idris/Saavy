@@ -1,4 +1,3 @@
-/* eslint-disable react-native/no-inline-styles */
 import colors from '@/assets/Colors';
 import typography from '@/assets/Typography';
 import CustomButton from '@/lib/components/Button/CustomButton';

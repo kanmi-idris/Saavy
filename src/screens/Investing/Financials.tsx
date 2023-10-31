@@ -1,4 +1,3 @@
-/* eslint-disable react-native/no-inline-styles */
 import {
   Dimensions,
   Linking,
@@ -484,6 +483,13 @@ const Startups = ({content}: {content: any}) => {
 };
 
 const RealEstate = ({content}: {content: any}) => {
+  type FundsUse = {
+    name: string;
+    amount: number;
+    percentage: number;
+    color: string;
+  };
+
   return (
     <ScrollView
       overScrollMode="never"
@@ -538,6 +544,46 @@ const RealEstate = ({content}: {content: any}) => {
           value={content.funding_deadline}
         />
       </View>
+
+      {/* Fund Composition Chart Start */}
+      <StaticSection heading="Proposed Use of Funds" gap={24}>
+        <View
+          style={{
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}>
+          <PieChart
+            donut
+            innerRadius={60}
+            radius={100}
+            data={createPieData(content.proposed_use_of_funds)}
+          />
+        </View>
+
+        <View style={{gap: 16, alignSelf: 'center'}}>
+          {content.proposed_use_of_funds.map(
+            (value: FundsUse, index: React.Key) => (
+              <View
+                key={index}
+                style={{flexDirection: 'row', gap: 12, alignSelf: 'center'}}>
+                <View
+                  style={{
+                    backgroundColor: value.color,
+                    width: 16,
+                    height: 16,
+                    borderRadius: 16,
+                  }}
+                />
+                <Text style={styles.legend}>
+                  {`${value.name} ($${value.amount}, ${value.percentage}%)`}
+                </Text>
+              </View>
+            ),
+          )}
+        </View>
+      </StaticSection>
+      {/* Fund Composition Chart End */}
+
       {/* Business Plan Begins */}
       <StaticSection heading="Business Plan / Strategy" gap={4}>
         <View style={[styles.cardBG, {gap: 8}]}>
@@ -633,5 +679,6 @@ const styles = StyleSheet.create({
   legend: {
     ...typography.regular.paragraphMid,
     color: colors.black_1,
+    textTransform: 'capitalize',
   },
 });

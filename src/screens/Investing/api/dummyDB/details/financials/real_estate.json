@@ -10,28 +10,38 @@
       "amount_raised_so_far": 150000000,
       "security_type": "Debt Instrument",
       "funding_deadline": "March 31, 2023",
-      "proposed_use_of_funds": {
-        "construction_costs": {
-          "amount": "₦500 million",
-          "percentage": "98.4%"
+      "proposed_use_of_funds": [
+        {
+          "name": "Construction Costs",
+          "amount": 5000,
+          "color": "#4154FF",
+          "percentage": 98.4
         },
-        "marketing_costs": {
-          "amount": "₦10 million",
-          "percentage": "1.67%"
+        {
+          "name": "marketing costs",
+          "amount": 1000,
+          "color": "#F59E0B",
+          "percentage": 1.67
         },
-        "maintenance_costs": {
-          "amount": "₦5 million",
-          "percentage": "0.83%"
+        {
+          "name": "maintenance costs",
+          "amount": 3000,
+          "color": "#FF5139",
+          "percentage": 0.83
         },
-        "taxes": {
-          "amount": "₦15 million",
-          "percentage": "2.5%"
+        {
+          "name": "taxes",
+          "amount": 500,
+          "color": "#16DB93",
+          "percentage": 2.5
         },
-        "contingency_costs": {
-          "amount": "₦10 million",
-          "percentage": "1.67%"
+        {
+          "name": "contingency costs",
+          "amount": 1000,
+          "color": "#FFB2A7",
+          "percentage": 1.67
         }
-      },
+      ],
       "business_plan": {
         "title": "Business Plan",
         "description": "Here is a detailed document showing the business plan.",
