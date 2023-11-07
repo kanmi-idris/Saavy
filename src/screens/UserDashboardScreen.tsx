@@ -1,17 +1,20 @@
-/* eslint-disable react-native/no-inline-styles */
+/* eslint-disable prettier/prettier */
 import colors from '@/assets/Colors';
 import Icon from '@/assets/Icons';
 import React from 'react';
 import {ScrollView, View, Text, StyleSheet, Pressable} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import ProgressBar from './components/ProgressBar';
+// import ProgressBar from '../lib/components/ProgressBar';
 import typography from '@/assets/Typography';
 import {ScrollableSection, StaticSection} from '@/lib/layout/Section';
 import strings from '@/assets/Strings';
 import RecommendationCard from '@/lib/components/Cards/RecommendationCard';
 import MiniInvestmentDetailCard from '@/lib/components/Cards/MiniInvestmentDetailCard';
-import DisplayCard from './components/DisplayCard';
-import WelcomeBar from './components/WelcomeBar';
+import DisplayCard from '@/lib/components/Cards/DisplayCard';
+import WelcomeBar from '@/lib/components/WelcomeBar';
+import ProgressBar from '@/lib/components/ProgressBar';
+// import DisplayCard from '../lib/components/Cards/DisplayCard';
+// import WelcomeBar from '../lib/components/WelcomeBar';
 
 const UserDashboardScreen = () => {
   return (
