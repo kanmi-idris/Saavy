@@ -209,7 +209,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    height: 'auto',
+    // height: 'auto',
+    flex: 1,
   },
   wrapper: {
     gap: 4,

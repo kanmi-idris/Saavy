@@ -1,18 +1,18 @@
 /* eslint-disable prettier/prettier */
-/* eslint-disable react-native/no-inline-styles */
+
 import colors from '@/assets/Colors';
 import Icon from '@/assets/Icons';
 import typography from '@/assets/Typography';
 import React, {useRef, useState} from 'react';
 import {
+  Animated,
+  Dimensions,
   FlatList,
   Pressable,
+  ScrollViewProps,
   StyleSheet,
   Text,
   View,
-  Dimensions,
-  Animated,
-  ScrollViewProps,
 } from 'react-native';
 import ScrollProgress from '../components/ScrollProgress';
 
@@ -171,6 +171,8 @@ const styles = StyleSheet.create({
   },
   item: {
     marginRight: 12,
+    // flex: 1,
+    alignSelf: 'stretch',
   },
   list: {
     // overflow: 'visible',
