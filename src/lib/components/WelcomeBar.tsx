@@ -3,19 +3,15 @@ import Icon from '@/assets/Icons';
 import typography from '@/assets/Typography';
 import React from 'react';
 import {View, Text, StyleSheet, Pressable, Image} from 'react-native';
-
-interface WelcomeBarProps {
-  newNotifications?: boolean;
-  heading: string;
-  subheading: string;
-  image: number;
-}
+import {WelcomeBarProps} from 'types';
 
 const WelcomeBar = ({
   newNotifications,
   heading,
   subheading,
   image,
+  style,
+  variant,
 }: WelcomeBarProps) => {
   const iconProps = {
     width: 24,
@@ -23,7 +19,7 @@ const WelcomeBar = ({
     viewBox: '0 0 20 20',
   };
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, style]}>
       <View style={styles.wrapper}>
         <Image source={image} style={styles.image} />
         <View>
@@ -33,7 +29,10 @@ const WelcomeBar = ({
       </View>
       <Pressable style={styles.notificationWrapper}>
         {newNotifications && <View style={styles.badge} />}
-        <Icon name="bell" {...iconProps} />
+        <Icon
+          name={variant === 'notification' ? 'bell' : 'settings'}
+          {...iconProps}
+        />
       </Pressable>
     </View>
   );

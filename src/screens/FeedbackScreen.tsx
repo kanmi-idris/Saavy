@@ -47,7 +47,7 @@ const FeedbackScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.nav}>
-        <Icon name="chevronLeft" onPress={navigation.goBack} />
+        {/* <Icon name="chevronLeft" onPress={navigation.goBack} /> */}
       </View>
       <View style={styles.wrapper}>
         <View style={styles.content}>

@@ -35,28 +35,55 @@ const strings = {
     continue: [
       {
         id: 1,
-        heading: 'What are stocks?',
-        text: 'Learn the basics of stocks and how they represent ownership in a company',
+        heading: 'What are real estate investments?',
+        text: 'Learn the basics of real estate investments and how they generate income and appreciation',
         percentCompleted: 80,
       },
       {
-        heading: 'How to read stock charts?',
-        text: 'Learn how to interpret the price movements and trends of stocks using charts',
+        heading: 'How to evaluate real estate properties?',
+        text: 'Learn how to use metrics such as cap rate, cash on cash return, and net operating income to assess the profitability of real estate properties',
         percentCompleted: 67,
       },
       {
-        heading: 'How to sell mutual funds?',
-        text: 'Learn how to redeem your mutual fund units, calculate your returns, and pay taxes',
+        heading: 'What are startup investments?',
+        text: 'Learn the basics of startup investments and how they offer potential returns and risks',
         percentCompleted: 20,
       },
       {
-        heading: 'How to buy mutual funds',
-        text: 'Learn how to place orders, choose payment methods, and confirm transactions',
+        heading: 'How to invest in startups?',
+        text: 'Learn how to find, evaluate, and fund startups using platforms such as Republic and AngelList',
         percentCompleted: 50,
       },
     ],
   },
+
   recommendations: [
+    {
+      id: '3',
+      name: 'Balogun 2.0',
+      company: 'CBC Africa',
+      type: 'Startup',
+      description:
+        'Balogun 2.0 is a startup that aims to revolutionize the fashion industry in Africa by using AI and blockchain to create personalized and sustainable clothing',
+      amount: '25M',
+      return: 'N/A',
+      frequency: 'N/A',
+      price: '10 per share',
+      image: require('@/assets/images/cbcAfrica.png'),
+    },
+    {
+      id: '6',
+      name: 'Lekki Garden City',
+      company: 'Lagos Housing Corporation',
+      type: 'Real Estate',
+      description:
+        'Real estate is a type of investment that involves buying, selling, renting, or managing properties such as land, buildings, or housing',
+      amount: '$250,000',
+      return: '5-yr return',
+      frequency: 'Yearly',
+      price: '250,000 per property',
+      image: require('@/assets/images/lagos.png'),
+    },
     {
       id: '1',
       name: 'PAXLX',
@@ -84,19 +111,6 @@ const strings = {
       image: require('@/assets/images/MicrosoftLogo.png'),
     },
     {
-      id: '3',
-      name: 'Balogun 2.0',
-      company: 'CBC Africa',
-      type: 'Startup',
-      description:
-        'Balogun 2.0 is a startup that aims to revolutionize the fashion industry in Africa by using AI and blockchain to create personalized and sustainable clothing',
-      amount: '25M',
-      return: 'N/A',
-      frequency: 'N/A',
-      price: '10 per share',
-      image: require('@/assets/images/cbcAfrica.png'),
-    },
-    {
       id: '4',
       name: 'Fair save',
       company: 'Fair Money',
@@ -121,19 +135,6 @@ const strings = {
       frequency: 'Daily',
       price: '25.67',
       image: require('@/assets/images/tiny.png'),
-    },
-    {
-      id: '6',
-      name: 'Lekki Garden City',
-      company: 'Lagos Housing Corporation',
-      type: 'Real Estate',
-      description:
-        'Real estate is a type of investment that involves buying, selling, renting, or managing properties such as land, buildings, or housing',
-      amount: '$250,000',
-      return: '5-yr return',
-      frequency: 'Yearly',
-      price: '250,000 per property',
-      image: require('@/assets/images/lagos.png'),
     },
   ],
 };

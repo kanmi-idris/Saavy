@@ -1,13 +1,12 @@
-/* eslint-disable react-native/no-inline-styles */
 import colors from '@/assets/Colors';
 import Icon from '@/assets/Icons';
 import typography from '@/assets/Typography';
-import React, {createContext, useContext, useState} from 'react';
-import {View, Pressable, Text, StyleSheet, ScrollView} from 'react-native';
-import {toCamelCase} from '../utils/toCamelCase';
+import {RootStackParams} from '@/navigation/RootStackNavigator';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
-import {RootStackParams} from '@/navigation/RootStackNavigator';
+import React, {createContext, useContext, useState} from 'react';
+import {Pressable, ScrollView, StyleSheet, Text, View} from 'react-native';
+import {toCamelCase} from '../utils/toCamelCase';
 
 /*This is a component that displays different investment suites for the user
  * It takes two props: heading and auxButton
@@ -34,11 +33,11 @@ interface InvestmentContextProps {
   setChosenInvestment?: React.Dispatch<React.SetStateAction<string>>;
 }
 export const InvestmentContext = createContext<InvestmentContextProps>({
-  chosenInvestment: 'mutualFunds',
+  chosenInvestment: 'realEstate',
 });
 
 export const InvestmentProvider = ({children}: {children: React.ReactNode}) => {
-  const [chosenInvestment, setChosenInvestment] = useState('mutualFunds');
+  const [chosenInvestment, setChosenInvestment] = useState('realEstate');
   return (
     <InvestmentContext.Provider value={{chosenInvestment, setChosenInvestment}}>
       {children}
@@ -52,11 +51,11 @@ const InvestmentSuites = ({
   noEndSpacing,
 }: InvestmentSuitesProps) => {
   const label = [
-    'Mutual Funds',
-    'Stocks',
     'Real Estate',
-    'Savings Lock',
     'Startups',
+    // 'Mutual Funds',
+    // 'Stocks',
+    // 'Savings Lock',
   ];
 
   const {chosenInvestment, setChosenInvestment} = useContext(InvestmentContext);

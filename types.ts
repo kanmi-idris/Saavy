@@ -1,3 +1,5 @@
+import {StyleProp, ViewStyle} from 'react-native';
+
 export type NewsItem = {
   headline: string;
   timestamp: string;
@@ -15,3 +17,12 @@ export type InvestmentType =
   | 'savingsLock'
   | 'startups'
   | 'mutualFunds';
+
+export interface WelcomeBarProps {
+  newNotifications?: boolean;
+  heading: string;
+  subheading: string;
+  image: number;
+  style?: StyleProp<ViewStyle>;
+  variant: 'notification' | 'settings';
+}

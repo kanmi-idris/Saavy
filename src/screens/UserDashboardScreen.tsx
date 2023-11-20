@@ -2,17 +2,17 @@
 import colors from '@/assets/Colors';
 import Icon from '@/assets/Icons';
 import React from 'react';
-import {ScrollView, View, Text, StyleSheet, Pressable} from 'react-native';
+import {Pressable, ScrollView, StyleSheet, Text, View} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 // import ProgressBar from '../lib/components/ProgressBar';
-import typography from '@/assets/Typography';
-import {ScrollableSection, StaticSection} from '@/lib/layout/Section';
 import strings from '@/assets/Strings';
-import RecommendationCard from '@/lib/components/Cards/RecommendationCard';
-import MiniInvestmentDetailCard from '@/lib/components/Cards/MiniInvestmentDetailCard';
+import typography from '@/assets/Typography';
 import DisplayCard from '@/lib/components/Cards/DisplayCard';
-import WelcomeBar from '@/lib/components/WelcomeBar';
+import MiniInvestmentDetailCard from '@/lib/components/Cards/MiniInvestmentDetailCard';
+import RecommendationCard from '@/lib/components/Cards/RecommendationCard';
 import ProgressBar from '@/lib/components/ProgressBar';
+import WelcomeBar from '@/lib/components/WelcomeBar';
+import {ScrollableSection, StaticSection} from '@/lib/layout/Section';
 // import DisplayCard from '../lib/components/Cards/DisplayCard';
 // import WelcomeBar from '../lib/components/WelcomeBar';
 
@@ -30,6 +30,7 @@ const UserDashboardScreen = () => {
             subheading="Lets Make you wealthier today 😊"
             image={require('@/assets/images/avatar.png')}
             newNotifications={true}
+            variant="notification"
           />
         </View>
         <View style={styles.scrollables}>
@@ -40,13 +41,19 @@ const UserDashboardScreen = () => {
               key={Math.random()}
               trend="upward"
             />
-            <DisplayCard label="Stocks" key={Math.random()} trend="downward" />
             <DisplayCard
               label="Real Estate"
               key={Math.random()}
               trend="upward"
             />
             <DisplayCard
+              label="Startups"
+              key={Math.random()}
+              trend="downward"
+            />
+
+            {/* <DisplayCard label="Stocks" key={Math.random()} trend="downward" /> */}
+            {/* <DisplayCard
               label="Mutual Funds"
               key={Math.random()}
               trend="downward"
@@ -55,8 +62,7 @@ const UserDashboardScreen = () => {
               label="Savings Lock"
               key={Math.random()}
               trend="upward"
-            />
-            <DisplayCard label="Startups" key={Math.random()} trend="upward" />
+            /> */}
           </ScrollableSection>
           {/* Portfolio Display End */}
           <ScrollableSection
@@ -172,7 +178,9 @@ const ContinueLearningCard = ({
     <Pressable style={[styles.container]}>
       <View style={styles.wrapper}>
         <Text style={styles.heading}>{heading}</Text>
-        <Text style={styles.subheading}>{subheading}</Text>
+        <Text style={styles.subheading} numberOfLines={2}>
+          {subheading}
+        </Text>
         <ProgressBar percent={percentCompleted} />
       </View>
       <Icon name="playCircle" {...iconProps} />
@@ -215,6 +223,7 @@ const styles = StyleSheet.create({
     ...typography.regular.paragraphMid,
     color: colors.black_6,
     marginBottom: 8,
+    // height: 40,
   },
   welcomeBarWrap: {
     marginHorizontal: 24,

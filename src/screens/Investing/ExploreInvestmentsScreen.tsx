@@ -1,4 +1,4 @@
-/* eslint-disable react-native/no-inline-styles */
+/* eslint-disable prettier/prettier */
 import colors from '@/assets/Colors';
 import strings from '@/assets/Strings';
 import MiniInvestmentDetailCard from '@/lib/components/Cards/MiniInvestmentDetailCard';
@@ -12,15 +12,15 @@ import {UserIsLoggedInStackParams} from '@/navigation/UserIsLoggedInScreensStack
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import React, {useCallback, useContext, useState} from 'react';
-import {View, StyleSheet, useWindowDimensions} from 'react-native';
+import {StyleSheet, View, useWindowDimensions} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
 // dummy APIs
-import stocks_api from './api/dummyDB/explore/stocks.json';
-import startups_api from './api/dummyDB/explore/startups.json';
-import savings_lock_api from './api/dummyDB/explore/savings_lock.json';
-import real_estate_api from './api/dummyDB/explore/real_estate.json';
 import mutual_funds_api from './api/dummyDB/explore/mutual_funds.json';
+import real_estate_api from './api/dummyDB/explore/real_estate.json';
+import savings_lock_api from './api/dummyDB/explore/savings_lock.json';
+import startups_api from './api/dummyDB/explore/startups.json';
+import stocks_api from './api/dummyDB/explore/stocks.json';
 
 const ExploreInvestmentsScreen = () => {
   const navigation =
@@ -63,7 +63,7 @@ const ExploreInvestmentsScreen = () => {
         <BasicInput iconStart="search" placeholder="Search" type="text" />
       </View>
       <View style={styles.investmentSuites}>
-        <InvestmentSuites heading="Investment Suites" auxButton />
+        <InvestmentSuites heading="Investment Suites" />
       </View>
       <View style={styles.margin}>
         <ScrollableSection heading="Highest Investors" horizontal offset={30}>
